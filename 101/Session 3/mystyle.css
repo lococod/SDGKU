@@ -6,13 +6,13 @@ body {
  }
  h1 {
   color: rgb(221, 243, 96);
-  text-align: left;
+  text-align: center;
   font: italic 400% fantasy;
  }
  p {
   background-color: #FFFF33;
   color: #333300;
-  text-align: left;
+  text-align: center;
   border: 3px groove #FFFF33;
  }
  img {border: 3px solid black}
