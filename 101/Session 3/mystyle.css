@@ -35,9 +35,9 @@ body {
  }
 
  .logo2 {
-  width: 250px;
   border-radius: 15px;
   border: 2px solid white;
+  width: 200px;
   
 }
 
@@ -56,8 +56,11 @@ color: orange;
 /* id selector */
 
 #title1{
-  color:red
+  color:red;
 }
 #h1style{
-  color:darkblue
+  color:darkblue;
+}
+#ice{
+  width: 100px;
 }
