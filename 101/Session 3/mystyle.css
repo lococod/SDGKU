@@ -41,7 +41,7 @@ body {
 }
 
 .logo3 {
-  width: 90px;
+  width: 150px;
   border-radius: 15px;
   border: 2px solid white;
   
@@ -55,5 +55,8 @@ color: orange;
 /* id selector */
 
 #title1{
-  color:green
+  color:red
+}
+#h1style{
+  color:darkblue
 }
