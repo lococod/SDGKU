@@ -1,4 +1,14 @@
 /* Tag Selectors*/
+
+a{
+color: red;
+background: rgb(6, 55, 71);
+display: block;
+width: 160px;
+padding: 10px;
+
+}
+
 body {
   background: url(download.jpg);
   /*background-color: #045533;*/
@@ -66,11 +76,3 @@ color: orange;
   width: 100px;
 }
 
-a{
-color: red;
-background: rgb(6, 55, 71);
-display: block;
-width: 160px;
-padding: 10px;
-
-}
