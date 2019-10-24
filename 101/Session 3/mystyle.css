@@ -6,13 +6,13 @@ body {
  }
  h1 {
   color: rgb(221, 243, 96);
-  text-align: center;
-  font: italic 200% fantasy;
+  text-align: left;
+  font: italic 400% fantasy;
  }
  p {
   background-color: #FFFF33;
   color: #333300;
-  text-align: right;
+  text-align: left;
   border: 3px groove #FFFF33;
  }
  img {border: 3px solid black}
@@ -20,7 +20,7 @@ body {
  blockquote {
   background-color: #FFFF33;
   color: #333300;
-  text-align: right;
+  text-align: center;
   border: 3px groove #FFFF33;
 
  }
