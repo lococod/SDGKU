@@ -65,3 +65,12 @@ color: orange;
 #ice{
   width: 100px;
 }
+
+a{
+color: red;
+background: rgb(6, 55, 71);
+display: block;
+width: 160px;
+padding: 10px;
+
+}
