@@ -2,6 +2,7 @@
 body {
   background: url(download.jpg);
   /*background-color: #045533;*/
+  background-repeat: repeat;
   color: #FFFFFF;
  }
  h1 {
@@ -42,7 +43,7 @@ body {
 
 .logo3 {
   width: 150px;
-  border-radius: 15px;
+  border-radius: 50%;
   border: 2px solid white;
   
 }
