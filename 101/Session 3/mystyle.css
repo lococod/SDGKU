@@ -1,10 +1,11 @@
 /* myStyle.css */
 body {
-  background-color: #045533;
+  background: url(download.jpg);
+  /*background-color: #045533;*/
   color: #FFFFFF;
  }
  h1 {
-  color: #FFFF33;
+  color: rgb(221, 243, 96);
   text-align: center;
   font: italic 200% fantasy;
  }
@@ -15,3 +16,11 @@ body {
   border: 3px groove #FFFF33;
  }
  img {border: 3px solid black}
+
+ blockquote {
+  background-color: #FFFF33;
+  color: #333300;
+  text-align: right;
+  border: 3px groove #FFFF33;
+
+ }
