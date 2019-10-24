@@ -24,3 +24,22 @@ body {
   border: 3px groove #FFFF33;
 
  }
+ /* class selector*/
+ .logo {
+   width: 100px;
+   border-radius: 15px;
+   border: 2px solid white;
+
+ }
+
+ .logo2 {
+  width: 250px;
+  border-radius: 15px;
+  border: 2px solid white;
+  
+}
+.text {
+font-size: 15px;
+color: orange;
+
+}
