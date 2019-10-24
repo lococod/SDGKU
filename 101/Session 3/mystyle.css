@@ -1,4 +1,4 @@
-/* myStyle.css */
+/* Tag Selectors*/
 body {
   background: url(download.jpg);
   /*background-color: #045533;*/
@@ -20,8 +20,9 @@ body {
  blockquote {
   background-color: #FFFF33;
   color: #333300;
-  text-align: center;
+  text-align: left;
   border: 3px groove #FFFF33;
+  text-indent: 70px;
 
  }
  /* class selector*/
@@ -38,8 +39,21 @@ body {
   border: 2px solid white;
   
 }
+
+.logo3 {
+  width: 90px;
+  border-radius: 15px;
+  border: 2px solid white;
+  
+}
 .text {
 font-size: 15px;
 color: orange;
 
+}
+
+/* id selector */
+
+#title1{
+  color:green
 }
