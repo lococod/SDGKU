@@ -9,6 +9,7 @@ body {
   color: rgb(221, 243, 96);
   text-align: center;
   font: italic 400% fantasy;
+  background-image: url(dice.jpg)
  }
  p {
   background-color: #FFFF33;
