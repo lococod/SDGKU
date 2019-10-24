@@ -9,6 +9,10 @@ padding: 10px;
 
 }
 
+ol{
+color:rgb(236, 191, 41);
+}
+
 body {
   background: url(download.jpg);
   /*background-color: #045533;*/
