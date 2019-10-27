@@ -1,0 +1,83 @@
+/* Tag Selectors*/
+
+a{
+color: red;
+background: rgb(6, 55, 71);
+display: block;
+width: 160px;
+padding: 10px;
+
+}
+
+ol{
+color:rgb(224, 77, 158);
+}
+
+body {
+  background: url(download.jpg);
+  /*background-color: #045533;*/
+  background-repeat: repeat;
+  color: #FFFFFF;
+ }
+ h1 {
+  color: rgb(221, 243, 96);
+  text-align: center;
+  font: italic 400% fantasy;
+  background: black
+ }
+ p {
+  background-color: #FFFF33;
+  color: #333300;
+  text-align: center;
+  border: 3px groove #FFFF33;
+ }
+ img {border: 3px solid black}
+
+ blockquote {
+  background-color: #FFFF33;
+  color: #333300;
+  text-align: left;
+  border: 3px groove #FFFF33;
+  text-indent: 70px;
+
+ }
+ /* class selector*/
+ .logo {
+   width: 100px;
+   border-radius: 15px;
+   border: 2px solid white;
+
+ }
+
+ .logo2 {
+  border-radius: 15px;
+  border: 2px solid white;
+  width: 200px;
+ 
+}
+
+.logo3 {
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+
+  
+}
+.text {
+font-size: 15px;
+color: orange;
+
+}
+
+/* id selector */
+
+#title1{
+  color:red;
+}
+#h1style{
+  color:rgb(154, 233, 50);
+}
+#ice{
+  width: 100px;
+}
+
