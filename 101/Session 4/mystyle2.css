@@ -16,21 +16,8 @@ ul {
   background: rgb(166, 216, 27);
 }
 
-ul li a{
-  color: rgb(27, 0, 145);
-  font-family: 'Courier New', Courier, monospace;
-  font:bold;
-  background: rgb(166, 216, 27);
-  text-align: center;
-}
-
 ul li:hover {
 background: rgb(187, 187, 223);
-transform: scale(1.2);
-}
-
-ul li{
-  display: inline-block
 }
 
 ol li:hover {
