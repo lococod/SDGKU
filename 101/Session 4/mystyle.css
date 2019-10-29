@@ -37,6 +37,17 @@ width: 30%;
   background: lightseagreen;
 }
 
+.supply li:hover{
+  background: lightseagreen;
+}
+
+.supply li {
+  background: grey;
+  width: 25%;
+  display: block;
+ list-style-image: url('coffeebean.png')
+}
+
 body {
   background: url(download.jpg);
   /*background-color: #045533;*/
