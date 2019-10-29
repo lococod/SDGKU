@@ -9,9 +9,19 @@ padding: 10px;
 
 }
 
-ol{
-color:rgb(224, 77, 158);
-}
+ul {
+  color: rgb(221, 243, 96);
+  text-align: center;
+  font: italic 300% fantasy;
+  background: transparent;
+list-style-type: square;}
+
+ol {
+  color: grey;
+  text-align: center;
+  font: italic 300% fantasy;
+  background: transparent;
+list-style-type: square;}
 
 body {
   background: url(download.jpg);
