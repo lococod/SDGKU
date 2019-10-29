@@ -9,42 +9,33 @@ padding: 10px;
 
 }
 
-ul {
-  color: rgb(27, 0, 145);
-  font-family: 'Courier New', Courier, monospace;
-  font:bold;
-  background: rgb(166, 216, 27);
+ul li {
+
+  display: inline-block;
+ }
+
+ li a{
+   background: ghostwhite
+ }
+
+li a:hover{
+  background: blue;
 }
 
-ul li a{
-  color: rgb(27, 0, 145);
-  font-family: 'Courier New', Courier, monospace;
-  font:bold;
-  background: rgb(166, 216, 27);
-  text-align: center;
+ol li {
+
+  display:block;
+  background: grey;
+width: 30%;
 }
 
-ul li:hover {
-background: rgb(187, 187, 223);
-transform: scale(1.2);
+.test li{
+  font-size: 18px;
+
 }
-
-ul li{
-  display: inline-block
+.test li:hover{
+  background: lightseagreen;
 }
-
-ol li:hover {
-  background: blue
-  }
-
-ol {
-  color:whitesmoke;
-  text-align: left;
-  width: 300px;
-  font: italic 150% fantasy;
-  background:rgba(0, 0, 0, 0.192);
-list-style-type: lower-roman;
-paddng: 5px;}
 
 body {
   background: url(download.jpg);
