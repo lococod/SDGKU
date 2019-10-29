@@ -20,6 +20,10 @@ ul li:hover {
 background: rgb(187, 187, 223);
 }
 
+.listblock{
+  display: inline-block
+}
+
 ol li:hover {
   background: blue
   }

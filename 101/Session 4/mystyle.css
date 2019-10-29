@@ -38,11 +38,11 @@ ol li:hover {
   }
 
 ol {
-  color: grey;
+  color:whitesmoke;
   text-align: left;
   width: 300px;
   font: italic 150% fantasy;
-  background: rgb(0, 128, 0);
+  background:rgba(0, 0, 0, 0.192);
 list-style-type: lower-roman;
 paddng: 5px;}
 
