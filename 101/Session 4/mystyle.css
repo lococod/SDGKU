@@ -1,7 +1,7 @@
 /* Tag Selectors*/
 
 a {
-    color: red;
+    color: rgba(255, 0, 0, 0.89);
     background: rgb(6, 55, 71);
     display: block;
     width: 160px;
