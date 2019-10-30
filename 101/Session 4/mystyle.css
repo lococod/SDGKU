@@ -17,7 +17,7 @@ li a {
 }
 
 li a:hover {
-    background: blue;
+    background: rgb(8, 171, 221);
 }
 
 ol li {
