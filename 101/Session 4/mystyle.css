@@ -60,8 +60,8 @@ h1 {
 }
 
 p {
-    background-color: #FFFF33;
-    color: #333300;
+    background-color: rgba(11, 88, 99, 0.548);
+    color: #3eff2c;
     text-align: center;
     border: 3px groove #FFFF33;
 }
