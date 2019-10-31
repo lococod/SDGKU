@@ -10,10 +10,12 @@ a {
 
 ul li {
     display: inline-block;
+    
 }
 
 li a {
     background: rgba(248, 248, 255, 0.747);
+    text-decoration: none;
     color: #0951a3;
     width: 180px;
 }
@@ -116,6 +118,17 @@ width: 150px;}
     color: #FFFF33;
     width: 50%;
     margin-left: 25%;
+}
+
+
+.square2 {
+    border: 5px solid rgb(166, 228, 20);
+    padding: 1em;
+    border-radius: 25px;
+    color: #FFFF33;
+    width: 50%;
+    margin-left: 25%;
+    float: left;
 }
 
 /* id selector */
