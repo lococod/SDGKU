@@ -20,30 +20,6 @@ li a:hover {
     background: rgb(8, 171, 221);
 }
 
-ol li {
-    display: block;
-    background: grey;
-    width: 30%;
-}
-
-.test li {
-    font-size: 18px;
-}
-
-.test li:hover {
-    background: lightseagreen;
-}
-
-.supply li:hover {
-    background: lightseagreen;
-}
-
-.supply li {
-    background: grey;
-    width: 25%;
-    display: block;
-    list-style-image: url('coffeebean.png')
-}
 
 body {
     background: url(download.jpg);
