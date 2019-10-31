@@ -13,24 +13,14 @@ ul li {
 }
 
 li a {
-    background: ghostwhite
+    background: rgba(248, 248, 255, 0.747);
+    color: #0951a3;
+    width: 180px;
 }
 
 li a:hover {
     background: rgb(8, 171, 221);
 }
-
-.supply li {display: block;
-background: rgba(205, 92, 92, 0.473);
-width: 150px;
-color: rgb(16, 255, 8);}
-
-.contacts li {display: block;
-text-size-adjust: 400%;}
-
-.alts li {display: block; 
-    background: green;
-width: 150px;}
 
 body {
     background: url(download.jpg);
@@ -68,6 +58,34 @@ blockquote {
 
 /* class selector*/
 
+.supply li:hover{
+    background:cyan;
+}
+
+.supply li {display: block;
+background: rgba(205, 92, 92, 0.473);
+width: 150px;
+color: rgb(16, 255, 8);}
+
+.contacts li {display: block;
+font-size: 22px;}
+
+.alts li {display: block; 
+    background: green;
+width: 150px;}
+
+.alts li:hover {
+    background: lightgreen;
+}
+
+.footer{
+    background: black;
+    color: white;
+    font-size: 14px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
 .logo {
     width: 100px;
     border-radius: 15px;
