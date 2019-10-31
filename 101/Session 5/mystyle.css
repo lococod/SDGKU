@@ -64,6 +64,20 @@ blockquote {
     background:cyan;
 }
 
+.kcup {
+
+    background:white;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    margin-left: 45%;
+}
+
+.kcup:hover {
+background:lightblue;
+
+}
+
 .supply li {display: block;
 background: rgba(205, 92, 92, 0.473);
 width: 150px;
