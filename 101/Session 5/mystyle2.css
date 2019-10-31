@@ -1,48 +1,40 @@
 /* Tag Selectors*/
 
 a {
-    color: rgba(255, 0, 0, 0.89);
+    color: red;
     background: rgb(6, 55, 71);
     display: block;
     width: 160px;
     padding: 10px;
 }
 
+ul {
+    color: rgb(27, 0, 145);
+    font-family: 'Courier New', Courier, monospace;
+    font: bold;
+    background: rgb(166, 216, 27);
+}
+
+ul li:hover {
+    background: rgb(187, 187, 223);
+}
+
 ul li {
-    display: inline-block;
+    display: inline-block
 }
 
-li a {
-    background: ghostwhite
+ol li:hover {
+    background: blue
 }
 
-li a:hover {
-    background: rgb(8, 171, 221);
-}
-
-ol li {
-    display: block;
-    background: grey;
-    width: 30%;
-}
-
-.test li {
-    font-size: 18px;
-}
-
-.test li:hover {
-    background: lightseagreen;
-}
-
-.supply li:hover {
-    background: lightseagreen;
-}
-
-.supply li {
-    background: grey;
-    width: 25%;
-    display: block;
-    list-style-image: url('coffeebean.png')
+ol {
+    color: grey;
+    text-align: left;
+    width: 300px;
+    font: italic 150% fantasy;
+    background: rgb(0, 128, 0);
+    list-style-type: lower-roman;
+    padding: 5px;
 }
 
 body {
@@ -60,8 +52,8 @@ h1 {
 }
 
 p {
-    background-color: rgba(11, 88, 99, 0.548);
-    color: #3eff2c;
+    background-color: #FFFF33;
+    color: #333300;
     text-align: center;
     border: 3px groove #FFFF33;
 }
