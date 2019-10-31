@@ -20,19 +20,30 @@ li a:hover {
     background: rgb(8, 171, 221);
 }
 
+.supply li {display: block;
+background: rgba(205, 92, 92, 0.473);
+width: 150px;
+color: rgb(16, 255, 8);}
+
+.contacts li {display: block;
+text-size-adjust: 400%;}
+
+.alts li {display: block; 
+    background: green;
+width: 150px;}
 
 body {
     background: url(download.jpg);
     /*background-color: #045533;*/
-    background-repeat: repeat;
-    color: #FFFFFF;
+      color: #FFFFFF;
 }
 
 h1 {
     color: rgb(221, 243, 96);
     text-align: center;
     font: italic 400% fantasy;
-    background: black
+    background: rgba(0, 0, 0, 0.603);
+    border-radius: 25px;
 }
 
 p {
@@ -80,6 +91,14 @@ blockquote {
     color: orange;
 }
 
+.square {
+    border: 5px solid grey;
+    padding: 1em;
+    border-radius: 25px;
+    color: #FFFF33;
+    width: 50%;
+    margin-left: 25%;
+}
 
 /* id selector */
 
