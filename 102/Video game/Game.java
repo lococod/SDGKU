@@ -16,52 +16,52 @@ public class Game {
 
     toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);
    toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);   
    toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);
    toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);
    toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);
    toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);
    toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);
    toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);
    toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);
    toad.attack(mario);
    luigi.attack(toad);
-   mario.attack(luigi)
+   mario.attack(luigi);
    luigi.attack(toad);
    toad.attack(luigi);
 

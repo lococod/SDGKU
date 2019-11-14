@@ -62,7 +62,7 @@ public class Character {
 
     // int newEnergy = opponent.energy-this.attackPoints;
     int newMana = this.mana - 5;
-    int damage = (50 + (this.attackPoints / (this.attackPoints - opponent.defensePoints)));
+    int damage = (100 + (this.attackPoints / (this.attackPoints - opponent.defensePoints)));
     int newEnergy = opponent.energy - damage;
 
     opponent.mana = newMana;
