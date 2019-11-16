@@ -5,8 +5,8 @@ header {
   background-image: url(img/oceanbanner.jpg);
   font-family: "Bebas Neue", cursive;
   color: black;
-  -webkit-filter: opacity(100%);
-  filter: opacity(85%);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
 }
 
 h1 {
@@ -39,8 +39,17 @@ footer img {
   padding: 5px;
   width: 300px;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(20%);
+  filter: grayscale(40%);
 }
+
+.newlocation {
+    border: 2px solid rgb(230, 142, 27);
+    border-radius: 60px;
+    padding: 5px;
+    width: 250px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    }
 figure {
   width: 300px;
   display: block;
