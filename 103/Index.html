@@ -12,15 +12,48 @@
     />
   </head>
   <body>
-    <header><h1>Random Earth Photos</h1></header>
-    
-    <img src="img/Cliff.jpg" alt="" /><br />
-    <img src="img/Fail-Whale.jpg" alt="" />
+    <header>
+      <h1>Random Earth Photos</h1>
+    </header>
+
     <main>
-      <img src="img/Iguana.jpg" alt="" /><br />
-      <img src="img/Careful.jpg" alt="" />
+      <figure>
+        <img class="location" src="img/Cliff.jpg" alt="" />
+        <figcaption>Cliff</figcaption>
+        <img class="location" src="img/Fail-Whale.jpg" alt="" />
+        <figcaption>Whale</figcaption>
+        <img class="location" src="img/Iguana.jpg" alt="" />
+        <figcaption>Iguana</figcaption>
+        <img class="location" src="img/Careful.jpg" alt="" />
+        <figcaption>Box</figcaption>
+      </figure>
+
+      <div class="container">
+        <img
+          src="https://www.w3schools.com/html/workplace.jpg"
+          alt="Computer"
+          usemap="#workmap"
+        />
+        <div class="center">Click it!</div>
+        <map name="workmap">
+          <area
+            shape="rect"
+            coords="355,200,405,300"
+            href="example.html"
+            alt="Click Here!"
+          />
+          <area
+            shape="rect"
+            coords="34,44,270,350"
+            href="example.html"
+            alt=""
+          />
+        </map>
+      </div>
     </main>
 
-    <footer><img src="img/duckhorse.jpg" alt="" /></footer>
+    <footer>
+      <img class="locationfooter" src="img/duckhorse.jpg" alt="" />
+    </footer>
   </body>
 </html>

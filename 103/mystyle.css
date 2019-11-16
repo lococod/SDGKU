@@ -1,16 +1,78 @@
 header {
-height: 50vh;
-background-size: cover;
-background-position: center center;
-background-image: url(img/oceanbanner.jpg);
-font-family: 'Bebas Neue', cursive;
-color: aliceblue;
-text-align: center;
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(img/oceanbanner.jpg);
+  font-family: "Bebas Neue", cursive;
+  color: aliceblue;
 }
 
 h1 {
-      
+  background-color: rgba(rgba(7, 36, 6, 0.842));
+  text-align: center;
+  font-size: 40px;
 }
+main {
+  background: rgba(0, 128, 0, 0.274);
+  height: auto;
+  padding-top: 20px;
+}
+main img {
+  width: 500px;
+}
+
+footer {
+  padding-top: 20px;
+  background: blue;
+  height: auto;
+  padding-bottom: 20px;
+}
+
 footer img {
-    width: 150px;
+  width: 150px;
+}
+
+.location {
+  border: 2px solid burlywood;
+  border-radius: 15px;
+  padding: 5px;
+  width: 300px;
+}
+figure {
+  width: 300px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+figcaption {
+  text-align: center;
+}
+.locationfooter {
+  border: 2px solid burlywood;
+  border-radius: 15px;
+  padding: 5px;
+  width: 150px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  position: relative;
+}
+
+div img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: yellow;
 }
