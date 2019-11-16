@@ -1,0 +1,16 @@
+header {
+height: 50vh;
+background-size: cover;
+background-position: center center;
+background-image: url(img/oceanbanner.jpg);
+font-family: 'Bebas Neue', cursive;
+color: aliceblue;
+text-align: center;
+}
+
+h1 {
+      
+}
+footer img {
+    width: 150px;
+}
