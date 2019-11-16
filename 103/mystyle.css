@@ -4,11 +4,12 @@ header {
   background-position: center center;
   background-image: url(img/oceanbanner.jpg);
   font-family: "Bebas Neue", cursive;
-  color: aliceblue;
+  color: black;
+  -webkit-filter: opacity(100%);
+  filter: opacity(85%);
 }
 
 h1 {
-  background-color: rgba(rgba(7, 36, 6, 0.842));
   text-align: center;
   font-size: 40px;
 }
@@ -23,7 +24,7 @@ main img {
 
 footer {
   padding-top: 20px;
-  background: blue;
+  background: rgba(0, 0, 255, 0.247);
   height: auto;
   padding-bottom: 20px;
 }
@@ -37,6 +38,8 @@ footer img {
   border-radius: 15px;
   padding: 5px;
   width: 300px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(20%);
 }
 figure {
   width: 300px;
@@ -62,10 +65,9 @@ figcaption {
 }
 
 div img {
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .center {
