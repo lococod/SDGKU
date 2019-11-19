@@ -1,0 +1,19 @@
+table{
+  border:1px solid black;
+  width: 50%;
+}
+
+td{
+  border-bottom: 1px solid grey;
+  width: auto;
+  text-align: center;
+  padding: 5px;
+}
+
+tr:hover {
+  background: lightseagreen;
+}
+
+img{
+  width: 100px;
+}
