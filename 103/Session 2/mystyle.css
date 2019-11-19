@@ -10,10 +10,16 @@ td{
   padding: 5px;
 }
 
-tr:hover {
+.one tr:hover {
   background: lightseagreen;
 }
 
 img{
   width: 100px;
+}
+
+.two img{
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 15px;
 }
