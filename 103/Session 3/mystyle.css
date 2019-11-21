@@ -30,6 +30,20 @@ main{
 
 }
 
+.site-main-contact-us{
+  background-image: url(img/challenger\ 2.jpg);
+  border-radius: 20px;
+  background-position: center center;
+ background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 20px;
+
+}
+
 .site-footer{
 
   font-size: 12px;
@@ -164,4 +178,18 @@ h5:hover{
 width: 500;
 height: auto;
 
+}
+
+.contact-info{
+  background: white;
+  color: black;
+  height: 80vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table{
+  margin-left: 20px;
+  padding: 20px;
 }
