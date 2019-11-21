@@ -30,22 +30,22 @@
 
   <main class="site-main-contact-us">
     <div>Contact us using the numbers listed or fill out the webform below</div>
-    <table>
+    <table class="table table-dark">
       <th>Name</th>
       <th>Phone</th>
       <tr>
-        <td>a</td>
-        <td>b
+        <td>John Doe</td>
+        <td>867-5309
         </td>
       </tr>
       <tr>
-        <td>a</td>
-        <td>b
+        <td>Jane Doe</td>
+        <td>867-5309
         </td>
       </tr>
       <tr>
-        <td>a</td>
-        <td>b
+        <td>Bob Dole</td>
+        <td>867-5309
         </td>
       </tr>
 
@@ -70,9 +70,16 @@
           <input type="tel" name="userPhone" id="phone">
         </p>
         <p>
-            <label for="password">Password</label>
-            <input type="password" name="userPassword" id="password">
-          </p>
+          <label for="userComment">Add Comments Here</label><br>
+          <textarea name="userComment" id="comment" cols="20" rows="5">
+               </textarea>
+
+        </p>
+        <p>
+          <input type="date" id="date">
+        </p>
+
+        <p><input type="submit" name="send" id="send"></p>
 
       </form>
     </div>
