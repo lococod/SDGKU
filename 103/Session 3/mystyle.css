@@ -47,7 +47,7 @@ main{
 .site-main-news{
 padding: 20;
 border-radius: 20px;
-display: flex;
+display: flexbox;
 }
 
 
@@ -202,3 +202,33 @@ height: auto;
 table{
   padding: 5px;
 }
+
+input {
+  width: 300px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 4px solid blue;
+}
+
+input[type=email] {
+  background-color: lightgreen;
+  }
+
+  input[type=tel]:focus {
+    border: 10px solid #555;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
