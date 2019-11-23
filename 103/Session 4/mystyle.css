@@ -233,3 +233,5 @@ input[type=email] {
     background-color: #f8f8f8;
     resize: none;
   }
+
+  .center { margin: 0 auto; width: 400px; }
