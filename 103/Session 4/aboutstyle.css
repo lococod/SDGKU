@@ -3,7 +3,7 @@
   background-color: rgba(6, 76, 94, 0.733);
   color: black;
   width: 100%;
-  min-height: 60vh;
+  min-height: 30vh;
   border-radius: 20px;
   background-image: url(img/charger\ 2.jpg);
   background-size: cover;
@@ -48,8 +48,12 @@ body{
 
 }
 main{
-
-
+background-color: lightgray;
+border-radius: 20px;
+padding: 1rem;
+width: 80%;
+margin-right: auto;
+margin-left: auto;
 }
 
 
@@ -90,4 +94,22 @@ main{
   justify-content: space-between;
   flex-direction: column;
 }
+
+.content{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1{
+
+  font-size: 3rem;
+  color: white;
+}
+
+h2{
+  font-size: 1rem;
+  color: white;
+}
+.center { margin: 0 auto; width: 400px; }
 
