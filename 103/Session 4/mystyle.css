@@ -7,6 +7,17 @@
   border-radius: 20px;
   
 }
+
+
+.site-header-about{
+  font-size: 18px;
+  background-color: rgba(6, 76, 94, 0.733);
+  color: black;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  
+}
 body{
  
 
