@@ -320,6 +320,9 @@ a.button:hover {
         z-index:10;
 
     }
+    .box:hover{
+      background-color: purple;
+    }
 
     .a {
         grid-column: col / span  2;
@@ -348,4 +351,11 @@ a.button:hover {
         grid-row: row 2  ;
         background-color: rgba(49,121,207, 0.5);
         z-index: 20;
+    }
+
+
+    .about-img{
+      width: 250px;
+      float: left;
+      padding: 20px;
     }
