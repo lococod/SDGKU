@@ -60,7 +60,8 @@ main{
   display: grid;
   grid-template-columns: 50% 50%;
   color: gold;
-  
+  margin-left: auto;
+  margin-right: auto;
   }
 
   .text{
@@ -358,4 +359,11 @@ a.button:hover {
       width: 250px;
       float: left;
       padding: 20px;
+    }
+
+    h2{
+      background-color: rgba(128, 128, 128, 0.692)    ;
+      border-radius: 10px;
+      padding: 10px;
+      width: 340px;
     }
