@@ -1,5 +1,5 @@
 body{
-  background-color: rgba(187, 240, 101, 0.568);
+  background-color: rgba(26, 32, 16, 0.384);
 }
 
 .site-header{
@@ -12,6 +12,11 @@ display: flex;
 height: 10rem;
 }
 
+iframe {
+  padding: 10px;
+  display: block;
+  
+}
 #logo{
   width: 200px;
   border-radius: 15px;
@@ -230,6 +235,24 @@ input[type=text],input[type=password]{
   margin-top: 13px; 
   padding-left: 10px;
 }
+
+input[type=date]
+{
+  width: 200px; 
+  height: 39px; 
+  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px; 
+  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
+  background-color: #fff; 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 1px #cbc9c9;
+  margin-left: -5px;
+  margin-top: 13px; 
+  padding-left: 10px;
+}
+
 
 input[type=password]{
   margin-bottom: 25px;
