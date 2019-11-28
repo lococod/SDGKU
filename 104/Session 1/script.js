@@ -83,11 +83,34 @@
 //         console.log("num2: "+num2+" is greater than num1: "+num1);
 //     }
 
-    let student = ['donald','don','loco','a','b','c'];
-    
+var num1 = prompt("Enter in your first number: ");
+var num2 = prompt("Enter in your second number: ");
+var num3 = prompt("Enter in your third number: ");
+var num4 = prompt("Enter in your fourth number: ");
+var num5 = prompt("Enter in your fifth number: ");
+var num6 = prompt("Enter in your sixth number: ");
 
-    for(var j=0;j<student.length;j++)
-    {
-        console.log(student[j]);
-        alert(student[j]);
+document.getElementById('num1').innerHTML = `Num1: ${num1} `;
+document.getElementById('num2').innerHTML = `Num2: ${num2} `;
+document.getElementById('num3').innerHTML = `Num3: ${num3} `;
+document.getElementById('num4').innerHTML = `Num4: ${num4} `;
+document.getElementById('num5').innerHTML = `Num5: ${num5} `;
+document.getElementById('num6').innerHTML = `Num6: ${num6} `;
+document.getElementById('num6').innerHTML = `Num6: ${num6} `;
+
+let student = [num1, num2, num3, num4, num5, num6];
+
+var sum = parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4) + parseInt(num5) + parseInt(num6);
+
+var avg = (parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4) + parseInt(num5) + parseInt(num6))/(student.length-1);
+
+document.getElementById('sum').innerHTML = `Sum: ${sum} `;
+document.getElementById('avg').innerHTML = `Average: ${avg} `;
+
+for (var j = 0; j < student.length; j++) {
+    console.log(student[j]);
+    console.log(sum);
     }
+
+    alert("Sum is: "+sum);
+    alert("Average is: " +avg);
