@@ -98,19 +98,14 @@ document.getElementById('num5').innerHTML = `Num5: ${num5} `;
 document.getElementById('num6').innerHTML = `Num6: ${num6} `;
 document.getElementById('num6').innerHTML = `Num6: ${num6} `;
 
-let student = [num1, num2, num3, num4, num5, num6];
+let nums = [num1, num2, num3, num4, num5, num6];
 
 var sum = parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4) + parseInt(num5) + parseInt(num6);
 
-var avg = (parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4) + parseInt(num5) + parseInt(num6))/(student.length-1);
+var avg = (parseInt(num1) + parseInt(num2) + parseInt(num3) + parseInt(num4) + parseInt(num5) + parseInt(num6))/nums.length;
 
 document.getElementById('sum').innerHTML = `Sum: ${sum} `;
 document.getElementById('avg').innerHTML = `Average: ${avg} `;
-
-for (var j = 0; j < student.length; j++) {
-    console.log(student[j]);
-    console.log(sum);
-    }
 
     alert("Sum is: "+sum);
     alert("Average is: " +avg);
