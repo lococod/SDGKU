@@ -121,20 +121,38 @@
 // console.log(`Number ${i}`);
 // }
 
-const cart = ['product 1','product 2','product 3','product 4'];
+// const cart = ['product 1', 'product 2', 'product 3', 'product 4'];
 
-for(let i=0;i<=4;i++){
-    console.log(`The product in the cart is: ${cart}`);
-}
+// for (let i = 0; i <= 4; i++) {
+//     console.log(`The product in the cart is: ${cart}`);
+// }
 
-let numbers = [3,3,6,22,8,9,17]
+let numbers = [3, 4, 6, 22, 8, 9, 17]
 let currentGreatest = 0;
-for(let i=0;i<7;i++){
-if(numbers[i]>currentGreatest)
-{currentGreatest=numbers[i];}
-console.log(currentGreatest);
-break;
+for (let i = 0; i < 7; i++) {
+    if (numbers[i] > currentGreatest) {
+        currentGreatest = numbers[i];
+        
+    }
+    console.log(currentGreatest);
+  
 }
 
-console.log(Math.max.apply(null,numbers));
-console.log(numbers.sort(function(a,b){return b-a}));
+let currentLeast = currentGreatest
+for (let i = 0; i < 7; i++) {
+    if (numbers[i] < currentLeast) {
+        currentLeast = numbers[i];
+        
+    }
+    console.log(currentLeast);
+  
+}
+
+
+
+
+
+console.log(Math.min.apply(null, numbers));
+console.log(numbers.sort(function (a, b) {
+    return a - b
+}));
