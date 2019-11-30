@@ -69,3 +69,11 @@ let days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 console.table(days);
 daytoday = whatDay.getDay();
 console.log(daytoday);
+
+const logged = false;
+if(logged){
+    console.log("Welcome to the system");
+}
+else{
+    console.log("You have been denied");
+}
