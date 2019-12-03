@@ -1,5 +1,5 @@
 (function () {
-    var updateHour = function() {
+    var updateHour = function () {
 
         var date = new Date();
         var hour = date.getHours();
@@ -28,18 +28,28 @@
         pMonth.textContent = months[month];
         pDay.textContent = day;
         pYear.textContent = year;
-        pHour.textContent=hour;
 
 
-        if(minute<10){
-            minute="0"+minute;
+
+        if (minute < 10) {
+            minute = "0" + minute;
         }
-        if(seconds<10){
-            seconds="0"+seconds;
+        if (seconds < 10) {
+            seconds = "0" + seconds;
         }
-        pMin.textContent=minute;
-        pSec.textContent=seconds;
-        
+        pMin.textContent = minute;
+        pSec.textContent = seconds;
+        if (hour >= 12) {
+            hour = hour - 12;
+            ampm = 'PM';
+        } else {
+            ampm = 'AM';
+        }
+        if (hour == 0) {
+            hour = 12;
+        }
+        pHour.textContent = hour;
+        AMPM.textContent = ampm;
     }
     updateHour();
     var inter = setInterval(updateHour, 1000);
