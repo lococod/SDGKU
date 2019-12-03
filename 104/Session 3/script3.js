@@ -29,8 +29,17 @@
         pDay.textContent = day;
         pYear.textContent = year;
         pHour.textContent=hour;
+
+
+        if(minute<10){
+            minute="0"+minute;
+        }
+        if(seconds<10){
+            seconds="0"+seconds;
+        }
         pMin.textContent=minute;
         pSec.textContent=seconds;
+        
     }
     updateHour();
     var inter = setInterval(updateHour, 1000);
