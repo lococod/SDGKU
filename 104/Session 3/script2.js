@@ -120,3 +120,17 @@ const student8 = new Student ('Ness',43,'B',13);
 
 var students = [student1,student2,student3,student4,student5,student6,student7,student8];
 console.log(students);
+
+const worst= students.filter(students => students.points<45);
+console.log(worst);
+
+var findThisStudent = prompt("Enter a Student to Search: ");
+const findStudent = students.find(students => students.name === findThisStudent);
+console.log(findStudent);
+
+var findThisStudentGrade = prompt("Enter a Student to Search: ");
+const findStudentWithGrade = students.find(students => students.grade === findThisStudentGrade);
+console.log(findStudentWithGrade);
+
+const total = students.reduce((total,students)=>total+students.points,0);
+console.log(total/students.length);
