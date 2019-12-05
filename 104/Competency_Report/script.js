@@ -1,5 +1,9 @@
-var hello = function(){
+var attack = function(){
 
-document.getElementById("console").innerHTML="<p>Hello World</p>";
+document.getElementById("console").innerHTML="<p>Attacked Yoshi</p>";
 }
-hello();
+
+var attack2 = function(){
+
+    document.getElementById("console").innerHTML="<p>Attacked Mario</p>";
+    }
