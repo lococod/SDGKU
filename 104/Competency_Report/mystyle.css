@@ -1,3 +1,57 @@
 img {
     width: 200px;
 }
+
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+
+#player {
+    background: grey;
+    height: auto;
+    width: 350px;
+    flex-basis: (40%-10px);
+    margin: 10px;
+    text-align: center;
+}
+#opponent {
+    background: grey;
+    height: auto;
+    width: 350px;
+    flex-basis: (40%-10px);
+    margin: 10px;
+    text-align: center;
+}
+header {
+    background: rgba(209, 223, 18, 0.37);
+    height: 100px;
+    text-align: center;
+    border-radius: 15px;
+}
+footer{
+    text-align: center;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.356);
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.btn {
+    background: rgb(96, 96, 219);
+}
+.btn:hover {
+    background: red;
+}
+
+#console{
+    background: black;
+    color: white;
+    width: auto;
+    height: 200px;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
