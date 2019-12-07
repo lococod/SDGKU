@@ -12,13 +12,13 @@ class Character {
 <p> Lives: ${this.lives}</p>`;
 
     }
-    attack = function (opponent) {        
+    attack = function (opponent) {
         let damage = (Math.floor(Math.random() * ((20 - 1) + 1) + 1));
         let newEnergy = opponent.energy - damage;
         opponent.energy = newEnergy;
         console.log(opponent);
         opponent.display();
-        document.getElementById("console").innerHTML=`<p>Attacked  ${opponent.name}  and hits for ${damage} damage.`;
+        document.getElementById("console").innerHTML = `<p>${this.name} attacked  ${opponent.name}  and hits for ${damage} damage.`;
 
     }
 }
