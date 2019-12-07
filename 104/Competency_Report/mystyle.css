@@ -9,7 +9,7 @@ img {
 
 #player {
     background: grey;
-    height: 1000;
+    height: auto;
     width: 350px;
     flex-basis: (40%-10px);
     margin: 10px;
@@ -17,7 +17,7 @@ img {
 }
 #opponent {
     background: grey;
-    height: 1000;
+    height: auto;
     width: 350px;
     flex-basis: (40%-10px);
     margin: 10px;
@@ -54,4 +54,17 @@ footer{
     margin-right: 25%;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+.imgItem{
+    width: 20px;
+}
+
+.btn2 {
+    background: rgb(96, 96, 219);
+    text-align: center;
+    justify-content: center;
+}
+.btn2:hover {
+    background: red;
 }

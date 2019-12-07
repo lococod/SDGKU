@@ -20,6 +20,7 @@
                 <img src="img/mario.jpg" alt="mario">
                 <br>
                 <button class="btn" onclick="character1.attack(character2)" >Attack</button>
+                <button class="btn" onclick="character1.attackWItem(character2,selectItem())" >Attack with Item</button>
                 <div id="c1">
 
                 </div>
@@ -28,6 +29,7 @@
                 <img src="img/yoshi.png" alt="yoshi">
                 <br>
                 <button class="btn" onclick="character2.attack(character1)">Attack</button>
+                <button class="btn" onclick="character2.attackWItem(character1,selectItem())">Attack with Item</button>
                 <div id="c2">
 
                 </div>
@@ -38,6 +40,8 @@
         <div id="console">
             
         </div>
+        <button class="btn2" onclick="reset()">Reset</button>
+        <br>
     </main>
     <footer>
 
