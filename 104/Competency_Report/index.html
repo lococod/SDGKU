@@ -19,14 +19,22 @@
             <div id="player">
                 <img src="img/mario.jpg" alt="mario">
                 <br>
-                <button class="btn" onclick="attack()" onclick="damage()">Attack</button>
+                <button class="btn" onclick="character1.attack(character2)" >Attack</button>
+                <div id="c1">
+
+                </div>
             </div>
             <div id="opponent">
                 <img src="img/yoshi.png" alt="yoshi">
                 <br>
-                <button class="btn" onclick="attack2()">Attack</button>
+                <button class="btn" onclick="character2.attack(character1)">Attack</button>
+                <div id="c2">
+
+                </div>
             </div>
         </div>
+        <br>
+        <br>
         <div id="console">
             
         </div>
@@ -35,7 +43,7 @@
 
         <p>Donald Lococo</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>

@@ -12,10 +12,11 @@ var damage= function(){
 var attack = function(){
 
 document.getElementById("console").innerHTML="<p>Attacked </p>"+ player2 +"<p> and hits for " +diceTotal+".";
+
 }
 
 var attack2 = function(){
 
     document.getElementById("console").innerHTML="<p>Attacked </p>" +player1;
     }
-
+    
