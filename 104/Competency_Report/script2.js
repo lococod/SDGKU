@@ -74,5 +74,4 @@ function selectItem(){
 }
 
 const reset = function(){
-    
-}
+   }
