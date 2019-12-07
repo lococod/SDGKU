@@ -18,8 +18,15 @@ class Character {
         opponent.energy = newEnergy;
         console.log(opponent);
         opponent.display();
-        document.getElementById("console").innerHTML = `<p>${this.name} attacked  ${opponent.name}  and hits for ${damage} damage.`;
-
+        if(opponent.energy<=0){
+            document.getElementById(opponent.id).innerHTML=`<p> You have died. </P`;
+            document.getElementById("console").innerHTML = `<p>${this.name} has won. Game Over for ${opponent.name}`;    
+        
+        }
+        else{
+            document.getElementById("console").innerHTML = `<p>${this.name} attacked  ${opponent.name}  and hits for ${damage} damage.`;
+       
+        }
     }
 }
 
