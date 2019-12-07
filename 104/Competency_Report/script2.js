@@ -73,5 +73,6 @@ function selectItem(){
     
 }
 
-const reset = function(){
+reset = function(){
+    window.location.reload();
    }
