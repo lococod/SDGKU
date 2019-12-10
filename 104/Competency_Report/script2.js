@@ -74,5 +74,12 @@ function selectItem(){
 }
 
 reset = function(){
-    window.location.reload();
+    character1.energy=100;
+    character2.energy=100;
+    document.getElementById("console").innerHTML =`<p>${character1.name}'s energy has been restored!</p> 
+    <p>${character2.name}'s energy has been restored!</p>`;
+    character1.display();
+    character2.display();
+  
+    //window.location.reload();
    }
