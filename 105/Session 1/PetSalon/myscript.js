@@ -18,11 +18,11 @@ const salon = {
 
 let { name,pets, phone, address: { street, number }, workingHours: { days, open, closing } } = salon;
 
-document.getElementById("col1").innerHTML = `<h2 class="h2">${name}</h2> <p class="lead"> Phone: ${phone}</P>`;
+document.getElementById("col1").innerHTML = `<h2>${name}</h2><p>Phone: ${phone} </P>`;
 
-document.getElementById("col2").innerHTML = `<p class="lead">Address Information: </p> <p class="lead> ${number} ${street}</p>`;
+document.getElementById("col2").innerHTML = `<p>Address Information: ${number} ${street} </p>`;
 
-document.getElementById("col3").innerHTML = `<p class="lead"> It is open ${days} from ${open} to ${closing}.`;
+document.getElementById("col3").innerHTML = `<p>It is open ${days} from ${open} to ${closing}.</p>`;
 
 class Pet {
     constructor(name, age, breed, gender, service, ownerName, phoneContact) {
