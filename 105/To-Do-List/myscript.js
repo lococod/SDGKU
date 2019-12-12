@@ -6,8 +6,8 @@ function register(){
     const newItem = document.createElement('li');
     newItem.innerHTML = `${inputTask.value} <button onclick="deleteTask(${taskId});" class="btn btn-success"> Remove </button>`;
     newItem.setAttribute('class','list-group-item');
-    taskId +=1;
-    newItem.setAttribute('Id',taskId);
+    newItem.setAttribute('id',taskId);
+    taskId +=1; 
     list.appendChild(newItem);
     clear();
     
