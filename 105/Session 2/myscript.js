@@ -98,3 +98,22 @@ const ex  = document.getElementsByTagName('p');
 for(var i=0;i<ex.length;i++){
 ex[i].setAttribute('class','example');
 }
+
+
+var heading3= document.createElement('h3');
+console.log(heading3);
+var text = document.createTextNode("my first dom exercise");
+console.log(text);
+heading3.appendChild(text);
+console.log(heading3);
+
+document.getElementById('example').appendChild(heading3);
+
+// heading3.cloneNode(true);
+// var col1 = document.getElementById('col1');
+// col1.insertBefore(heading3);
+
+document.querySelector('.lead');
+
+var deleted = document.querySelector("header h1");
+deleted.remove();
