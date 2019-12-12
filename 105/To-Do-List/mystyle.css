@@ -8,17 +8,14 @@ h1 {
 }
 
 header{
-    background: rgb(25, 206, 167);
+    background: rgb(201, 56, 20);
     height: 30vh;
 }
 .input-text {
     width: 60%;
-    height: 50px;
-    padding: 15px;
-    border-radius: 20px;
-    margin-left: 30px;
-    border: none;
-    font-size: 18px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .form-section{
     text-align: center;

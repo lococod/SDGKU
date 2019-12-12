@@ -6,24 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-Do List</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="mystyle.css">
+
 </head>
 
 <body>
     <header>
         <div class="container">
 
-       <h1>To-Do List</h1>
-        <div class="form-section">
-            <form action="#">
-                <input class="input-text" type="text" id="input-task">
-                <input class="btn" type="submit" id="add2" value="Add">
-            </form>
-        </div>
-        
+            <h1>To-Do List</h1>
+            <div class="form-section">
+                <form action="#">
+                    <input class="form-control input-text" type="text" id="input-task">
+                    <input class="btn btn-success" type="submit" id="add2" onclick="register();" value="Add" >
+                </form>
+            </div>
 
-    </div>
+
+        </div>
     </header>
+    <maIN>
+
+        <div class="container">
+
+            <h2>Tasks</h2>
+            <ul id="list-task">
+
+
+            </ul>
+
+        </div>
+
+
+    </maIN>
     <script src="myscript.js"></script>
 </body>
 
