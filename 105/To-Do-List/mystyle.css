@@ -20,3 +20,8 @@ header{
 .form-section{
     text-align: center;
 }
+
+.btn {
+    display: block;
+    text-align: right;
+    float: right;
