@@ -6,5 +6,10 @@ function register(){
     const newItem = document.createElement('li');
     newItem.innerHTML = `${inputTask.value}`;
     list.appendChild(newItem);
+    clear();
     
+}
+
+function clear() {
+    inputTask.value="";
 }
