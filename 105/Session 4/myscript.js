@@ -118,6 +118,6 @@ function remove(petId){
                 indexDelete=i;
             }
         }
-        salon.pets.splice(indexDelete);
+        salon.pets.splice(indexDelete,1);
     
 }
