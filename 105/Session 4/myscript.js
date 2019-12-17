@@ -65,6 +65,9 @@ var textOwnerPhone = document.getElementById('petPhone');
 var textBreed = document.getElementById('petBreed');
 
 function register(){
-    const thePet = new Pet(textName.value,textAge.value,textGender.value,textService.value,textOwnerName.value,textOwnerPhone.value,textBreed.value);
+    const thePet = new Pet(textName.value,textAge.value,textBreed.value,textGender.value,textService.value,textOwnerName.value,textOwnerPhone.value,);
+    console.log(thePet);
 }
+
+
 
