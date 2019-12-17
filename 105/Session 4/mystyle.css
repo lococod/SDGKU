@@ -46,6 +46,7 @@ font-size: 2rem;
     font-size: 1rem;
     color: black;
     height: auto;
+    display: inline-flex;
 }
 #info2{
     font-size: 1rem;
@@ -56,6 +57,6 @@ font-size: 2rem;
 .footer-in{
     font-size: 1rem;
     color: black;
-    background: rgb(77, 75, 75);
+    background: rgba(6, 94, 89, 0.336);
     height: auto;
 }
