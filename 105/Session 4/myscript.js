@@ -66,8 +66,39 @@ var textBreed = document.getElementById('petBreed');
 
 function register(){
     const thePet = new Pet(textName.value,textAge.value,textBreed.value,textGender.value,textService.value,textOwnerName.value,textOwnerPhone.value,);
+    salon.pets.push(thePet);
     console.log(thePet);
+    alert("Your Pet has been registered for the service.");
+    clean();
+    displayPet(thePet);
 }
 
+function clean(){
+    textName.value="";
+    textAge.value="";
+    textGender.value="";
+    textService.value="";
+    textOwnerName.value="";
+    textOwnerPhone.value="";
+    textBreed.value="";
+}
+
+
+function displayPet(aPet){
+var tBody = document.getElementById("rowPets");
+var row = `<tr> <td>${aPet.name} </td>
+<td>${aPet.age} </td> 
+<td>${aPet.breed} </td> 
+<td>${aPet.gender} </td> 
+<td>${aPet.service} </td> 
+<td>${aPet.ownerName} </td> 
+<td>${aPet.phoneContact} </td> 
+
+
+
+</tr>`;
+
+tBody.innerHTML+=row;
+}
 
 
