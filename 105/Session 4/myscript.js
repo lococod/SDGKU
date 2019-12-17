@@ -20,6 +20,8 @@ let { name,pets, phone, address: { street, number }, workingHours: { days, open,
 
 document.getElementById("info").innerHTML = `<h2> ${name}</h2>  <p> Address Information: ${number} ${street} </p> <p> Phone: (123) ${phone} </P><p> It is open ${days} from ${open} to ${closing}.</p>`;
 
+var petId=0;
+
 class Pet {
     constructor(name, age, breed, gender, service, ownerName, phoneContact) {
     this.name = name;
@@ -31,6 +33,8 @@ class Pet {
         this.phoneContact = phoneContact;
         this.hunger=10;
         this.happiness=5;
+        this.id="pet"+petId;
+        petId+=1;
     }
     ownerInfo = function(){
         console.log("Owner name:"+this.ownerName + " \n" + "Contact Number: " + this.phoneContact);
@@ -86,14 +90,14 @@ function clean(){
 
 function displayPet(aPet){
 var tBody = document.getElementById("rowPets");
-var row = `<tr> <td>${aPet.name} </td>
+var row = `<tr id="${aPet.id}"> <td>${aPet.name} </td>
 <td>${aPet.age} </td> 
 <td>${aPet.breed} </td> 
 <td>${aPet.gender} </td> 
 <td>${aPet.service} </td> 
 <td>${aPet.ownerName} </td> 
 <td>${aPet.phoneContact} </td> 
-<td> <button > Delete </button>
+<td> <button onclick='remove("${aPet.id}");'> X </button>
 
 
 
@@ -103,3 +107,17 @@ tBody.innerHTML+=row;
 }
 
 
+function remove(petId){
+        var tr =document.getElementById(petId);
+        tr.remove();
+        var indexDelete;
+        for(i=0;i<salon.pets.length;i++){
+            var selectedPet = salon.pets[i];
+            if(selectedPet.id == petId)
+            {
+                indexDelete=i;
+            }
+        }
+        salon.pets.splice(indexDelete);
+    
+}
