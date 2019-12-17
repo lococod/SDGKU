@@ -102,7 +102,7 @@ ex[i].setAttribute('class','example');
 
 var heading3= document.createElement('h3');
 console.log(heading3);
-var text = document.createTextNode("my first dom exercise");
+//var text = document.createTextNode("my first dom exercise");
 console.log(text);
 heading3.appendChild(text);
 console.log(heading3);

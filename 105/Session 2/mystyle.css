@@ -1,3 +1,20 @@
-.example {
-    color: blue;
+#col1{
+    border-radius: 20px;
+    width: 80%;
 }
+#col2{
+    border-radius: 20px;
+    width: 80%;
+}
+#col3{
+    border-radius: 20px;
+    width: 80%;
+}
+#example{
+    border-radius: 20px;
+    width: 80%;
+}
+#pets{   
+        border-radius: 20px;
+        width: 80%;
+    }
