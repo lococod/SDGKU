@@ -28,7 +28,12 @@
             <p>Pet Name: <input id="petName" type="text"></p>
             <p>Age: <input id="petAge" type="text"></p>
             <p>Breed: <input id="petBreed" type="text"></p>
-            <p>Gender: <input id="petGender" type="text"></p>
+            <p>Gender: <select name="petGender" id="petGender">
+                    <option value="" disabled selected>Select an Option</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    </select>
+            </p>
             <p>Service: <select name="service" id="petService">
                     <option value="" disabled selected>Select an Option</option>
                     <option value="Shower">Wash</option>
@@ -46,8 +51,8 @@
         <input type="submit" value="Register" onclick="register();">
         </div>
         <div class="pets">
-            <table>
-                <thead>
+            <table class="table table-striped">
+                <thead class="thead-light">
                     <th>Name</th>
                     <th>Age</th>
                     <th>Breed</th>
