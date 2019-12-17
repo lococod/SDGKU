@@ -18,7 +18,11 @@ const salon = {
 
 let { name,pets, phone, address: { street, number }, workingHours: { days, open, closing } } = salon;
 
-document.getElementById("info").innerHTML = `<h2> ${name}</h2>  <p> Address Information: ${number} ${street} </p> <p> Phone: (123) ${phone} </P><p> It is open ${days} from ${open} to ${closing}.</p>`;
+document.querySelector(".info").innerHTML = `<h2> ${name}</h2>  <p> Address Information: ${number} ${street} </p> <p> Phone: (123) ${phone} </P><p> It is open ${days} from ${open} to ${closing}.</p>`;
+
+
+document.querySelector("footer .info").innerHTML = `<h2> ${name}</h2>  <p> Address Information: ${number} ${street} </p> <p> Phone: (123) ${phone} </P><p> It is open ${days} from ${open} to ${closing}.</p>`;
+
 
 var petId=0;
 

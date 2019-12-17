@@ -20,7 +20,8 @@
     color: white;
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    height: auto;
+    font-size: .75rem;
 }
 
 .menu nav a{
@@ -40,6 +41,7 @@
 
 h1{
 font-size: 2rem;
+height: auto;
 }
 
 #info{
@@ -47,6 +49,7 @@ font-size: 2rem;
     color: black;
     height: auto;
     display: inline-flex;
+    justify-content: space-between;
 }
 #info2{
     font-size: 1rem;
@@ -55,8 +58,11 @@ font-size: 2rem;
 }
 
 .footer-in{
-    font-size: 1rem;
+    font-size: .75rem;
     color: black;
     background: rgba(6, 94, 89, 0.336);
     height: auto;
+    border-top: 2px solid black;
+    text-align: center;
+
 }
