@@ -1,0 +1,28 @@
+#col1{
+    border-radius: 20px;
+    width: 80%;
+}
+#col2{
+    border-radius: 20px;
+    width: 80%;
+}
+#col3{
+    border-radius: 20px;
+    width: 80%;
+}
+#example{
+    border-radius: 20px;
+    width: 80%;
+}
+#pets{   
+        border-radius: 20px;
+        width: 80%;
+    }
+
+.header-in{
+    background: rgb(194, 19, 19);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+}
