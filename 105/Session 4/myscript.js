@@ -18,11 +18,7 @@ const salon = {
 
 let { name,pets, phone, address: { street, number }, workingHours: { days, open, closing } } = salon;
 
-document.getElementById("col1").innerHTML = `<h2> ${name}</h2> <p> Phone: ${phone} </P>`;
-
-document.getElementById("col2").innerHTML = `<p> Address Information: ${number} ${street} </p>`;
-
-document.getElementById("col3").innerHTML = `<p> It is open ${days} from ${open} to ${closing}.</p>`;
+document.getElementsByClassName("info").innerHTML = `<h2> ${name}</h2> <p> Phone: ${phone} </P> <p> Address Information: ${number} ${street} </p> <p> It is open ${days} from ${open} to ${closing}.</p>`;
 
 class Pet {
     constructor(name, age, breed, gender, service, ownerName, phoneContact) {
@@ -91,7 +87,7 @@ text += `Name: ${salon.pets[i].name}, Age: ${salon.pets[i].age}, Owner: ${salon.
 
 }
 
-document.getElementById("pets").innerHTML=text;
+//document.getElementById("pets").innerHTML=text;
   
 
 const ex  = document.getElementsByTagName('p');
@@ -104,10 +100,10 @@ var heading3= document.createElement('h3');
 console.log(heading3);
 //var text = document.createTextNode("my first dom exercise");
 console.log(text);
-heading3.appendChild(text);
+//heading3.appendChild(text);
 console.log(heading3);
 
-document.getElementById('example').appendChild(heading3);
+//document.getElementById('example').appendChild(heading3);
 
 // heading3.cloneNode(true);
 // var col1 = document.getElementById('col1');
