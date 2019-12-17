@@ -93,6 +93,7 @@ var row = `<tr> <td>${aPet.name} </td>
 <td>${aPet.service} </td> 
 <td>${aPet.ownerName} </td> 
 <td>${aPet.phoneContact} </td> 
+<td> <button > Delete </button>
 
 
 
