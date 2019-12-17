@@ -1,8 +1,4 @@
-/* #col1{
-    border-radius: 20px;
-    width: 80%;
-}
-#col2{
+/*#col2{
     border-radius: 20px;
     width: 80%;
 }
@@ -46,13 +42,20 @@ h1{
 font-size: 2rem;
 }
 
-.info{
+#info{
     font-size: 1rem;
     color: black;
+    height: auto;
+}
+#info2{
+    font-size: 1rem;
+    color: black;
+    height: auto;
 }
 
 .footer-in{
     font-size: 1rem;
     color: black;
     background: rgb(77, 75, 75);
+    height: auto;
 }

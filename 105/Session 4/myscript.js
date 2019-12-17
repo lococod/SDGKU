@@ -1,7 +1,7 @@
 // object literal
 const salon = {
     name: "The Fashion Pets",
-    phone: "8675309",
+    phone: "867-5309",
     pets:[],
     address: {
         street: "Avenue Blvd",
@@ -18,7 +18,9 @@ const salon = {
 
 let { name,pets, phone, address: { street, number }, workingHours: { days, open, closing } } = salon;
 
-document.getElementsByClassName("info").innerHTML = `<h2> ${name}</h2> <p> Phone: ${phone} </P> <p> Address Information: ${number} ${street} </p> <p> It is open ${days} from ${open} to ${closing}.</p>`;
+document.getElementById("info").innerHTML = `<h2> ${name}</h2>  <p> Address Information: ${number} ${street} </p> <p> Phone: (123) ${phone} </P><p> It is open ${days} from ${open} to ${closing}.</p>`;
+
+document.getElementById("info2").innerHTML = `<h2> ${name}</h2>  <p> Address Information: ${number} ${street} </p> <p> Phone: (123) ${phone} </P><p> It is open ${days} from ${open} to ${closing}.</p>`;
 
 class Pet {
     constructor(name, age, breed, gender, service, ownerName, phoneContact) {
@@ -90,26 +92,26 @@ text += `Name: ${salon.pets[i].name}, Age: ${salon.pets[i].age}, Owner: ${salon.
 //document.getElementById("pets").innerHTML=text;
   
 
-const ex  = document.getElementsByTagName('p');
-for(var i=0;i<ex.length;i++){
-ex[i].setAttribute('class','example');
-}
+// const ex  = document.getElementsByTagName('p');
+// for(var i=0;i<ex.length;i++){
+// ex[i].setAttribute('class','example');
+// }
 
 
-var heading3= document.createElement('h3');
-console.log(heading3);
-//var text = document.createTextNode("my first dom exercise");
-console.log(text);
-//heading3.appendChild(text);
-console.log(heading3);
+// var heading3= document.createElement('h3');
+// console.log(heading3);
+// //var text = document.createTextNode("my first dom exercise");
+// console.log(text);
+// //heading3.appendChild(text);
+// console.log(heading3);
 
-//document.getElementById('example').appendChild(heading3);
+// //document.getElementById('example').appendChild(heading3);
 
-// heading3.cloneNode(true);
-// var col1 = document.getElementById('col1');
-// col1.insertBefore(heading3);
+// // heading3.cloneNode(true);
+// // var col1 = document.getElementById('col1');
+// // col1.insertBefore(heading3);
 
-document.querySelector('.lead');
+// document.querySelector('.lead');
 
-var deleted = document.querySelector("header h1");
-deleted.remove();
+// //var deleted = document.querySelector("header h1");
+// //deleted.remove();
