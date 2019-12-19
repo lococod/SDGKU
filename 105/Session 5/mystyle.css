@@ -1,0 +1,68 @@
+/*#col2{
+    border-radius: 20px;
+    width: 80%;
+}
+#col3{
+    border-radius: 20px;
+    width: 80%;
+}
+#example{
+    border-radius: 20px;
+    width: 80%;
+}
+#pets{   
+        border-radius: 20px;
+        width: 80%;
+    } */
+
+.header-in{
+    background: rgb(194, 19, 19);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    font-size: .75rem;
+}
+
+.menu nav a{
+    color: rgb(27, 204, 27);
+    font-size: 1rem;
+    padding: .5rem;
+    margin-right: .5rem;
+}
+.menu nav a:hover
+{
+    background: yellow;
+}
+
+.img-logo{
+    width: 300px;
+}
+
+/* h1{
+font-size: 2rem;
+height: auto;
+} */
+
+#info{
+    font-size: 1rem;
+    color: black;
+    height: auto;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#info2{
+    font-size: 1rem;
+    color: black;
+    height: auto;
+}
+
+.footer-in{
+    font-size: .75rem;
+    color: black;
+    background: rgba(6, 94, 89, 0.336);
+    height: auto;
+    border-top: 2px solid black;
+    text-align: center;
+
+}
