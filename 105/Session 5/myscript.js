@@ -127,16 +127,22 @@ function remove(petId) {
 }
 
 function search(petId) {
-    var lowercasetext=document.getElementById('petSearch').value;
+
+    // for (var j = 0; j < salon.pets.length; j++) {
+    //     document.getElementById('pet'+j).setAttribute('class', 'x');
+    // }
+
+    var lowercasetext = document.getElementById('petSearch').value;
     var textSearch = lowercasetext.toLowerCase();
-    console.log(textSearch);
     var flag = false;
     for (var i = 0; i < salon.pets.length; i++) {
         var foundPet = salon.pets[i];
-
-        if (foundPet.id.toLowerCase() == textSearch || foundPet.name.toLowerCase() == textSearch || foundPet.service.toLowerCase() == textSearch) {
-            flag = true;
+        if (foundPet.name.toLowerCase() == textSearch || foundPet.service.toLowerCase() == textSearch) {
+            index = i;
+            document.getElementById('pet' + index).setAttribute('class', 'found');
             document.getElementById("result").innerHTML = `<h3>${salon.pets[i].name} was found.</h3>`;
+            console.log(i);
+            flag = true;
         }
         if (flag == false) {
             document.getElementById("result").innerHTML = `<h3>${textSearch} was not found.</h3>`;
