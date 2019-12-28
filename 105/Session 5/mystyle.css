@@ -25,14 +25,16 @@
 }
 
 .menu nav a{
-    color: rgb(27, 204, 27);
+    color: rgb(197, 240, 41);
     font-size: 1rem;
     padding: .5rem;
     margin-right: .5rem;
+    border-style: dashed;
+    border-color: black;
 }
 .menu nav a:hover
 {
-    background: yellow;
+    background: rgb(23, 224, 114);
 }
 
 .img-logo{
@@ -70,3 +72,16 @@ height: auto;
 .found {
     background-color: yellow;
 }
+
+.form-group{
+    width: 40%;
+}
+.searchbox{
+    width: 40%;
+    border-style: solid;
+}
+
+p{
+    text-decoration: underline;
+}
+

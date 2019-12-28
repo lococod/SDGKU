@@ -27,33 +27,33 @@
     </header>
     <main><br>
         <form action="#">
-            <p>Pet Name: <input id="petName" type="text"></p>
-            <p>Age: <input id="petAge" type="text"></p>
-            <p>Breed: <input id="petBreed" type="text"></p>
-            <p>Gender: <select name="petGender" id="petGender">
+            <div class="form-group"><p>Pet Name: <input id="petName" type="text"class="form-control"></p></div>
+            <div class="form-group"> <p>Age: <input id="petAge" type="text"class="form-control"></p></div>
+                <div class="form-group"><p>Breed: <input id="petBreed" type="text"class="form-control"></p></div>
+                    <div class="form-group"> <p>Gender: <select name="petGender" id="petGender"class="form-control">
                     <option value="" disabled selected>Select an Option</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
-            </p>
-            <p>Service: <select name="service" id="petService">
+            </p></div>
+            <div class="form-group"> <p>Service: <select name="service" id="petService"class="form-control">
                     <option value="" disabled selected>Select an Option</option>
                     <option value="Shower">Shower</option>
                     <option value="Nail Trim">Nail Trim</option>
                     <option value="Teeth">Teeth Cleaning</option>
                     <option value="Full">Full Service</option>
                 </select>
-            </p>
-            <p>Owner Name: <input id="petOwner" type="text"></p>
-            <p>Contact Phone: <input id="petPhone" type="text"></p>
+            </p></div>
+            <div class="form-group">  <p>Owner Name: <input id="petOwner" type="text"class="form-control"></p></div>
+                <div class="form-group"> <p>Contact Phone: <input id="petPhone" type="text"class="form-control"></p></div>
 
 
 
         </form>
         <input type="submit" value="Register" onclick="register();">
         <br><br>
-        <div class="searchbox">
-            <input type="search" value="" id="petSearch">
+        <div class="search1">
+            <input type="search" id="petSearch" class="searchbox" value="Enter a name to search">
             <button onclick="search();">Search</button>
             <div id="result">
 
@@ -85,8 +85,9 @@
         </div>
 
     </footer>
-    <script src="myscript.js"></script>
     <script src="jquery.js"></script>
+    <script src="myscript.js"></script>
+    
 </body>
 
 </html>

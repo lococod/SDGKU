@@ -114,23 +114,25 @@ function displayPet(aPet) {
 
 function remove(petId) {
     var tr = document.getElementById(petId);
-    tr.remove();
+    
     var indexDelete;
     for (i = 0; i < salon.pets.length; i++) {
         var selectedPet = salon.pets[i];
         if (selectedPet.id == petId) {
             indexDelete = i;
-        }
+            }
     }
     salon.pets.splice(indexDelete, 1);
+    tr.remove();
 
 }
 
 function search(petId) {
 
-    // for (var j = 0; j < salon.pets.length; j++) {
+    for (var j = 0; j < salon.pets.length; j++) {
     //     document.getElementById('pet'+j).setAttribute('class', 'x');
-    // }
+ //$('#pet'+j).show();
+}
 
     var lowercasetext = document.getElementById('petSearch').value;
     var textSearch = lowercasetext.toLowerCase();
@@ -138,16 +140,18 @@ function search(petId) {
     for (var i = 0; i < salon.pets.length; i++) {
         var foundPet = salon.pets[i];
         if (foundPet.name.toLowerCase() == textSearch || foundPet.service.toLowerCase() == textSearch) {
-            index = i;
-            document.getElementById('pet' + index).setAttribute('class', 'found');
-            document.getElementById("result").innerHTML = `<h3>${salon.pets[i].name} was found.</h3>`;
-            console.log(i);
             flag = true;
+            index = i;
+            //document.getElementById('pet' + index).setAttribute('class', 'found');
+            //document.getElementById("result").innerHTML = `<h3>${salon.pets[i].name} was found.</h3>`;
+            //console.log(i);
+            $('#pet'+i).show();
+            
         }
-        if (flag == false) {
-            document.getElementById("result").innerHTML = `<h3>${textSearch} was not found.</h3>`;
+        else{
+            $('#pet'+i).hide();
         }
-
+       
     }
 
     document.getElementById("petSearch").value = "";
