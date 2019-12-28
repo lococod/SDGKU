@@ -56,6 +56,8 @@ height: auto;
 main{
     background-color: lightgray;
 }
+
+
 #info{
     font-size: 1rem;
     color: black;
@@ -101,4 +103,7 @@ p{
 
 .form-control:hover{
     background: rgb(230, 226, 14);
+}
+#rowPets{
+    width: 80%;
 }
