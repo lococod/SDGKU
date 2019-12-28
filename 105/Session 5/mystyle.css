@@ -16,21 +16,29 @@
     } */
 
 .header-in{
-    background: rgb(194, 19, 19);
-    color: white;
+    background-image: url(img/pet-shop.jpg);
+    color: rgb(7, 7, 7);
     display: flex;
     justify-content: space-between;
     height: auto;
     font-size: .75rem;
 }
 
+.info{
+    background-color: rgb(34, 159, 197);
+    padding: 4px;
+    color: black;
+    text-decoration: solid;
+}
+
 .menu nav a{
-    color: rgb(197, 240, 41);
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     padding: .5rem;
     margin-right: .5rem;
     border-style: dashed;
     border-color: black;
+    background-color: rgb(34, 159, 197);
 }
 .menu nav a:hover
 {
@@ -45,7 +53,9 @@
 font-size: 2rem;
 height: auto;
 } */
-
+main{
+    background-color: lightgray;
+}
 #info{
     font-size: 1rem;
     color: black;
@@ -62,7 +72,7 @@ height: auto;
 .footer-in{
     font-size: .75rem;
     color: black;
-    background: rgba(6, 94, 89, 0.336);
+    background: rgba(6, 94, 65, 0.336);
     height: auto;
     border-top: 2px solid black;
     text-align: center;
@@ -85,3 +95,10 @@ p{
     text-decoration: underline;
 }
 
+.form-control{
+    border-style: inset;
+}
+
+.form-control:hover{
+    background: rgb(230, 226, 14);
+}
