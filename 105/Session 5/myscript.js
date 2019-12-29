@@ -60,6 +60,9 @@ displayPet(maggie);
 const lulu = new Pet("Lulu","12","Chihuahua","Female","Nail Trim","Donald","7022415138");
 salon.pets.push(lulu);
 displayPet(lulu);
+const domino = new Pet("Domino","14","Akita","Female","Nail Trim","Su","7022415138");
+salon.pets.push(domino);
+displayPet(domino);
 
 
 
