@@ -54,12 +54,12 @@ class Pet {
 
 }
 
-// const maggie = new Pet("Maggie","4","Corgi","Female","Wash","Donald","7022415138");
-// salon.pets.push(maggie);
-// displayPet(maggie);
-// const lulu = new Pet("Lulu","12","Chihuahua","Female","Nail Trim","Donald","7022415138");
-// salon.pets.push(lulu);
-// displayPet(lulu);
+const maggie = new Pet("Maggie","4","Corgi","Female","Wash","Donald","7022415138");
+salon.pets.push(maggie);
+displayPet(maggie);
+const lulu = new Pet("Lulu","12","Chihuahua","Female","Nail Trim","Donald","7022415138");
+salon.pets.push(lulu);
+displayPet(lulu);
 
 
 
@@ -131,10 +131,10 @@ function remove(petId) {
 
 function search(petId) {
 
-   // for (var j = 0; j < salon.pets.length; j++) {
+   for (var j = 0; j < salon.pets.length; j++) {
     //     document.getElementById('pet'+j).setAttribute('class', 'x');
- //$('#pet'+j).show();
-//}
+ $('#pet'+j).show();
+}
 
     var lowercasetext = document.getElementById('petSearch').value;
     var textSearch = lowercasetext.toLowerCase();
@@ -157,4 +157,12 @@ function search(petId) {
     }
 
     document.getElementById("petSearch").value = "";
+}
+
+function reset(petId) {
+
+    for (var k = 0; k < salon.pets.length; k++) {
+     //     document.getElementById('pet'+j).setAttribute('class', 'x');
+  $('#pet'+k).show();
+ }
 }
