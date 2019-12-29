@@ -54,11 +54,13 @@ class Pet {
 
 }
 
+// const maggie = new Pet("Maggie","4","Corgi","Female","Wash","Donald","7022415138");
+// salon.pets.push(maggie);
+// displayPet(maggie);
+// const lulu = new Pet("Lulu","12","Chihuahua","Female","Nail Trim","Donald","7022415138");
+// salon.pets.push(lulu);
+// displayPet(lulu);
 
-// salon.pets.push(pet1);
-// salon.pets.push(pet2);
-// salon.pets.push(pet3);
-// console.log(salon.pets);
 
 
 
@@ -129,10 +131,10 @@ function remove(petId) {
 
 function search(petId) {
 
-    for (var j = 0; j < salon.pets.length; j++) {
+   // for (var j = 0; j < salon.pets.length; j++) {
     //     document.getElementById('pet'+j).setAttribute('class', 'x');
  //$('#pet'+j).show();
-}
+//}
 
     var lowercasetext = document.getElementById('petSearch').value;
     var textSearch = lowercasetext.toLowerCase();
