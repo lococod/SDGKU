@@ -1,0 +1,109 @@
+/*#col2{
+    border-radius: 20px;
+    width: 80%;
+}
+#col3{
+    border-radius: 20px;
+    width: 80%;
+}
+#example{
+    border-radius: 20px;
+    width: 80%;
+}
+#pets{   
+        border-radius: 20px;
+        width: 80%;
+    } */
+
+.header-in{
+    background-image: url(img/pet-shop.jpg);
+    color: rgb(7, 7, 7);
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    font-size: .75rem;
+}
+
+.info{
+    background-color: rgb(34, 159, 197);
+    padding: 4px;
+    color: black;
+    text-decoration: solid;
+}
+
+.menu nav a{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: .5rem;
+    margin-right: .5rem;
+    border-style: dashed;
+    border-color: black;
+    background-color: rgb(34, 159, 197);
+}
+.menu nav a:hover
+{
+    background: rgb(23, 224, 114);
+}
+
+.img-logo{
+    width: 300px;
+}
+
+/* h1{
+font-size: 2rem;
+height: auto;
+} */
+main{
+    background-color: lightgray;
+}
+
+
+#info{
+    font-size: 1rem;
+    color: black;
+    height: auto;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#info2{
+    font-size: 1rem;
+    color: black;
+    height: auto;
+}
+
+.footer-in{
+    font-size: .75rem;
+    color: black;
+    background: rgba(6, 94, 65, 0.336);
+    height: auto;
+    border-top: 2px solid black;
+    text-align: center;
+
+}
+
+.found {
+    background-color: yellow;
+}
+
+.form-group{
+    width: 40%;
+}
+.searchbox{
+    width: 40%;
+    border-style: solid;
+}
+
+p{
+    text-decoration: underline;
+}
+
+.form-control{
+    border-style: inset;
+}
+
+.form-control:hover{
+    background: rgb(230, 226, 14);
+}
+#rowPets{
+    width: 80%;
+}

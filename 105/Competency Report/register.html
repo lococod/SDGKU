@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Salon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+    <header class="header-in">
+        <h1></h1>
+        <div class="menu">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+        <div class="info">
+
+        </div>
+    </header>
+    <main><br>
+        <form action="#">
+            <div class="form-group"><p>Pet Name: <input id="petName" type="text"class="form-control"></p></div>
+            <div class="form-group"> <p>Age: <input id="petAge" type="text"class="form-control"></p></div>
+                <div class="form-group"><p>Breed: <input id="petBreed" type="text"class="form-control"></p></div>
+                    <div class="form-group"> <p>Gender: <select name="petGender" id="petGender"class="form-control">
+                    <option value="" disabled selected>Select an Option</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </p></div>
+            <div class="form-group"> <p>Service: <select name="service" id="petService"class="form-control">
+                    <option value="" disabled selected>Select an Option</option>
+                    <option value="Shower">Shower</option>
+                    <option value="Nail Trim">Nail Trim</option>
+                    <option value="Teeth">Teeth Cleaning</option>
+                    <option value="Full">Full Service</option>
+                </select>
+            </p></div>
+            <div class="form-group">  <p>Owner Name: <input id="petOwner" type="text"class="form-control"></p></div>
+                <div class="form-group"> <p>Contact Phone: <input id="petPhone" type="text"class="form-control"></p></div>
+
+
+
+        </form>
+        <input type="submit" value="Register" onclick="register();">
+        <br><br>
+        <div class="search1">
+            <input type="search" id="petSearch" class="searchbox" value="">
+            <button onclick="search();">Search</button><button onclick="reset();">Reset</button>
+            <div id="result">
+
+            </div>
+
+           </div>
+        </div>
+        <div class="pets">
+            <table class="table table-striped">
+                <thead class="thead-light">
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Breed</th>
+                    <th>Gender</th>
+                    <th>Service</th>
+                    <th>Owner Name</th>
+                    <th>Contact Phone</th>
+                </thead>
+                <tbody id="rowPets">
+
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+
+    <footer class="footer-in">
+        <div class="info">
+
+        </div>
+
+    </footer>
+    <script src="jquery.js"></script>
+    <script src="myscript.js"></script>
+    
+</body>
+
+</html>
