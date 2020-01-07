@@ -6,7 +6,7 @@ h1 {
 }
 
 #listButton {
-    
+    float: right;
 }
 
 #listButton:hover {
