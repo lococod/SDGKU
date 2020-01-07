@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JQuery Practice</title>
 
     <!-- Link Styles here -->
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+    <h1>Welcome to my ToDo App!</h1>
+    <label for="">ToDo:</label>
+    <div>
+      <input type="text" id="txtText" value="" />
+      <input type="button" id="btnSave" value="Create ToDo" />
 
-</head>
-<body>
-
-    <h1>Hello, This is our new webpage</h1>
-
-    <input type="text" id="txtTest" value="something">
+      <ul id="pendingList"></ul>
+    </div>
 
     <!-- Link scripts here -->
-    <script src="myscript.js"></script>
     <script src="jquery-3.4.1.min.js"></script>
-</body>
+    <script src="myscript.js"></script>
+  </body>
 </html>

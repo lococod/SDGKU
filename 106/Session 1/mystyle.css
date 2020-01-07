@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    color: lightblue;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+#listButton {
+    
+}
+
+#listButton:hover {
+    background-color: yellow;    
+}
+
+#btnSave:hover {
+    background-color: rgb(92, 236, 104);
+}
+
+div{
+    padding: 10px;
+    background-color: beige;
+    width: 400;
+    border: 1px solid white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+ul{
+    padding: 10px 15px;
+    border: 1px solid grey;
+}
