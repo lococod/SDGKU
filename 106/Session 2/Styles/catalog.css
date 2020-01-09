@@ -41,9 +41,11 @@ img {
 
 .item button {
     float: right;
+    border-radius: 25px;
+    margin-right: 5px;
 }
 
 .item:hover {
-    background-color: greenyellow;
-    box-shadow: -2px 2px 2px black;
+    background-color: rgba(47, 224, 255, 0.445);
+    box-shadow: -2px 2px 2px rgb(133, 130, 130);
 }

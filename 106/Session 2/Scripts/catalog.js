@@ -23,7 +23,7 @@ function fetchCatalog() {
             "deliveryDays": 3
         },
         {
-            "code": "5896",
+            "code": "598321",
             "description": "Third Item",
             "price": 49.99,
             "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.idgesg.net%2Fimages%2Farticle%2F2018%2F06%2Fintel_generic_cpu_background-100760187-large.jpg&f=1&nofb=1",
@@ -31,6 +31,16 @@ function fetchCatalog() {
             "stock": 4,
             "deliveryDays": 6
         },
+        {
+            "code": "598321",
+            "description": "Fourth Item",
+            "price": 59.99,
+            "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.idgesg.net%2Fimages%2Farticle%2F2018%2F06%2Fintel_generic_cpu_background-100760187-large.jpg&f=1&nofb=1",
+            "category": "PSU",
+            "stock": 4,
+            "deliveryDays": 6
+        },
+
     ];
 }
 
