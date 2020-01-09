@@ -10,24 +10,23 @@ h1 {
 }
 
 #listButton:hover {
-    background-color: yellow;    
+    background-color: yellow;
 }
 
 #btnSave:hover {
     background-color: rgb(92, 236, 104);
 }
 
-div{
+div {
     padding: 10px;
-    background-color: beige;
+    background-color: rgba(20, 163, 27, 0.685);
     width: 400;
     border: 1px solid white;
     margin-bottom: 30px;
     margin-top: 20px;
-
 }
 
-ul{
+ul {
     padding: 10px 15px;
     border: 1px solid grey;
 }

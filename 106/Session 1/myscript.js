@@ -11,13 +11,13 @@ function createTodo() {
     var text2 = $("#txtText").val();
 
     //create Li
-    var li = '<li>' + text2 +' <button id="listButton">Done!</button> </li>';
+    var li = '<li class="list-group-item d-flex justify-content-between align-items-center">' + text2 + ' <button id="listButton">Done!</button> </li>';
 
     // add li to ul
     $("#pendingList").append(li);
 
     //console.log(text2);
-//clear input field
+    //clear input field
     $("#txtText").val("");
     //set focus
     $("#txtText").focus();
@@ -44,9 +44,9 @@ function init() {
 
     //hook events
     $("#btnSave").click(createTodo);
-    $("#txtText").keypress(function (e){
+    $("#txtText").keypress(function(e) {
         //console.log(e);
-        if(e.key =="Enter"){
+        if (e.key == "Enter") {
             createTodo();
         }
     })
