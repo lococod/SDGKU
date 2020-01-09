@@ -1,0 +1,49 @@
+.item {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 150px;
+}
+
+.item .code,
+.item .category {
+    display: inline-block;
+    width: 48%;
+}
+
+.item .price {
+    color: green;
+    display: inline-block;
+    width: 48%;
+}
+
+.item .deliveryDays {
+    color: red;
+    display: inline-block;
+    width: 48%;
+}
+
+.item .stock {
+    color: rgb(0, 255, 170);
+    display: inline-block;
+    width: 48%;
+}
+
+.item .description {
+    display: block;
+}
+
+.item button {
+    float: right;
+}
+
+.item:hover {
+    background-color: greenyellow;
+    box-shadow: -2px 2px 2px black;
+}

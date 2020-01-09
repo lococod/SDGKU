@@ -45,9 +45,22 @@ function displayCatalog() {
 
 }
 
-function drawItem() {
+function drawItem(item) {
 
+    var sntx = `<div class='item'>
+    <img src='${item.image}'>
+    <label class='code'>${item.code}</label>    
+    <label class='description'>${item.description}</label> 
+    <label class='category'>${item.category}</label> 
+    <label class='price'>${item.price}</label>     
+    <label class='stock'>${item.stock}</label> 
+    <label class='deliveryDays'>${item.deliveryDays}</label> 
+    <button class='btn btn0sm btn-info'>+</button>
+    </div>`;
 
+    var container = $("#catalog");
+
+    container.append(sntx);
 }
 
 
