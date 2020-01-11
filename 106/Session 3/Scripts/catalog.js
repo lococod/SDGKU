@@ -59,13 +59,14 @@ function drawItem(item) {
 
     var sntx = `<div class='item'>
     <img src='${item.image}'>
-    <label class='code'>${item.code}</label>    
-    <label class='description'>${item.description}</label> 
-    <label class='category'>${item.category}</label> 
-    <label class='price'>${item.price}</label>     
-    <label class='stock'>${item.stock}</label> 
-    <label class='deliveryDays'>${item.deliveryDays}</label> 
-    <button class='btn btn0sm btn-info'>+</button>
+    <label>Item Code:</label><label class='code'>${item.code}</label>
+    <br>    
+    <label>Description:</label><label class='description'>${item.description}</label> 
+    <label>Category:</label><label class='category'>${item.category}</label> 
+    <label>Price:</label><label class='price'>${item.price}</label>     
+    <label>Stock:</label><label class='stock'>${item.stock}</label> 
+    <label>Days to Deliver:</label><label class='deliveryDays'>${item.deliveryDays}</label> 
+    <button class='btn btn-sm btn-info'>+</button>
     </div>`;
 
     var container = $("#catalog");
@@ -116,7 +117,7 @@ fetchCatalog();
 displayCatalog();
 
 
-//HTTP Method
+//HTTP Method - get/post/put/delete/patch
 //HTTP Status Code
 
 window.onload = init;
