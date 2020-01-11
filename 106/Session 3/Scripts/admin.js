@@ -1,4 +1,9 @@
-function registerItem() {
+var serverURL = "http://restclass.azurewebsites.net/API/";
+
+
+
+
+function saveItem() {
     var code = $("#code").val();
     var description = $("#description").val();
     var price = $("#price").val();
@@ -22,11 +27,27 @@ function registerItem() {
 
     //set focus
     $("#code").focus();
+
+    $.ajax({
+
+    });
 }
 
+
+function textAjax() {
+    $.ajax({
+        url: serverURL + "test",
+        type: 'GET',
+        onSuccess: function (res) {
+            console.log(res);
+        }, 
+        onError: function (err) { 
+            console.log(err); }
+    });
+}
 function init() {
     //hook events
-    $("#btnSave").click(registerItem);
+    $("#btnSave").click(saveItem);
 }
 
 //when browser finishes loading all elements

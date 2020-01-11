@@ -1,5 +1,6 @@
 img {
     width: 300px;
+    border-radius: 5px;
 }
 
 .item .code {
@@ -50,13 +51,13 @@ img {
     
     
     height: 450px;
-    border: 1px solid black;
+    border: 1px dashed black;
     margin-right: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-top: 10px;
     padding: 10px;
-    border-radius: 5x;
+    border-radius: 20px;
 }
 
 
