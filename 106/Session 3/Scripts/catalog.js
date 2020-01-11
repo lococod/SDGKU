@@ -5,7 +5,7 @@ function fetchCatalog() {
 
         {
             "code": "1234",
-            "description": "First Item",
+            "description": "Intel CPU",
             "price": 99.99,
             "image": "Images/cpu.jpg",
             "category": "CPU",
@@ -15,7 +15,7 @@ function fetchCatalog() {
 
         {
             "code": "4321",
-            "description": "Second Item",
+            "description": "DDR4 2666MHz Ram",
             "price": 19.99,
             "image": "Images/ram_lead_image.jpg",
             "category": "RAM",
@@ -24,7 +24,7 @@ function fetchCatalog() {
         },
         {
             "code": "598321",
-            "description": "Third Item",
+            "description": "Generic Black Case",
             "price": 49.99,
             "image": "Images/case.jpg",
             "category": "Case",
@@ -32,8 +32,8 @@ function fetchCatalog() {
             "deliveryDays": 6
         },
         {
-            "code": "598321",
-            "description": "Fourth Item",
+            "code": "598322",
+            "description": "550w 80+",
             "price": 59.99,
             "image": "Images/psu.jpg",
             "category": "PSU",
@@ -74,9 +74,37 @@ function drawItem(item) {
 }
 
 
+function search() {
+    // console.log("User wants to search");
+
+    var text = $("#txtSearch").val().toLowerCase();//get the search term
+
+    //console.log(text);
+
+    //clear non searched items
+    $("#catalog").html("");
+
+    //travel array to find the item that was searched
+
+    for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        if (item.category.toLowerCase().includes(text) 
+        || item.description.toLowerCase().includes(text)
+        ||item.code == text
+        ||item.price == text) 
+        {
+            drawItem(item);
+        }
+
+    }
+}
+
 function init() {
 
-    console.log("Hello World");
+    //console.log("Hello World");
+
+    //hook events
+    $("#btnSearch").click(search);
 }
 fetchCatalog();
 displayCatalog();

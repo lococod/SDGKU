@@ -1,40 +1,29 @@
-.item {
-    display: inline-flexbox;
-    width: 350px;
-    height: 400px;
-    border: 1px solid black;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5x;
-}
-
 img {
-    width: 150px;
+    width: 300px;
 }
 
 .item .code,
 .item .category {
     display: inline-block;
-    width: 48%;
+    width: 40%;
 }
 
 .item .price {
     color: green;
     display: inline-block;
-    width: 48%;
+    width: 40%;
 }
 
 .item .deliveryDays {
     color: red;
     display: inline-block;
-    width: 48%;
+    width: 40%;
 }
 
 .item .stock {
     color: rgb(0, 255, 170);
     display: inline-block;
-    width: 48%;
+    width: 40%;
 }
 
 .item .description {
@@ -51,3 +40,16 @@ img {
     background-color: rgba(47, 224, 255, 0.445);
     box-shadow: -2px 2px 2px rgb(133, 130, 130);
 }
+.item {
+    /* width: 350px;
+    height: 500px; */
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5x;
+}
+
+
+
+ 
