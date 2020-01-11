@@ -7,7 +7,7 @@ function fetchCatalog() {
             "code": "1234",
             "description": "First Item",
             "price": 99.99,
-            "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.idgesg.net%2Fimages%2Farticle%2F2018%2F06%2Fintel_generic_cpu_background-100760187-large.jpg&f=1&nofb=1",
+            "image": "Images/cpu.jpg",
             "category": "CPU",
             "stock": 17,
             "deliveryDays": 7
@@ -17,7 +17,7 @@ function fetchCatalog() {
             "code": "4321",
             "description": "Second Item",
             "price": 19.99,
-            "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.idgesg.net%2Fimages%2Farticle%2F2018%2F06%2Fintel_generic_cpu_background-100760187-large.jpg&f=1&nofb=1",
+            "image": "Images/ram_lead_image.jpg",
             "category": "RAM",
             "stock": 12,
             "deliveryDays": 3
@@ -26,7 +26,7 @@ function fetchCatalog() {
             "code": "598321",
             "description": "Third Item",
             "price": 49.99,
-            "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.idgesg.net%2Fimages%2Farticle%2F2018%2F06%2Fintel_generic_cpu_background-100760187-large.jpg&f=1&nofb=1",
+            "image": "Images/case.jpg",
             "category": "Case",
             "stock": 4,
             "deliveryDays": 6
@@ -35,7 +35,7 @@ function fetchCatalog() {
             "code": "598321",
             "description": "Fourth Item",
             "price": 59.99,
-            "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.idgesg.net%2Fimages%2Farticle%2F2018%2F06%2Fintel_generic_cpu_background-100760187-large.jpg&f=1&nofb=1",
+            "image": "Images/psu.jpg",
             "category": "PSU",
             "stock": 4,
             "deliveryDays": 6
