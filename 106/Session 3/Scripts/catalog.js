@@ -105,8 +105,18 @@ function init() {
 
     //hook events
     $("#btnSearch").click(search);
+    $("#txtSearch").keypress(function(e) {
+        //console.log(e);
+        if (e.keyCode == 13) {
+            search();
+        }
+    })
 }
 fetchCatalog();
 displayCatalog();
+
+
+//HTTP Method
+//HTTP Status Code
 
 window.onload = init;

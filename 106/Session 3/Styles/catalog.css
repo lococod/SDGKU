@@ -1,11 +1,15 @@
 img {
-    width: 300px;
+    width: 170px;
 }
 
+.item .code {
+  text-align: center;
+}
 .item .code,
 .item .category {
     display: inline-block;
     width: 40%;
+   
 }
 
 .item .price {
@@ -28,6 +32,8 @@ img {
 
 .item .description {
     display: block;
+    
+    margin-bottom: 10px;
 }
 
 .item button {
@@ -41,11 +47,14 @@ img {
     box-shadow: -2px 2px 2px rgb(133, 130, 130);
 }
 .item {
-    /* width: 350px;
-    height: 500px; */
+    display: inline-block;
+    width: 400px;
+    height: 300px;
     border: 1px solid black;
     margin-right: 10px;
     margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
     padding: 10px;
     border-radius: 5x;
 }
@@ -53,3 +62,4 @@ img {
 
 
  
+
