@@ -34,7 +34,7 @@ function saveItem() {
 }
 
 
-function textAjax() {
+function testAjax() {
     $.ajax({
         url: serverURL + "test",
         type: 'GET',
