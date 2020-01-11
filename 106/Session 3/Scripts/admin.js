@@ -38,11 +38,11 @@ function textAjax() {
     $.ajax({
         url: serverURL + "test",
         type: 'GET',
-        onSuccess: function (res) {
-            console.log(res);
+        success: function (res) {
+            console.log("Server says:"+res);
         }, 
-        onError: function (err) { 
-            console.log(err); }
+        error: function (err) { 
+            console.log("error has occured:"+err); }
     });
 }
 function init() {
