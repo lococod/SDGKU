@@ -44,6 +44,9 @@ function textAjax() {
         error: function (err) { 
             console.log("error has occured:"+err); }
     });
+
+    console.log("below ajax req");
+    console.log("Waiting on Jax");
 }
 function init() {
     //hook events
