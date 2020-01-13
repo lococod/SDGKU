@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     color: lightblue;
     margin-bottom: 5px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 #listButton {
@@ -19,14 +19,36 @@ h1 {
 
 div {
     padding: 10px;
-    background-color: rgba(20, 163, 27, 0.685);
+    background-color: rgba(114, 236, 120, 0.685);
     width: 400;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     margin-bottom: 30px;
     margin-top: 20px;
 }
 
 ul {
     padding: 10px 15px;
-    border: 1px solid grey;
+    border: 1px solid rgb(83, 81, 81);
+    border-radius: 10px;
+}
+body{
+    background-color: yellow;
+}
+
+li {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input{
+    border-radius: 10px;
+}
+
+#pendingList {
+    border-radius: 10px;
+}
+.col {
+    border-radius: 10px;
+    background-color: rgb(40, 212, 40);
 }
