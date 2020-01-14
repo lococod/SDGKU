@@ -12,20 +12,21 @@ function Item(code, description, price, category, image, stock, deliveryDays) {
     this.user = "Donald";
 }
 
-function clearForm(){
+function clearForm() {
 
-      //clear input field
-      $("#code").val("");
-      $("#description").val("");
-      $("#price").val("");
-      $("#category").val("");
-      $("#image").val("");
-      $("#stock").val("");
-      $("#deliveryDays").val("");
-  
-      //set focus
-      $("#code").focus();
+    //clear input field
+    $("#code").val("");
+    $("#description").val("");
+    $("#price").val("");
+    $("#category").val("");
+    $("#image").val("");
+    $("#stock").val("");
+    $("#deliveryDays").val("");
+
+    //set focus
+    $("#code").focus();
 }
+
 
 function saveItem() {
     var code = $("#code").val();
@@ -43,7 +44,7 @@ function saveItem() {
     //console.log(theItem);
     //  console.log("code:" + code + "description:" + description + "price:" + price + "category:" + category + "image:" + image + "stock:" + stock + "deliveryDays:" + deliveryDays);
 
-  
+
 
     $.ajax({
         url: serverURL + "points",
@@ -54,6 +55,9 @@ function saveItem() {
             console.log("ITS WORKING!:" + response);
             clearForm();
             $("#alertSuccess").removeClass("hidden");
+            setTimeout(function () {
+                $("#alertSuccess").addClass("hidden");
+            }, 3000);
         },
         error: function (errorDetails) {
             console.log("Error: " + errorDetails);
@@ -80,7 +84,7 @@ function saveItem() {
 function init() {
     //hook events
     $("#btnSave").click(saveItem);
-  
+
 }
 
 //when browser finishes loading all elements

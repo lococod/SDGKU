@@ -143,6 +143,9 @@ function init() {
             search();
         }
     })
+    $("#catalog").on("click",".item",function(){
+        $(this).toggleClass("selected");
+    })
 }
 fetchCatalog();
 displayCatalog();
