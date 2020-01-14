@@ -143,9 +143,18 @@ function init() {
             search();
         }
     })
-    $("#catalog").on("click",".item",function(){
-        $(this).toggleClass("selected");
-    })
+    $("#catalog").on("click", ".item", function(){        
+
+        // $(this).toggleClass("selected");
+ 
+        // get the image of the clicked element
+        var img = $(this).find('img').clone();
+ 
+        $(".modal-body").html(img);
+        $("#modal").modal();
+ 
+     });
+ 
 }
 fetchCatalog();
 displayCatalog();
