@@ -1,7 +1,31 @@
 var serverURL = "http://restclass.azurewebsites.net/API/";
 
+//object constructor
+function Item(code, description, price, category, image, stock, deliveryDays) {
+    this.code = code;
+    this.description = description;
+    this.price = price;
+    this.category = category;
+    this.image = image;
+    this.stock = stock;
+    this.deliveryDays = deliveryDays;
+    this.user = "Donald";
+}
 
+function clearForm(){
 
+      //clear input field
+      $("#code").val("");
+      $("#description").val("");
+      $("#price").val("");
+      $("#category").val("");
+      $("#image").val("");
+      $("#stock").val("");
+      $("#deliveryDays").val("");
+  
+      //set focus
+      $("#code").focus();
+}
 
 function saveItem() {
     var code = $("#code").val();
@@ -12,42 +36,47 @@ function saveItem() {
     var stock = $("#stock").val();
     var deliveryDays = $("#deliveryDays").val();
 
+    var theItem = new Item(code, description, price, category, image, stock, deliveryDays);
 
+    var jsonString = JSON.stringify(theItem);
+    //console.log(jsonString);
+    //console.log(theItem);
+    //  console.log("code:" + code + "description:" + description + "price:" + price + "category:" + category + "image:" + image + "stock:" + stock + "deliveryDays:" + deliveryDays);
 
-    console.log("code:" + code + "description:" + description + "price:" + price + "category:" + category + "image:" + image + "stock:" + stock + "deliveryDays:" + deliveryDays);
-
-    //clear input field
-    $("#code").val("");
-    $("#description").val("");
-    $("#price").val("");
-    $("#category").val("");
-    $("#image").val("");
-    $("#stock").val("");
-    $("#deliveryDays").val("");
-
-    //set focus
-    $("#code").focus();
+  
 
     $.ajax({
-
+        url: serverURL + "points",
+        type: "POST",
+        data: jsonString,
+        contentType: "application/json",
+        success: function (response) {
+            console.log("ITS WORKING!:" + response);
+            clearForm();
+            alert("The Item was saved to the database");
+        },
+        error: function (errorDetails) {
+            console.log("Error: " + errorDetails);
+        }
     });
 }
 
 
-function testAjax() {
-    $.ajax({
-        url: serverURL + "test",
-        type: 'GET',
-        success: function (res) {
-            console.log("Server says:"+res);
-        }, 
-        error: function (err) { 
-            console.log("error has occured:"+err); }
-    });
+// function testAjax() {
+//     $.ajax({
+//         url: serverURL + "test",
+//         type: 'GET',
+//         success: function (res) {
+//             console.log("Server says:" + res);
+//         },
+//         error: function (err) {
+//             console.log("error has occured:" + err);
+//         }
+//     });
 
-    console.log("below ajax req");
-    console.log("Waiting on Jax");
-}
+//     console.log("below ajax req");
+//     console.log("Waiting on Jax");
+// }
 function init() {
     //hook events
     $("#btnSave").click(saveItem);

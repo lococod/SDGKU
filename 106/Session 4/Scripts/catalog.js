@@ -1,48 +1,69 @@
 var items = [];
+var serverURL = "http://restclass.azurewebsites.net/API/";
 
 function fetchCatalog() {
-    items = [
 
-        {
-            "code": "1234",
-            "description": "Intel CPU",
-            "price": 99.99,
-            "image": "Images/cpu.jpg",
-            "category": "CPU",
-            "stock": 17,
-            "deliveryDays": 7
-        },
 
-        {
-            "code": "4321",
-            "description": "DDR4 2666MHz Ram",
-            "price": 19.99,
-            "image": "Images/ram_lead_image.jpg",
-            "category": "RAM",
-            "stock": 12,
-            "deliveryDays": 3
-        },
-        {
-            "code": "598321",
-            "description": "Generic Black Case",
-            "price": 49.99,
-            "image": "Images/case.jpg",
-            "category": "Case",
-            "stock": 4,
-            "deliveryDays": 6
-        },
-        {
-            "code": "598322",
-            "description": "550w 80+",
-            "price": 59.99,
-            "image": "Images/psu.jpg",
-            "category": "PSU",
-            "stock": 4,
-            "deliveryDays": 6
-        },
+    //get items from server
+    $.ajax({
+        url: serverURL + "points",
+        type: "GET",
+        success: function (response) {
+            // solve, show only MY items
+            // travel response array
+            // get each item on the array
+            // if the item.user == "Sergio"
+            // then, push item into items array
 
-    ];
+            console.log("ITS WORKING!:", response);            
+        },
+        error: function (errorDetails) {
+            console.log("Error: ", errorDetails);
+        }
+    });
 }
+    // items = [
+
+    //     {
+    //         "code": "1234",
+    //         "description": "Intel CPU",
+    //         "price": 99.99,
+    //         "image": "Images/cpu.jpg",
+    //         "category": "CPU",
+    //         "stock": 17,
+    //         "deliveryDays": 7
+    //     },
+
+    //     {
+    //         "code": "4321",
+    //         "description": "DDR4 2666MHz Ram",
+    //         "price": 19.99,
+    //         "image": "Images/ram_lead_image.jpg",
+    //         "category": "RAM",
+    //         "stock": 12,
+    //         "deliveryDays": 3
+    //     },
+    //     {
+    //         "code": "598321",
+    //         "description": "Generic Black Case",
+    //         "price": 49.99,
+    //         "image": "Images/case.jpg",
+    //         "category": "Case",
+    //         "stock": 4,
+    //         "deliveryDays": 6
+    //     },
+    //     {
+    //         "code": "598322",
+    //         "description": "550w 80+",
+    //         "price": 59.99,
+    //         "image": "Images/psu.jpg",
+    //         "category": "PSU",
+    //         "stock": 4,
+    //         "deliveryDays": 6
+    //     },
+
+    // ];
+
 
 function displayCatalog() {
     //travel item array
