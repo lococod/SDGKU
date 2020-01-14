@@ -15,7 +15,17 @@ function fetchCatalog() {
             // if the item.user == "Sergio"
             // then, push item into items array
 
-            console.log("ITS WORKING!:", response);            
+            for (var i = 0; i < response.length; i++) {
+                var item = response[i];
+                if (item.user == "Donald") 
+                {
+                    items.push(item);
+                }
+        
+            }
+
+             console.log("ITS WORKING!:", response);  
+             displayCatalog();          
         },
         error: function (errorDetails) {
             console.log("Error: ", errorDetails);
