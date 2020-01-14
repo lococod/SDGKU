@@ -1,5 +1,5 @@
-#btnSave {
-    text-align: center;
+.btn {
+    float: right;
 }
 
 .form-group {
@@ -21,4 +21,7 @@ h1 {
 body {
     background-color: black;
     color: white;
+}
+.hidden {
+    display: none;
 }

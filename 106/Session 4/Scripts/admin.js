@@ -53,7 +53,7 @@ function saveItem() {
         success: function (response) {
             console.log("ITS WORKING!:" + response);
             clearForm();
-            alert("The Item was saved to the database");
+            $("#alertSuccess").removeClass("hidden");
         },
         error: function (errorDetails) {
             console.log("Error: " + errorDetails);
@@ -80,6 +80,7 @@ function saveItem() {
 function init() {
     //hook events
     $("#btnSave").click(saveItem);
+  
 }
 
 //when browser finishes loading all elements
