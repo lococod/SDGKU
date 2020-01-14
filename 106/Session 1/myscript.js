@@ -11,7 +11,7 @@ function createTodo() {
     var text2 = $("#txtText").val();
 
     //create Li
-    var li = '<div class="col">' + text2 + ' <button id="listButton">Done!</button></div>';
+    var li = '<div class="col wordwrap">' + text2 + ' <button id="listButton">Done!</button></div>';
 
     // add li to ul
     $("#pendingList").append(li);

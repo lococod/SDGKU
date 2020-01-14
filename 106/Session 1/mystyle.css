@@ -57,3 +57,12 @@ input{
     border-radius: 10px;
     background-color: rgb(81, 88, 54);
 }
+
+.wordwrap { 
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -pre-wrap;     /* Opera <7 */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+ }
+ /*https://stackoverflow.com/questions/1638223/is-there-a-way-to-word-wrap-long-words-in-a-div*/
