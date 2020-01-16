@@ -129,7 +129,7 @@ function drawCategories() {
         var c = categories[i];
         // create an LI for category
 
-        var li = `<li class="list-group-item"><a href="#" onclick="searchByCategory('${c}');">${c}</a></li>`;
+        var li = `<li class="list-group-item" onclick="searchByCategory('${c}');"><a href="#" >${c}</a></li>`;
         // add li to container
 
         container.append(li);
