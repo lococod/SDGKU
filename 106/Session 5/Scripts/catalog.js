@@ -88,13 +88,13 @@ function displayCatalog() {
 
 function drawItem(item) {
 
-    var sntx = `<div class='item'>
+     var sntx = `<div class='item'>
     <img src='${item.image}'>
     <label>Item Code:</label><label class='code'>${item.code}</label>
     <br>    
     <label>Description:</label><label class='description'>${item.description}</label> 
     <label>Category:</label><label class='category'>${item.category}</label> 
-    <label>Price:</label><label class='price'>${item.price}</label>     
+    <label>Price:</label><label class='price'> $${(item.price*1).toFixed(2)}</label>     
     <label>Stock:</label><label class='stock'>${item.stock}</label> 
     <label>Days to Deliver:</label><label class='deliveryDays'>${item.deliveryDays}</label> 
     <button class='btn btn-sm btn-info'>+</button>
