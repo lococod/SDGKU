@@ -88,7 +88,7 @@ function displayCatalog() {
         if (!categories.includes(cat)) {
             categories.push(cat);
         }
-        
+
     }
     drawCategories();
 
@@ -124,16 +124,16 @@ function drawCategories() {
 
     for (var i = 0; i < categories.length; i++) {
 
-  
-    // get each category
-    var c = categories[i];
-    // create an LI for category
 
-    var li = `<li class="list-group-item"><a href="#">${c}</a></li>`;
-    // add li to container
+        // get each category
+        var c = categories[i];
+        // create an LI for category
 
-    container.append(li);
-}
+        var li = `<li class="list-group-item"><a href="#" onclick="searchByCategory('${c}');">${c}</a></li>`;
+        // add li to container
+
+        container.append(li);
+    }
 }
 
 function search() {
@@ -160,8 +160,31 @@ function search() {
     }
 }
 
-function searchByCategory(catName){
-    
+function resetCategory(){
+    var text = "";
+    $("#catalog").html("");
+    for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        if (item.category.toLowerCase().includes(text)) {
+            drawItem(item);
+        }
+
+    }
+
+}
+
+function searchByCategory(catName) {
+    //console.log("search",catName);
+    $("#catalog").html("");
+    //clear and travel array showing only categories
+    for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        if (item.category.includes(catName)
+        ) {
+            drawItem(item);
+        }
+
+    }
 }
 
 function init() {
