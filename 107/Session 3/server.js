@@ -2,11 +2,13 @@ console.log("hello node");
 
 var express = require("express");
 var app = express(); //create an app
+var itemList = []; //store items in this array
+
 
 //Configurations
 
 //enable cors
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET, PUT, POST, PATCH, DELETE");
     res.header("Access-Control-Allow-Headers", "Origin, X-Rquested-With, Content-Type, Accept");
@@ -14,8 +16,20 @@ app.use(function(req, res, next) {
 });
 
 
+//configure body-parse to read info
+var bparser = require('body-parser');
+app.use(bparser.json());
 
 
+//serve static files (css,js,img,pdf)
+app.use(express.static( __dirname + '/public'))
+
+
+//to serve html
+var ejs = require('ejs');
+app.set('views',__dirname + '/public');
+app.engine('html',ejs.renderFile);
+app.set('view engine', ejs);
 
 //Web Server endpoints
 
@@ -24,7 +38,7 @@ app.use(function(req, res, next) {
 
 app.get('/', (req, res) => {
     console.log("Someone wants the root page");
-    res.send("Hello my friend!");
+    res.render('Catalog.html');
 });
 
 
@@ -35,12 +49,12 @@ app.get('/contact', (req, res) => {
 
 app.get('/about', (req, res) => {
     console.log("Someone wants the about page");
-    res.send("<h1 style='color:red;'>Donald Lococo</h1>");
+    res.render('About.html');
 });
 
 app.get('/home', (req, res) => {
     console.log("Someone wants the home page");
-    res.send("Hello my Homies!");
+    res.render('Home.html');
 });
 
 app.get('/FAQ', (req, res) => {
@@ -62,7 +76,7 @@ app.get('/exc/:message', (req, res) => {
         //console.log(letter);
         if (vowel.indexOf(letter.toLowerCase()) != -1) {
             vowels += letter;
-            
+
         }
         //return each vowel only once
         var uniquevowel = [new Set(vowels)];
@@ -75,10 +89,25 @@ app.get('/exc/:message', (req, res) => {
 
 // API End Points
 
-app.post('/api/items',(req, res) => {
-console.log("Client wants to store items");
-res.status(201); //201=> created
-res.send("Ok");
+app.post('/api/items', (req, res) => {
+    console.log("Client wants to store items");
+
+    var item = req.body;
+    item.id = itemList.length + 1; //create unique ID
+
+    itemList.push(item);
+
+    res.status(201); //201=> created
+    res.json(item);//return the item as JSON
+    
+
+});
+
+
+app.get('/api/items', (req, res) => {
+    console.log("Client wants to get items");
+    res.status(201); //201=> created
+    res.json(itemList);
 });
 
 
