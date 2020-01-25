@@ -15,20 +15,19 @@ app.use(function (req, res, next) {
     next();
 });
 
-
+6
 //configure body-parse to read info
 var bparser = require('body-parser');
 app.use(bparser.json());
 
 
 //serve static files (css,js,img,pdf)
-app.use(express.static( __dirname + '/public'))
-
+app.use(express.static(__dirname + '/public'))
 
 //to serve html
 var ejs = require('ejs');
-app.set('views',__dirname + '/public');
-app.engine('html',ejs.renderFile);
+app.set('views', __dirname + '/public');
+app.engine('html', ejs.renderFile);
 app.set('view engine', ejs);
 
 //Web Server endpoints
@@ -59,7 +58,7 @@ app.get('/home', (req, res) => {
 
 app.get('/FAQ', (req, res) => {
     console.log("Someone wants the faq page");
-    res.send("Hello my FAQ!");
+    res.render('FAQ.html');
 });
 
 app.get('/exc/:message', (req, res) => {
@@ -99,7 +98,7 @@ app.post('/api/items', (req, res) => {
 
     res.status(201); //201=> created
     res.json(item);//return the item as JSON
-    
+
 
 });
 
