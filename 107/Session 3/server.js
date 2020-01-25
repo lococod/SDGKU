@@ -57,7 +57,11 @@ app.get('/exc/:message', (req, res) => {
 
 // API End Points
 
-
+app.post('/api/items',(req, res) => {
+console.log("Client wants to store items");
+res.status(201); //201=> created
+res("Ok");
+});
 
 
 

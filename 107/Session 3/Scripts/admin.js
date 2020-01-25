@@ -1,4 +1,5 @@
-var serverURL = "http://restclass.azurewebsites.net/API/";
+//var serverURL = "http://restclass.azurewebsites.net/API/";
+var serverUrl = "http://localhost:8080/api/";
 
 //object constructor
 function Item(code, description, price, category, image, stock, deliveryDays) {

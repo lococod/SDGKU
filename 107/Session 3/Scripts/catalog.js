@@ -1,5 +1,6 @@
 var items = [];
-var serverURL = "http://restclass.azurewebsites.net/API/";
+//var serverURL = "http://restclass.azurewebsites.net/API/";
+var serverUrl = "http://localhost:8080/api/";
 
 var categories = [];
 
