@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
 
 app.get('/contact', (req, res) => {
     console.log("Someone wants the contacts page");
-    res.send("Hello my Contacts!");
+    res.render('Contact.html');
 });
 
 app.get('/about', (req, res) => {
