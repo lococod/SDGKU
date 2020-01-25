@@ -3,6 +3,24 @@ console.log("hello node");
 var express = require("express");
 var app = express(); //create an app
 
+//Configurations
+
+//enable cors
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, PATCH, DELETE");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Rquested-With, Content-Type, Accept");
+    next();
+});
+
+
+
+
+
+//Web Server endpoints
+
+
+
 
 app.get('/', (req, res) => {
     console.log("Someone wants the root page");
@@ -60,7 +78,7 @@ app.get('/exc/:message', (req, res) => {
 app.post('/api/items',(req, res) => {
 console.log("Client wants to store items");
 res.status(201); //201=> created
-res("Ok");
+res.send("Ok");
 });
 
 

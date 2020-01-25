@@ -1,6 +1,6 @@
 var items = [];
 //var serverURL = "http://restclass.azurewebsites.net/API/";
-var serverUrl = "http://localhost:8080/api/";
+var serverURL = "http://localhost:8080/api/";
 
 var categories = [];
 
@@ -9,7 +9,7 @@ function fetchCatalog() {
 
     //get items from server
     $.ajax({
-        url: serverURL + "points",
+        url: serverURL + "items",
         type: "GET",
         success: function (response) {
             // solve, show only MY items

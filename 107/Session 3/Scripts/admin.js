@@ -1,5 +1,5 @@
 //var serverURL = "http://restclass.azurewebsites.net/API/";
-var serverUrl = "http://localhost:8080/api/";
+var serverURL = "http://localhost:8080/api/";
 
 //object constructor
 function Item(code, description, price, category, image, stock, deliveryDays) {
@@ -48,7 +48,7 @@ function saveItem() {
 
 
     $.ajax({
-        url: serverURL + "points",
+        url: serverURL + "items",
         type: "POST",
         data: jsonString,
         contentType: "application/json",
