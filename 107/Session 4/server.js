@@ -153,6 +153,19 @@ ItemDB.find({_id: id},function(error, item){
 
 
 
+app.get('/api/items/byName/:name',(req,res)=> {
+    var name = req.params.name;
+    ItemDB.find({user: name},function(error, data){
+        if(error){
+            res.status(404);
+            res.send(error);
+        }
+        res.status(200);
+        res.json(data);
+    });
+    });
+
+
 app.delete('/api/items',(req,res)=> {
     var item = req.body;
 
