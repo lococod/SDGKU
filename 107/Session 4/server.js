@@ -21,7 +21,6 @@ app.use(function (req, res, next) {
     next();
 });
 
-6
 //configure body-parse to read info
 var bparser = require('body-parser');
 app.use(bparser.json());
@@ -99,21 +98,42 @@ app.post('/api/items', (req, res) => {
 
     //var item = req.body;
     var itemForMongo = ItemDB(req.body);
+    itemForMongo.save(
+        function (error, savedItem) {
+            if (error) {
+                console.log("Error saving item", error);
+                res.status(500);
+                res.send(error);
+            }
+            console.log("Item has been saved");
+            res.status(201);
+            res.json(savedItem);
+        }
+    );
+
     //item.id = itemList.length + 1; //create unique ID
 
     //itemList.push(item);
 
-    res.status(201); //201=> created
-    res.json(item);//return the item as JSON
+    //moved to if statement res.status(201); //201=> created
+    //moved to if statement res.json(item);//return the item as JSON
 
 
 });
 
 
 app.get('/api/items', (req, res) => {
-    console.log("Client wants to get items");
-    res.status(201); //201=> created
-    res.json(itemList);
+    //console.log("Client wants to get items");
+    //res.status(201); //201=> created
+    //res.json(itemList);
+    ItemDB.find({}, function (error, data) {
+        if (error) {
+            res.status(500);
+            res.send(error);
+        }
+        res.status(200);
+        res.json(data);
+    })
 });
 
 
