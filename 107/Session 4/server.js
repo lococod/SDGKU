@@ -138,6 +138,34 @@ app.get('/api/items', (req, res) => {
 
 
 
+
+app.get('/api/items/:id',(req,res)=> {
+var id = req.params.id;
+ItemDB.find({_id: id},function(error, item){
+    if(error){
+        res.status(404);
+        res.send(error);
+    }
+    res.status(200);
+    res.json(item);
+});
+});
+
+
+
+app.delete('/api/items',(req,res)=> {
+    var item = req.body;
+
+    ItemDB.findByIdAndRemove(item._id,function(error){
+        if(error){
+            res.status(500);
+            res.send(error);
+        }
+        res.status(200);
+        res.send("Item removed.");
+    });
+});
+
 //Start Server
 db.on('open', function () {
     console.log("Mongo Connected");
