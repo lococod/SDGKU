@@ -46,6 +46,11 @@ app.get('/contact', (req, res) => {
     res.render('Contact.html');
 });
 
+app.get('/admin', (req, res) => {
+    console.log("Someone wants the admin page");
+    res.render('Admin.html');
+});
+
 app.get('/about', (req, res) => {
     console.log("Someone wants the about page");
     res.render('About.html');
