@@ -3,9 +3,15 @@ console.log("hello node");
 var express = require("express");
 var app = express(); //create an app
 var itemList = []; //store items in this array
+var ItemDB;
 
 
 //Configurations
+
+var mongoose = require('mongoose');
+mongoose.connect("mongodb://ThiIsAPassword:TheRealPassword@cluster0-shard-00-00-euadh.mongodb.net:27017,cluster0-shard-00-01-euadh.mongodb.net:27017,cluster0-shard-00-02-euadh.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin");
+
+var db = mongoose.connection;
 
 //enable cors
 app.use(function (req, res, next) {
@@ -91,10 +97,11 @@ app.get('/exc/:message', (req, res) => {
 app.post('/api/items', (req, res) => {
     console.log("Client wants to store items");
 
-    var item = req.body;
-    item.id = itemList.length + 1; //create unique ID
+    //var item = req.body;
+    var itemForMongo = ItemDB(req.body);
+    //item.id = itemList.length + 1; //create unique ID
 
-    itemList.push(item);
+    //itemList.push(item);
 
     res.status(201); //201=> created
     res.json(item);//return the item as JSON
@@ -112,7 +119,27 @@ app.get('/api/items', (req, res) => {
 
 
 //Start Server
+db.on('open', function () {
+    console.log("Mongo Connected");
+    //define database structure
+    var itemSchema = mongoose.Schema({
+        code: String,
+        description: String,
+        price: Number,
+        image: String,
+        category: String,
+        stock: Number,
+        deliveryDays: Number,
+        user: String
+    });
+    //create constructor (mongoose model)
+    ItemDB = mongoose.model("itemCh6", itemSchema);
+});
 
+db.on('error', function (error) {
+    console.log("Error connecting to Mongo");
+    console.log(error);
+})
 
 
 app.listen(8080, function () {
