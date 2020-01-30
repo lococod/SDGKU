@@ -1,6 +1,6 @@
 //var serverURL = "http://restclass.azurewebsites.net/API/";
 var serverURL = "http://localhost:8080/api/";
-var messages = [];
+var messageList=[];
 //object constructor
 function Item(code, description, price, category, image, stock, deliveryDays) {
     this.code = code;
@@ -42,6 +42,7 @@ function saveItem() {
 
     var jsonString = JSON.stringify(theItem);
 
+
     $.ajax({
         url: serverURL + "items",
         type: "POST",
@@ -61,59 +62,52 @@ function saveItem() {
     });
 }
 
-function fetchMessages() {
+//draw messages
 
-
-    //get items from server
+function retrieveMessages() {
+    //get messages from server
     $.ajax({
-        url: serverURL + "messages",
+        url: serverURL + "message",
         type: "GET",
         success: function (response) {
+            console.log("response: ", response);
             for (var i = 0; i < response.length; i++) {
-                var message = response[i];
-                if (message.user == "Donald") {
-                    messages.push(message);
-                }
+                var item = response[i];
+                messagelist.push(item);
 
             }
 
-            console.log("ITS WORKING!:", response);
-            displayMessages();
+            drawMessages();
+
         },
         error: function (errorDetails) {
             console.log("Error: ", errorDetails);
         }
     });
+
 }
 
 function drawMessages() {
-    var container = $("#questions");
-    for (var i = 0; i < messages.length; i++) {
-        var c = messages[i];
-        var li = `<li class="list-group-item" <a href="#" >${c.messages}</a></li>`;
+    console.log(messagelist);
+    // get the container for categories
+    var container = $("#messages");
+    // travel the categories array
+    for (var i = 0; i < messagelist.length; i++) {
+        // get each category
+        var c = messagelist[i];
+        // create an LI for category
+        var li = `<li class="list-group-item">${c.messages}</li>;`
+        console.log(li);
+        // add li to container
         container.append(li);
     }
 }
 
+function init() {
+    //hook events
+    $("#btnSave").click(saveItem);
 
-function displayMessages() {
-    //travel messages array
-    for (var i = 0; i < messages.length; i++) {
-        //get item
-        var item = messages[i];
-        //draw item on the DOM
-        drawMessages(item);
+}
 
-    }
-
-    
-    function init() {
-        //hook events
-        $("#btnSave").click(saveItem);
-        fetchMessages();
-
-    }
-
+//when browser finishes loading all elements
 window.onload = init;
-//     when browser finishes loading all elements
-//
