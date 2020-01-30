@@ -187,7 +187,7 @@ app.get('/api/items/byName/:name', (req, res) => {
 
 app.get('/api/messages', (req, res) => {
     var name = req.params.name;
-    MessageDB.find({}, function (error, data) {
+    MessageDB.find({user: "Donald"}, function (error, data) {
         if (error) {
             res.status(404);
             res.send(error);
