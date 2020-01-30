@@ -2,11 +2,10 @@
 var serverURL = "http://localhost:8080/api/";
 
 //object constructor
-function question(email,name,question) {
+function message(email,name,question) {
     this.email = email;
     this.name = name;
     this.question = question;
-
     this.user = "Donald";
 }
 
@@ -29,7 +28,7 @@ function saveQuestion() {
     var question = $("#question").val();
 
 
-    var theQuestion = new Question(email,name,question);
+    var theQuestion = new message(email,name,question);
 
     var jsonString = JSON.stringify(theQuestion);
  
@@ -57,7 +56,7 @@ function saveQuestion() {
 function init() {
     //hook events
     $("#btnSave").click(saveQuestion);
-    console.log("saved");
+    
 
 }
 

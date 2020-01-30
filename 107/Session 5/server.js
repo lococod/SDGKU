@@ -185,6 +185,19 @@ app.get('/api/items/byName/:name', (req, res) => {
 });
 
 
+app.get('/api/messages', (req, res) => {
+    var name = req.params.name;
+    MessageDB.find({ user: "Donald" }, function (error, data) {
+        if (error) {
+            res.status(404);
+            res.send(error);
+        }
+        res.status(200);
+        res.json(data);
+    });
+});
+
+
 app.delete('/api/items', (req, res) => {
     var item = req.body;
 
@@ -213,8 +226,8 @@ db.on('open', function () {
         user: String
     });
     var messageSchema = mongoose.Schema({
-        emame: String,
-        nail: String,
+        email: String,
+        name: String,
         question: String
     });
 
