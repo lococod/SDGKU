@@ -66,6 +66,65 @@ function saveItem() {
     });
 }
 
+function retrieveMessages(){
+
+    //get items from server
+    $.ajax({
+        url: serverURL + "messages",
+        type: "GET",
+        success: function (response) {
+                     for (var i = 0; i < response.length; i++) {
+                var messages = response[i];
+                if (messages.user == "Donald") {
+                    messages.push(item);
+                }
+
+            }
+
+            console.log("ITS WORKING!:", response);
+            displayMessage();
+        },
+        error: function (errorDetails) {
+            console.log("Error: ", errorDetails);
+        }
+    });
+}
+function displayMessage() {
+    //travel item array
+    for (var i = 0; i < messages.length; i++) {
+        //get item
+        var message = messages[i];
+        //draw item on the DOM
+        drawMessage(message);
+
+    }
+
+}
+
+
+function drawMessage() {
+
+
+    // get the container for categories
+
+    var container = $("#questions");
+
+    // travel the categories array
+
+    for (var i = 0; i < messages.length; i++) {
+
+
+        // get each category
+        var c = messages[i];
+        // create an LI for category
+
+        var li = `<li class="list-group-item" onclick="searchByCategory('${c}');"><a href="#" >${c}</a></li>`;
+        // add li to container
+
+        container.append(li);
+    }
+}
+
 
 // function testAjax() {
 //     $.ajax({
