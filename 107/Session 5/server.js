@@ -4,6 +4,7 @@ var express = require("express");
 var app = express(); //create an app
 var itemList = []; //store items in this array
 var ItemDB;
+var MessageDB;
 
 
 //Configurations
@@ -111,15 +112,33 @@ app.post('/api/items', (req, res) => {
         }
     );
 
-    //item.id = itemList.length + 1; //create unique ID
-
-    //itemList.push(item);
-
-    //moved to if statement res.status(201); //201=> created
-    //moved to if statement res.json(item);//return the item as JSON
+    
 
 
 });
+
+app.post('/api/messages', (req, res) => {
+    console.log("Client wants to send a message");
+
+    var messageForMongo = MessageDB(req.body);
+    messageForMongo.save(
+        function (error, savedMessage) {
+            if (error) {
+                console.log("Error saving message", error);
+                res.status(500);
+                res.send(error);
+            }
+            console.log("Message has been saved");
+            res.status(201);
+            res.json(savedMessage);
+        }
+    );
+
+    
+
+
+});
+
 
 
 app.get('/api/items', (req, res) => {
@@ -139,38 +158,38 @@ app.get('/api/items', (req, res) => {
 
 
 
-app.get('/api/items/:id',(req,res)=> {
-var id = req.params.id;
-ItemDB.find({_id: id},function(error, item){
-    if(error){
-        res.status(404);
-        res.send(error);
-    }
-    res.status(200);
-    res.json(item);
+app.get('/api/items/:id', (req, res) => {
+    var id = req.params.id;
+    ItemDB.find({ _id: id }, function (error, item) {
+        if (error) {
+            res.status(404);
+            res.send(error);
+        }
+        res.status(200);
+        res.json(item);
+    });
 });
-});
 
 
 
-app.get('/api/items/byName/:name',(req,res)=> {
+app.get('/api/items/byName/:name', (req, res) => {
     var name = req.params.name;
-    ItemDB.find({user: name},function(error, data){
-        if(error){
+    ItemDB.find({ user: name }, function (error, data) {
+        if (error) {
             res.status(404);
             res.send(error);
         }
         res.status(200);
         res.json(data);
     });
-    });
+});
 
 
-app.delete('/api/items',(req,res)=> {
+app.delete('/api/items', (req, res) => {
     var item = req.body;
 
-    ItemDB.findByIdAndRemove(item._id,function(error){
-        if(error){
+    ItemDB.findByIdAndRemove(item._id, function (error) {
+        if (error) {
             res.status(500);
             res.send(error);
         }
@@ -193,9 +212,21 @@ db.on('open', function () {
         deliveryDays: Number,
         user: String
     });
+    var messageSchema = mongoose.Schema({
+        emame: String,
+        nail: String,
+        question: String
+    });
+
     //create constructor (mongoose model)
     ItemDB = mongoose.model("itemCh6", itemSchema);
+    MessageDB = mongoose.model("messagesCh6", messageSchema);
 });
+
+
+
+
+
 
 db.on('error', function (error) {
     console.log("Error connecting to Mongo");
