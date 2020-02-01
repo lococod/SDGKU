@@ -1,6 +1,7 @@
 //var serverURL = "http://restclass.azurewebsites.net/API/";
 var serverURL = "http://localhost:8080/api/";
 var messageList=[];
+
 //object constructor
 function Item(code, description, price, category, image, stock, deliveryDays) {
     this.code = code;
@@ -61,51 +62,52 @@ function saveItem() {
         }
     });
 }
+//get messages
+function fetchMessage() {
 
-//draw messages
 
-function retrieveMessages() {
-    //get messages from server
+    //get items from server
     $.ajax({
-        url: serverURL + "message",
+        url: serverURL + "messages",
         type: "GET",
         success: function (response) {
-            console.log("response: ", response);
             for (var i = 0; i < response.length; i++) {
-                var item = response[i];
-                messagelist.push(item);
+                var mess = response[i];
+                 messageList.push(mess);            
 
             }
 
-            drawMessages();
-
+            console.log("ITS WORKING!:", response);
+            drawMsg();
         },
         error: function (errorDetails) {
             console.log("Error: ", errorDetails);
         }
     });
-
 }
 
-function drawMessages() {
-    console.log(messagelist);
-    // get the container for categories
-    var container = $("#messages");
-    // travel the categories array
-    for (var i = 0; i < messagelist.length; i++) {
-        // get each category
-        var c = messagelist[i];
-        // create an LI for category
-        var li = `<li class="list-group-item">${c.messages}</li>;`
-        console.log(li);
-        // add li to container
-        container.append(li);
+
+//draw messages
+
+function drawMsg(message) {
+
+    var sntx = $("#msg");
+    for(var i=0; i<messageList.length; i++){
+        var c = messageList[i];
+        var li = `<div>
+        <p>Name: ${c.name} || Email: ${c.email} ||Message: ${c.question}</p>
+        </div>`;
+        sntx.append(li)
     }
+    
 }
+
+
 
 function init() {
     //hook events
     $("#btnSave").click(saveItem);
+    fetchMessage();
 
 }
 
