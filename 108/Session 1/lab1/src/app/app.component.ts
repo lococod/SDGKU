@@ -47,12 +47,15 @@ export class AppComponent {
 
   hello() {
     console.log("this is the hello function");
-    this.time(4);
+    this.time(5, "the message");
   }
-  time(howManyTimes: number) {
+
+  time(howManyTimes: number, message: string) {
 
     for (var i = 0; i < howManyTimes; i++) {
-      console.log("One Time");
+      if (i != 3) {
+        console.log(i, message);
+      }
     }
 
   }
