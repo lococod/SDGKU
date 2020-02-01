@@ -95,7 +95,7 @@ function drawMsg(message) {
     for(var i=0; i<messageList.length; i++){
         var c = messageList[i];
         var li = `<div>
-        <p>Name: ${c.name} || Email: ${c.email} ||Message: ${c.question}</p>
+        <p>Name: ${c.name} || Email: ${c.email} || Message: ${c.question}</p>
         </div>`;
         sntx.append(li)
     }
