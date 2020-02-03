@@ -211,6 +211,17 @@ app.delete('/api/items', (req, res) => {
     });
 });
 
+app.get('/api/items/delete/:id',(req,res)=>{
+    ItemDB.findByIdAndRemove(req.params.id,function(error){
+        if (error) {
+            res.status(500);
+            res.send(error);
+        }
+        res.status(200);
+        res.send("Item removed.");
+    });
+});
+
 //Start Server
 db.on('open', function () {
     console.log("Mongo Connected");
