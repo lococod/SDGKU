@@ -10,6 +10,7 @@ export class UserRegisterComponent implements OnInit {
 
   model: User = new User();
   retypePassword = "";
+  
   constructor() { }
 
   ngOnInit() {

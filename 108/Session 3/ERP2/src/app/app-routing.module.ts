@@ -7,6 +7,7 @@ import { TempCalculatorComponent } from './components/temp-calculator/temp-calcu
 const routes: Routes = [
   {path: 'user/register', component: UserRegisterComponent},
   {path: 'converter', component: TempCalculatorComponent}
+  
 ];
 
 @NgModule({
