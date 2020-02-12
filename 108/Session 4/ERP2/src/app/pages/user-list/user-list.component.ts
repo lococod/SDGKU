@@ -9,14 +9,26 @@ import { DataService } from 'src/app/services/data.service';
 export class UserListComponent implements OnInit {
 
   users = [];
+  // toDo = "";
+
 
   constructor(private data : DataService) { 
     console.log(data.getSampleList());
-    console.log(data.test());
-    this.users = data.getSampleList();//gets user list from service
+    console.log(data.getUsers());
+    // console.log(data.test());
+    //this.users = data.getSampleList();//gets user list from service
+    this.users = data.getUsers();
   }
 
   ngOnInit() {
   }
+
+  // saveToDo(){
+  //   this.users.push(this.toDo);
+  //   this.toDo="";
+  // }
+  // resetArray(){
+  //   this.users = [];//reset array
+  // }
 
 }
