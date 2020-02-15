@@ -13,11 +13,17 @@ import { firestore } from "firebase";
 })
 export class DataService {
 messages: Observable<Message[]>;
+messageCollection: AngularFirestoreCollection<Message>;
 
-  constructor() { }
+  constructor(private fb: AngularFirestore) {
+    this.messageCollection = fb.collection<Message>("posts"); //open the posts pipeline - posts is the name of the connection on firebase
+   }
 
   public saveMessage(message: Message) {
-    console.log("saving", message)
+    console.log("saving", message);
+
+    var item = Object.assign({}, message);
+    this.messageCollection.add(item);
   }
 
   public getAllMessages() {
