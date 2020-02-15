@@ -9,6 +9,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { AngularFireModule} from 'angularfire2';
+import { AngularFirestoreModule} from 'angularfire2/firestore';
+
 // these are the credentials to Firebase project
 var fbConfig = {
   apiKey: "AIzaSyBmp1d_-QechGk8JY2vHoMdRZewKVM006Q",
@@ -23,7 +26,14 @@ var fbConfig = {
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    AngularFireModule.initializeApp(fbConfig),
+    AngularFirestoreModule
+  ],
+
   providers: [
     StatusBar,
     SplashScreen,
@@ -31,4 +41,4 @@ var fbConfig = {
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
