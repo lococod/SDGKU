@@ -9,6 +9,17 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// these are the credentials to Firebase project
+var fbConfig = {
+  apiKey: "AIzaSyBmp1d_-QechGk8JY2vHoMdRZewKVM006Q",
+  authDomain: "fsdi-6aa30.firebaseapp.com",
+  databaseURL: "https://fsdi-6aa30.firebaseio.com",
+  projectId: "fsdi-6aa30",
+  storageBucket: "fsdi-6aa30.appspot.com",
+  messagingSenderId: "92558793025"
+};
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

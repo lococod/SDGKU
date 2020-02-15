@@ -6,4 +6,12 @@ import { Injectable } from '@angular/core';
 export class DataService {
 
   constructor() { }
+
+  public saveMessage(message){
+    console.log("saving", message)
+  }
+
+  public getAllMessages(){
+
+  }
 }
