@@ -26,7 +26,13 @@ messageCollection: AngularFirestoreCollection<Message>;
     this.messageCollection.add(item);
   }
 
-  public getAllMessages() {
 
+  retriveMessageFromDB(){
+this.messages = this.messageCollection.valueChanges();
+  }
+
+  public getAllMessages() {
+this.retriveMessageFromDB();
+return this.messages;
   }
 }

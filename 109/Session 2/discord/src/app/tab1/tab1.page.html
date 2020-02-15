@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-title>
-      Tab 1
+      SDGKU
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,7 +14,14 @@
   </ion-header>
 
   <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
-  <h1>Hello Ionic!</h1>
+  <!-- <h1>Hello Ionic!</h1>
   <button>this is an html button</button>
-  <ion-button color="secondary"></ion-button>
+  <ion-button color="secondary"></ion-button> -->
+
+  <ion-item>
+    <ion-label>My Feed</ion-label>
+  </ion-item>
+  <ul>
+    <li *ngFor="let message of allMessages" >{{message.from}}:{{message.to}}:{{message.createdDate}}:{{message.text}}</li>
+   </ul>
 </ion-content>
