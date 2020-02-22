@@ -10,9 +10,10 @@ import { DataService } from 'src/app/services/data.service';
 export class UserRegisterComponent implements OnInit {
 
   model: User = new User();
-  retypePassword = "";
-  
-  constructor(private dataSrv : DataService) { }
+  retypePassword = null
+  savedAlertVisible = false;
+
+  constructor(private dataSrv: DataService) { }
 
   ngOnInit() {
   }
@@ -22,5 +23,9 @@ export class UserRegisterComponent implements OnInit {
     //save the user into a service
     this.dataSrv.saveUser(this.model);
 
+    //clear the form
+    this.model = new User();
+    this.retypePassword = null;
+    this.savedAlertVisible = true;
   }
 }

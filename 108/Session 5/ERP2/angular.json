@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ERP2"
+    }
+  },
+  "defaultProject": "ERP2",
+  "cli": {
+    "analytics": false
+  }
 }
