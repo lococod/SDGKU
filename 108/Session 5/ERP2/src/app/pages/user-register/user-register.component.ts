@@ -18,6 +18,19 @@ export class UserRegisterComponent implements OnInit {
   ngOnInit() {
   }
 
+  isPasswordStrong(){var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");return strongRegex.test(this.model.password);}
+
+
+  isDataCorrect(){
+
+if(!this.isPasswordStrong()){return true};
+
+   return !this.model.email 
+        || !this.model.userName
+        || !this.model.password 
+        || this.model.password != this.retypePassword;
+  }
+
   save() {
     console.log("saving user", this.model);
     //save the user into a service
