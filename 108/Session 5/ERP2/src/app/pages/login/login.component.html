@@ -17,10 +17,10 @@
          type="button" id="btnSave" class="btn btn-primary" (click)="validateLogin()">
             Login
         </button>
-        <div *ngIf="validateLogin()" class="alert alert-danger">
+        <div *ngIf="clicked == '1'" class="alert alert-success">
             You are Logged In!
         </div>
-        <div *ngIf="password && !validateLogin()" class="alert alert-danger">
+        <div *ngIf="clicked == '0'" class="alert alert-danger">
             Wrong Credentials!
         </div>
 
