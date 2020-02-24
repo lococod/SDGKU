@@ -8,6 +8,7 @@ input {
   padding-top: 8px;
   width: 350px;
   text-align: center;
+  border-color:5px solid black;
  
 }
 
@@ -35,6 +36,12 @@ input[type="password"]:focus {
   background-color: lightcoral;
 }
 
+label {
+   color: rgb(0, 0, 0);
+   font-size: 18px;
+   text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+}
+
 a {
   color: black;
 }
@@ -44,4 +51,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;  
+}
+
+.alert {
+    width: 350px;
 }
