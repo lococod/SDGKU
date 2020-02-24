@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active" >[108] ERP Project</a>
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active" >Welcome to my Competency Report!</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,6 +8,9 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" [routerLink]="['/about']" routerLinkActive="router-link-active" >About Us</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" [routerLink]="['/user/register']" routerLinkActive="router-link-active" >User Registration</a>
@@ -21,9 +24,7 @@
       <li class="nav-item ">
         <a class="nav-link" [routerLink]="['/converter']" routerLinkActive="router-link-active" >Temp Converter</a>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link" [routerLink]="['/about']" routerLinkActive="router-link-active" >About Us</a>
-      </li>
+     
     </ul>
   </div>
 </nav>

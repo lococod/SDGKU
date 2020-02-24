@@ -1,2 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+
+input {
+  border-radius: 5px;
+  padding-top: 8px;
+  width: 350px;
+  text-align: center;
+ 
+}
+
+.form-group{
+    
+    vertical-align: middle;   
+}
+
+.form-control{
+    width: 350px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+input[type="text"]:focus {
+  background-color: lightblue;
+}
+input[type="email"]:focus {
+  background-color: lightgreen;
+}
+input[type="password"]:focus {
+  background-color: lightcoral;
+}
+
+a {
+  color: black;
+}
+
+body{
+    background-image: url(http://at.blogs.wm.edu/files/2013/11/Bliss.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+}
