@@ -1,7 +1,7 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 3
+      Friends
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,21 @@
     </ion-toolbar>
   </ion-header> -->
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card>
+    <ion-card-content>
+    <ion-item>
+      <ion-label position="stacked">
+        Add a Friend: 
+      </ion-label>
+      <ion-input [(ngModel)]="model.name"></ion-input>
+    </ion-item>
+    <ion-button (click)="saveFriend()" color="primary" expand="block">Add Friend  </ion-button>  
+    </ion-card-content>
+  </ion-card>
+<ion-list>
+<ion-item *ngFor="let friend of myFriends">{{friend.name}}</ion-item>
+
+
+</ion-list>
+  <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
 </ion-content>
