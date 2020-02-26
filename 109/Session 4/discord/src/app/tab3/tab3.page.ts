@@ -24,7 +24,7 @@ export class Tab3Page {
       //   }
       // }
 
-      this.myFriends = list.filter(f=> f.addedBy == this.shared.userName);
+      this.myFriends = list.filter(f=> f.belongsTo == this.shared.userName);
       
     });
 
@@ -33,7 +33,7 @@ export class Tab3Page {
   }
 
   saveFriend() {
-    this.model.addedBy = this.shared.userName;
+    this.model.belongsTo = this.shared.userName;
     console.log(this.model);
     this.data.saveFriend(this.model);
   }
