@@ -17,16 +17,8 @@ export class Tab3Page {
     this.data.getAllFriends().subscribe(list => {
       console.log("all friends", list);
       this.myFriends = [];
-
-      // for (var i = 0; i < list.length; i++) {
-      //   if (list[i].addedBy == this.shared.userName){
-      //     this.myFriends.push(list[i]);
-      //   }
-      // }
-
       this.myFriends = list.filter(f=> f.belongsTo == this.shared.userName);
-      
-    });
+        });
 
  
 
@@ -36,6 +28,8 @@ export class Tab3Page {
     this.model.belongsTo = this.shared.userName;
     console.log(this.model);
     this.data.saveFriend(this.model);
+
+    this.model = new Friend();
   }
 
 }

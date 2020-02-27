@@ -41,8 +41,9 @@
         <ion-label position="Stacked">To:</ion-label>
         <ion-select [(ngModel)]="post.to">
       <ion-list>
-       
-      </ion-list>
+        <ion-select-option value="Everyone">Everyone</ion-select-option>
+       <ion-select-option *ngFor="let friend of myFriends" [value]="friend.name">{{friend.name}}</ion-select-option>
+       </ion-list>
         </ion-select>
 
       </ion-item>
