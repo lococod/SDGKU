@@ -1,49 +1,40 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>
-      SDGKU
-    </ion-title>
-    
+    <ion-buttons slot="primary">
+      <ion-icon name="funnel-outline"></ion-icon>
+      <ion-select [(ngModel)]="friendFilter" name="friendFilter">
+        <ion-select-option value="Everyone">Everyone</ion-select-option>
+        <ion-select-option *ngFor="let friend of myFriends" [value]="friend.name">{{friend.name}}</ion-select-option>
+      </ion-select>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">SDGKU</ion-title>
+      <ion-title size="large">Feed</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
-  <!-- <h1>Hello Ionic!</h1>
-  <button>this is an html button</button>
-  <ion-button color="secondary"></ion-button> -->
 
-  <ion-item>
-    <ion-label>My Feed</ion-label>
-  </ion-item>
-  <!-- <ul>
-    <li *ngFor="let message of allMessages" >{{message.from}}:{{message.to}}:{{message.createdDate}}:{{message.text}}</li>
-   </ul> -->
 
-   <ion-card *ngFor="let message of allMessages" [class.my-message]="message.from == shared.userName">
+  <ion-card *ngFor="let message of getMessagesToDisplay()" [class.my-message]="message.from == shared.userName">
     <ion-card-content class="imgBorder" *ngIf="message.imageUrl">
-      <img src="{{message.imageUrl}}">
+      <img src="{{message.imageUrl}}" />
     </ion-card-content>
-    <hr>
-<ion-card-header>
-  <ion-card-title>
-    {{message.from}}
-  </ion-card-title>
-  <ion-card-subtitle>
-    To:  {{message.to}}
-  </ion-card-subtitle>
- </ion-card-header>
+    <hr />
+    <ion-card-header>
+      <ion-card-title>
+        {{message.from}}
+      </ion-card-title>
+      <ion-card-subtitle>
+        To: {{message.to}}
+      </ion-card-subtitle>
+    </ion-card-header>
 
-<ion-card-content>
-  {{message.text}}
-</ion-card-content>
-     </ion-card>
-
-
+    <ion-card-content>
+      {{message.text}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
