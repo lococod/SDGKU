@@ -36,3 +36,4 @@ F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.csproj.CopyCo
 F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Test.cshtml.g.cs
 F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Register.cshtml.g.cs
