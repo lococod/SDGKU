@@ -1,0 +1,18 @@
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\bin\Debug\netcoreapp3.1\Session 2.exe
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\bin\Debug\netcoreapp3.1\Session 2.deps.json
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\bin\Debug\netcoreapp3.1\Session 2.runtimeconfig.json
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\bin\Debug\netcoreapp3.1\Session 2.runtimeconfig.dev.json
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\bin\Debug\netcoreapp3.1\Session 2.dll
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\bin\Debug\netcoreapp3.1\Session 2.pdb
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.csprojAssemblyReference.cache
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.AssemblyInfoInputs.cache
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.AssemblyInfo.cs
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.RazorTargetAssemblyInfo.cache
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\staticwebassets\Session 2.StaticWebAssets.Manifest.cache
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\staticwebassets\Session 2.StaticWebAssets.xml
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.dll
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.pdb
