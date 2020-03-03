@@ -1,5 +1,5 @@
 {
-  "FilePath": "f:\\Programming\\Git\\SDGKU\\110\\Session 2\\Session 2.csproj",
+  "FilePath": "f:\\Programming\\Git\\SDGKU\\110\\RedoSession1\\RedoSession1.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20498,13 +20498,7 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "Session_2",
-  "Documents": [
-    {
-      "FilePath": "f:\\Programming\\Git\\SDGKU\\110\\Session 2\\wwwroot\\js\\catalog\\index.cshtml",
-      "TargetPath": "wwwroot\\js\\catalog\\index.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "RootNamespace": "RedoSession1",
+  "Documents": [],
   "SerializationFormat": "0.2"
 }
