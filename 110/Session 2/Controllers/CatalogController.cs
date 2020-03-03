@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Rental.Controllers
 {
-    public class CatalogController : Controllers
+    public class CatalogController : Controller
     {
         public IActionResult Index()
         {
