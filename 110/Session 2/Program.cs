@@ -1,42 +1,26 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
-namespace Session_1
+namespace Session_2
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Test();
+            CreateHostBuilder(args).Build().Run();
         }
-        static void Test() {
-            Console.WriteLine("This is a Method");
-            Console.WriteLine("This is method 2 ");
 
-            // Variables and Data types
-
-            string firstName = "Donald"            ;
-            Console.WriteLine("My name is "+ firstName);
-
-            int age = 34;
-            float price = 12.34f;
-            bool isThisCrazy = true;
-
-            Console.WriteLine("My age is "+ age);
-
-            //if
-            if(isThisCrazy)
-            {
-                Console.WriteLine("Yes it is");
-            }
-            else{
-                Console.WriteLine("No it is not");
-            }
-
-            //loops
-            for(int i=0; i < 10; i++){
-                Console.WriteLine("Iteration: "+ i);
-            }
-        }
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }
