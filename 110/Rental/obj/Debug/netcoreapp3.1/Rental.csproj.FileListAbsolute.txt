@@ -33,3 +33,5 @@ F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\staticwebassets\Rent
 F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.dll
 F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.pdb
 F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.csproj.CopyComplete
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Test.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
