@@ -16,3 +16,5 @@ C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\sta
 C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\staticwebassets\Session 2.StaticWebAssets.xml
 C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.dll
 C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.pdb
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.RazorAssemblyInfo.cache
+C:\Users\Lococo\Documents\GitHub\SDGKU\110\Session 2\obj\Debug\netcoreapp3.1\Session 2.RazorAssemblyInfo.cs
