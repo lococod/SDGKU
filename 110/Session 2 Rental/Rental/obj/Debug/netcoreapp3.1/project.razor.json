@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2\\Session 2.csproj",
+  "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Rental.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20518,11 +20518,61 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "Session_2",
+  "RootNamespace": "Rental",
   "Documents": [
     {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2\\wwwroot\\js\\catalog\\index.cshtml",
-      "TargetPath": "wwwroot\\js\\catalog\\index.cshtml",
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\Home\\Test.cshtml",
+      "TargetPath": "Views\\Home\\Test.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\Catalog\\Index.cshtml",
+      "TargetPath": "Views\\Catalog\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\Catalog\\Register.cshtml",
+      "TargetPath": "Views\\Catalog\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Views\\Home\\About.cshtml",
+      "TargetPath": "Views\\Home\\About.cshtml",
       "FileKind": "mvc"
     }
   ],

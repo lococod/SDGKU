@@ -1,0 +1,12 @@
+.item {
+    border: 1px solid white;
+    width: 600px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.item img { 
+    width: 150px;
+}
