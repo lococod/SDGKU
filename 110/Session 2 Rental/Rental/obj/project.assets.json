@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Donny\\.nuget\\packages\\": {}
+    "C:\\Users\\Donny-ThinkPad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programming\\Git\\SDGKU\\110\\Rental\\Rental.csproj",
+      "projectUniqueName": "D:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Rental.csproj",
       "projectName": "Rental",
-      "projectPath": "F:\\Programming\\Git\\SDGKU\\110\\Rental\\Rental.csproj",
-      "packagesPath": "C:\\Users\\Donny\\.nuget\\packages\\",
-      "outputPath": "F:\\Programming\\Git\\SDGKU\\110\\Rental\\obj\\",
+      "projectPath": "D:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\Rental.csproj",
+      "packagesPath": "C:\\Users\\Donny-ThinkPad\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\SDGKU\\110\\Session 2 Rental\\Rental\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Donny\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Donny-ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
