@@ -24,6 +24,7 @@ namespace Session_1
             bool isThisCrazy = true;
 
             Console.WriteLine("My age is " + age);
+            Console.WriteLine("The price is " + price);
 
             //if
             if (isThisCrazy)
