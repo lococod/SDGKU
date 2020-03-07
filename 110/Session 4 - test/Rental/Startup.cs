@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using Rental.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace Rental
 {
     public class Startup
@@ -24,6 +27,9 @@ namespace Rental
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            var conString = "Data Source=Rental.db";
+            services.addDbContext<DataContext>(options => options.UseSqlite(conString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
