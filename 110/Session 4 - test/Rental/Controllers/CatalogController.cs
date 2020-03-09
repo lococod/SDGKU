@@ -25,8 +25,6 @@ namespace Rental.Controllers
 
         [HttpPost]
         public IActionResult SaveCar([FromBody] Car theCar){
-            Console.WriteLine("User is saving the car");
-            Console.Writeline(theCar.Make);
             dbContext.Cars.Add(theCar);
             dbContext.SaveChanges();
             return Json(theCar);

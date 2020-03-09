@@ -28,8 +28,8 @@ namespace Rental
         {
             services.AddControllersWithViews();
 
-            var conString = "Data Source=Rental.db";
-            services.addDbContext<DataContext>(options => options.UseSqlite(conString));
+            var conString = "Data source=Rental.db";
+            services.AddDbContext<DataContext>(options => options.UseSqlite(conString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
