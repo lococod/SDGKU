@@ -1141,7 +1141,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore.Design >= 3.1.2",
-      "Microsoft.EntityFrameworkCore.Sqlite"
+      "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.2"
     ]
   },
   "packageFolders": {
@@ -1187,7 +1187,7 @@
           },
           "Microsoft.EntityFrameworkCore.Sqlite": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[3.1.2, )"
           }
         },
         "imports": [
