@@ -1,0 +1,103 @@
+@{ ViewData["title"] = "Register Car"; }
+
+<h1>Register new car here</h1>
+
+<div class="form">
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="year">Year:</label>
+    <div class="col-8">
+      <input type="text" class="form-control" placeholder="" id="txtYear" />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="make">Make:</label>
+    <div class="col-8">
+      <input type="text" class="form-control" placeholder="" id="txtMake" />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="model">Model:</label>
+    <div class="col-8">
+      <input type="text" class="form-control" placeholder="" id="txtModel" />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="cyls">Cylinders:</label>
+    <div class="col-8">
+      <input type="text" class="form-control" placeholder="" id="txtCyls" />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="dailyPrice">Daily Price:</label>
+    <div class="col-8">
+      <input
+        type="text"
+        class="form-control"
+        placeholder=""
+        id="txtDailyPrice"
+      />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="imageUrl">Image Link:</label>
+    <div class="col-8">
+      <input type="text" class="form-control" placeholder="" id="txtImageUrl" />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="passengers">Passengers:</label>
+    <div class="col-8">
+      <input
+        type="text"
+        class="form-control"
+        placeholder=""
+        id="txtPassengers"
+      />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="type">Type:</label>
+    <div class="col-8">
+      <select name="txtType" id="txtType" class="custom-select">
+        <option value="0">Economy</option>
+        <option value="1">Family</option>
+        <option value="2">Luxury</option>
+        <option value="3">Sport</option>
+        <option value="4">Utility</option>
+        <option value="5">Other</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="description">Description:</label>
+    <div class="col-8">
+      <input
+        type="text"
+        class="form-control"
+        placeholder=""
+        id="txtDescription"
+      />
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4 form-group-label" for="fuelType">Fuel Type:</label>
+    <div class="col-8">
+      <select name="txtFuel" id="txtFuel" class="custom-select">
+        <option value="0">Electric</option>
+        <option value="1">Regular Unleaded</option>
+        <option value="2">Premium Unleaded</option>
+        <option value="3">Diesel</option>
+        <option value="4">Hybrid</option>
+      </select>
+    </div>
+  </div>
+  <button type="button" id="btnSave" class="btn btn-primary">Register</button>
+</div>
+
+@section Styles {
+  <link rel="stylesheet" href="/css/register.css">
+}
+
+@section Scripts {
+<script src="/js/catalog/register.js"></script>
+}
