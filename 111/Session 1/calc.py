@@ -63,6 +63,6 @@ while (selection != 'x'):
             print(x, "/", y, "=", divide(x, y))
 
         elif selection == '4' and y == 0:
-            print("No dividing by 0!")
+            print("over 9000!")
 
         input('Press Enter to continue')
