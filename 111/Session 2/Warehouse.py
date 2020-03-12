@@ -52,7 +52,7 @@ def display_catalog():
     
 def display_zero_stock():
     print_header(' Catalog ')
-    print('  Title              |   Category         | Price     | Stock       ')
+    print('Title                |   Category         | Price     | Stock       ')
     for item in catalog:
         if (item.stock == 0):
             print(item.title.ljust(20) + " | " + item.category.ljust(18) +  " | " + str(item.price).rjust(9) + " | " + str(item.stock).rjust(5))
