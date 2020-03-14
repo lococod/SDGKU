@@ -88,6 +88,8 @@ def warehouse_value():
     value = 0
     for item in catalog:
         value += item.stock*item.price
+        individual_value = item.stock*item.price
+        print("Total Item Value: "+item.title + " $" +str(round(individual_value,2)))
     print("Total Warehouse Value: $"+str(round(value,2)))
        
     
