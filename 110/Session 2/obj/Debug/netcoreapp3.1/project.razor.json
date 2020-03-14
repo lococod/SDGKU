@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2\\Session 2.csproj",
+  "FilePath": "f:\\Programming\\Git\\SDGKU\\110\\Session 2\\Session 2.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,7 +20521,7 @@
   "RootNamespace": "Session_2",
   "Documents": [
     {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 2\\wwwroot\\js\\catalog\\index.cshtml",
+      "FilePath": "f:\\Programming\\Git\\SDGKU\\110\\Session 2\\wwwroot\\js\\catalog\\index.cshtml",
       "TargetPath": "wwwroot\\js\\catalog\\index.cshtml",
       "FileKind": "mvc"
     }
