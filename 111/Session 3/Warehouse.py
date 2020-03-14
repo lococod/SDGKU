@@ -1,6 +1,7 @@
 from Menu import print_menu, print_header
 from Item import Item
 import os
+import pickle
 
 
 """
@@ -16,6 +17,7 @@ stock
 
 catalog = []
 id_count = 1
+data_file = 'catalog.data'
 
 def clear():
     return os.system('cls')
@@ -47,13 +49,15 @@ def register_item():
 
 def update_stock():
     display_catalog()
-    selected = int(input(' Please select the ID to update: '))
+    selected = int(input(' Please select the ID to update Stock: '))
 
     found = False
     for item in catalog:
         if(item.id == selected):
-            print('Id is correct')
+            new_stock = int(input('Please enter a new stocking value: '))
+            item.stock = new_stock
             found = True
+            print('Stock has been updated to: '+str(new_stock))
 
     if(found == False):
         print('** Error : Selected ID does not exist.')
@@ -79,11 +83,26 @@ def display_zero_stock():
     print('-' * 80)
     
     
+def save_catalog():
+    global data_file
+    writer = open(data_file, "wb")
+    pickle.dump(catalog, writer)
+    writer.close()
+    print(" Data Saved!")
+
+def read_catalog():
+    global data_file
+    global id_count
+    reader = open(data_file, "rb")
+    temp_list = pickle.load(reader)
     
+    for item in temp_list:
+        catalog.append(item)
+
+    last = catalog[-1]
+    id_count = last.id + 1
     
-    
-    
-    
+read_catalog()    
 # loop
 valid_selection = ['1', '2', '3', '4', 'X', 'x']
 selection = ''
@@ -97,12 +116,14 @@ while(selection != 'x'):
 
     if(selection == '1'):
         register_item()
+        save_catalog()
     elif(selection == '2'):
         display_catalog()
     elif(selection == '3'):
         display_zero_stock()
     elif(selection == '4'):
         update_stock()
+        save_catalog()
         
         
         
