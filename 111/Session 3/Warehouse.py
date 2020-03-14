@@ -2,6 +2,7 @@ from Menu import print_menu, print_header
 from Item import Item
 import os
 import pickle
+import math
 
 
 """
@@ -81,7 +82,18 @@ def display_zero_stock():
            print("|"+str(item.id).ljust(3)+"|"+item.title.ljust(20) + " | " + item.category.ljust(18) +  " | " + str(item.price).rjust(9) + " | " + str(item.stock).rjust(5))
 
     print('-' * 80)
+
+
+def warehouse_value():
+    value = 0
+    for item in catalog:
+        value += item.stock*item.price
+    print("Total Warehouse Value: $"+str(round(value,2)))
+       
     
+        
+       
+
     
 def save_catalog():
     global data_file
@@ -104,7 +116,7 @@ def read_catalog():
     
 read_catalog()    
 # loop
-valid_selection = ['1', '2', '3', '4', 'X', 'x']
+valid_selection = ['1', '2', '3', '4', 'X', 'x', '5']
 selection = ''
 while(selection != 'x'):
     clear()
@@ -124,6 +136,8 @@ while(selection != 'x'):
     elif(selection == '4'):
         update_stock()
         save_catalog()
+    elif(selection == '5'):
+        warehouse_value()
         
         
         

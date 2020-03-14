@@ -6,7 +6,8 @@ def print_menu():
     print('[1] Register New Item')
     print('[2] Display Catalog')
     print('[3] Diplay Items with No Stock')
-    print('[4] Update Stocking Quantity')        
+    print('[4] Update Stocking Quantity')
+    print('[5] Print Warehouse Value')            
     print('[x] Exit')
     
     
