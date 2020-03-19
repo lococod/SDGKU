@@ -1,0 +1,194 @@
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\appsettings.Development.json
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\appsettings.json
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\Rental.exe
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\Rental.deps.json
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\Rental.runtimeconfig.json
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\Rental.runtimeconfig.dev.json
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\Rental.dll
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\Rental.pdb
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\Rental.Views.dll
+F:\Programming\Git\SDGKU\110\Rental\bin\Debug\netcoreapp3.1\Rental.Views.pdb
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.csprojAssemblyReference.cache
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.MvcApplicationPartsAssemblyInfo.cache
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.RazorAssemblyInfo.cache
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.RazorAssemblyInfo.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.AssemblyInfoInputs.cache
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.AssemblyInfo.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.TagHelpers.input.cache
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.TagHelpers.output.cache
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.RazorCoreGenerate.cache
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.RazorTargetAssemblyInfo.cache
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.RazorTargetAssemblyInfo.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.Views.pdb
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\staticwebassets\Rental.StaticWebAssets.Manifest.cache
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\staticwebassets\Rental.StaticWebAssets.xml
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.dll
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.pdb
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Rental.csproj.CopyComplete
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Test.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
+F:\Programming\Git\SDGKU\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Register.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.exe
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.deps.json
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.runtimeconfig.json
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.runtimeconfig.dev.json
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.dll
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.pdb
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.Views.dll
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.Views.pdb
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.csprojAssemblyReference.cache
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.MvcApplicationPartsAssemblyInfo.cache
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorAssemblyInfo.cache
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorAssemblyInfo.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.AssemblyInfoInputs.cache
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.AssemblyInfo.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.TagHelpers.input.cache
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.TagHelpers.output.cache
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorCoreGenerate.cache
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Register.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Test.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorTargetAssemblyInfo.cache
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorTargetAssemblyInfo.cs
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.Views.pdb
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\staticwebassets\Rental.StaticWebAssets.Manifest.cache
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\staticwebassets\Rental.StaticWebAssets.xml
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.dll
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.pdb
+D:\Programming\SDGKU\110\Session 2 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.csproj.CopyComplete
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.exe
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.deps.json
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.runtimeconfig.json
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.runtimeconfig.dev.json
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.dll
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.pdb
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.Views.dll
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.Views.pdb
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.csprojAssemblyReference.cache
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.MvcApplicationPartsAssemblyInfo.cache
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorAssemblyInfo.cache
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorAssemblyInfo.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.AssemblyInfoInputs.cache
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.AssemblyInfo.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.TagHelpers.input.cache
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.TagHelpers.output.cache
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorCoreGenerate.cache
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Register.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Test.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorTargetAssemblyInfo.cache
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorTargetAssemblyInfo.cs
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.Views.pdb
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\staticwebassets\Rental.StaticWebAssets.Manifest.cache
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\staticwebassets\Rental.StaticWebAssets.xml
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.dll
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.pdb
+D:\Programming\SDGKU\110\Session 3 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.csproj.CopyComplete
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.exe
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.deps.json
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.runtimeconfig.json
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.runtimeconfig.dev.json
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.pdb
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.Views.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Rental.Views.pdb
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.csprojAssemblyReference.cache
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.MvcApplicationPartsAssemblyInfo.cache
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorAssemblyInfo.cache
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorAssemblyInfo.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.AssemblyInfoInputs.cache
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.AssemblyInfo.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.TagHelpers.input.cache
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.TagHelpers.output.cache
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorCoreGenerate.cache
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Index.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Register.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\Test.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorTargetAssemblyInfo.cache
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.RazorTargetAssemblyInfo.cs
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.Views.pdb
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\staticwebassets\Rental.StaticWebAssets.Manifest.cache
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\staticwebassets\Rental.StaticWebAssets.xml
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.pdb
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\obj\Debug\netcoreapp3.1\Rental.csproj.CopyComplete
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+D:\Programming\SDGKU\110\Session 4 Rental\Rental\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
