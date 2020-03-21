@@ -7,6 +7,12 @@ class Genre(models.Model):
     def __str__(self):
         return self.name
 
+class Director(models.Model):
+    name = models.CharField(max_length = 255)
+
+    def __str__(self):
+        return self.name
+
 
 class Movie(models.Model):
     title = models.CharField(max_length = 255)
@@ -14,7 +20,11 @@ class Movie(models.Model):
     release_year = models.IntegerField()
     price = models.FloatField()
     in_stock = models.IntegerField()
-    Genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
+    director = models.ForeignKey(Director, on_delete=models.CASCADE)
+    genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     in_4k = models.BooleanField()
-    director = models.CharField(max_length = 255)
     image_url = models.TextField()
+
+    def __str__(self):
+        return self.title+" Release Year: "+ str(self.release_year)
+        
