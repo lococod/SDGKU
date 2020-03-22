@@ -73,14 +73,36 @@ def display_catalog():
 
     print('-' * 80)
 
-def display_categories():
+# def display_categories():
+#     print_header(' Catalog ')
+#     print(' | Category           |')
+#     unique_catagories = set()
+#     for item in catalog:
+#          unique_catagories.add(item.category)
+#     print(" | " + str(list(unique_catagories))+  "          |")
+
+
+def display_selected_category():
     print_header(' Catalog ')
     print(' | Category           |')
     unique_catagories = set()
     for item in catalog:
-    #     unique_catagories.add(item.category)
-    # print(" | " + str(list(unique_catagories))+  "          |")
-    print(item.category)
+         unique_catagories.add(item.category)
+    print(" | " + str(list(unique_catagories))+  "          |")
+
+    selected = input(' Please select the Category to display items: ')
+
+    found = False
+    for item in catalog:
+        if(item.category == selected):
+            print("|"+str(item.id).ljust(3)+"|"+item.title.ljust(20) + " | " + item.category.ljust(18) +  " | " + str(item.price).rjust(9) + " | " + str(item.stock).rjust(5))
+        found = True
+    print('-' * 80)
+         
+
+    if(found == False):
+        print('** Error : Selected Category does not exist.')
+
     
     
 def display_zero_stock():
@@ -165,7 +187,7 @@ while(selection != 'x'):
         remove_item()
         save_catalog()
     elif(selection == '7'):
-        display_categories()
+        display_selected_category()
         
         
         
