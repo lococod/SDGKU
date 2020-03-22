@@ -93,8 +93,9 @@ def display_selected_category():
     selected = input(' Please select the Category to display items: ')
     print('')
     found = False
+    print('|ID |Title                | Category           | Price     | Stock       ')
     for item in catalog:
-        if(item.category.upper() == selected.upper()):
+        if(item.category.upper() == selected.upper()):            
             print("|"+str(item.id).ljust(3)+"|"+item.title.ljust(20) + " | " + item.category.ljust(18) +  " | " + str(item.price).rjust(9) + " | " + str(item.stock).rjust(5))
             found = True
     print('-' * 80)
