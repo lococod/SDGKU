@@ -78,8 +78,9 @@ def display_categories():
     print(' | Category           |')
     unique_catagories = set()
     for item in catalog:
-        unique_catagories.add(item.category)
-    print(" | " + str(list(unique_catagories))+  "          |")
+    #     unique_catagories.add(item.category)
+    # print(" | " + str(list(unique_catagories))+  "          |")
+    print(item.category)
     
     
 def display_zero_stock():
