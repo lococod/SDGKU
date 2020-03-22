@@ -84,19 +84,19 @@ def display_catalog():
 
 def display_selected_category():
     print_header(' Catalog ')
-    print(' | Category           |')
+    print(' | Categories          |')
     unique_catagories = set()
     for item in catalog:
          unique_catagories.add(item.category)
     print(" | " + str(list(unique_catagories))+  "          |")
 
     selected = input(' Please select the Category to display items: ')
-
+    print('')
     found = False
     for item in catalog:
-        if(item.category == selected):
+        if(item.category.upper() == selected.upper()):
             print("|"+str(item.id).ljust(3)+"|"+item.title.ljust(20) + " | " + item.category.ljust(18) +  " | " + str(item.price).rjust(9) + " | " + str(item.stock).rjust(5))
-        found = True
+            found = True
     print('-' * 80)
          
 
