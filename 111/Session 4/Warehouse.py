@@ -72,6 +72,14 @@ def display_catalog():
         print("|"+str(item.id).ljust(3)+"|"+item.title.ljust(20) + " | " + item.category.ljust(18) +  " | " + str(item.price).rjust(9) + " | " + str(item.stock).rjust(5))
 
     print('-' * 80)
+
+def display_categories():
+    print_header(' Catalog ')
+    print(' | Category           |')
+    unique_catagories = set()
+    for item in catalog:
+        unique_catagories.add(item.category)
+    print(" | " + str(list(unique_catagories))+  "          |")
     
     
 def display_zero_stock():
@@ -85,7 +93,7 @@ def display_zero_stock():
 
 
 def warehouse_value():
-    value = 0
+    value = 0.0
     for item in catalog:
         value += item.stock*item.price
         individual_value = item.stock*item.price
@@ -94,7 +102,19 @@ def warehouse_value():
        
     
         
-       
+def remove_item():
+    display_catalog()
+    selected = int(input(' Select an Id to remove: '))
+
+    found = False
+    for item in catalog:
+        if(item.id == selected):
+            catalog.remove(item)
+            found = True
+            print('Item has been deleted')
+
+    if(found == False):
+        print('** Error : Selected ID does not exist.')
 
     
 def save_catalog():
@@ -118,7 +138,7 @@ def read_catalog():
     
 read_catalog()    
 # loop
-valid_selection = ['1', '2', '3', '4', 'X', 'x', '5']
+valid_selection = ['1', '2', '3', '4', 'X', 'x', '5','6','7']
 selection = ''
 while(selection != 'x'):
     clear()
@@ -140,6 +160,11 @@ while(selection != 'x'):
         save_catalog()
     elif(selection == '5'):
         warehouse_value()
+    elif(selection == '6'):
+        remove_item()
+        save_catalog()
+    elif(selection == '7'):
+        display_categories()
         
         
         
