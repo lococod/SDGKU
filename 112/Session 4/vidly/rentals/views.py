@@ -15,6 +15,6 @@ def index(request):
     movies = Movie.objects.all()
     return render(request,'views/index.html', {'movies': movies})
 
-def details(request, model_id):
-    movie = Movie.objects.get(id=model_id)
+def details(request, movie_id):
+    movie = Movie.objects.get(id=movie_id)
     return render(request,'views/details.html', {'movie': movie})
