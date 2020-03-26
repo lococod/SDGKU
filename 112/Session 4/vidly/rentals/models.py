@@ -38,7 +38,7 @@ class GenreAdmin(admin.ModelAdmin):
 
 class MovieAdmin(admin.ModelAdmin):
     list_display_links = ('id', 'title')
-    list_display = ('id', 'release_year', 'title', 'genre', 'director')
+    list_display = ('id', 'release_year', 'title', 'genre', 'director','in_stock')
     
     
     

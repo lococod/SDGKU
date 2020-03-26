@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.contrib import messages
+
 
 # Create your views here.
 
@@ -18,3 +20,14 @@ def index(request):
 def details(request, movie_id):
     movie = Movie.objects.get(id=movie_id)
     return render(request,'views/details.html', {'movie': movie})
+
+def cart(request, movie_id):
+    movie = Movie.objects.get(id=movie_id)
+    movie.in_stock -= 1
+    movie.save()
+    return render(request,'views/cart.html', {'movie': movie})
+
+
+
+    
+

@@ -13,11 +13,8 @@
       <h6 class="card-text">{{movie.director}}</h6>
       <h6 class="card-text movie-price">${{movie.price}}</h6>
       <h6 class="card-text movie-price">In Stock: {{movie.in_stock}}</h6>
-      {% if movie.in_stock > 0 %}
-      <a href="cart/{{movie.id}}" class="btn btn-info" role="button">Rent Movie</a>
-      {% else %}
-      <a href="/rentals/" class="btn btn-info" role="button" disabled>Out of Stock</a>
-      {% endif %}   
+      <a href="/rentals" class="btn btn-primary" role="button">Return to Movies</a>   
+      
 
 
               
