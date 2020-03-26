@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Rental.csproj",
+  "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Rental.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -1911,7 +1911,7 @@
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
-        "Documentation": "\n            <summary>\n            Adds Data Annotations validation support to an <see cref=\"T:Microsoft.AspNetCore.Components.Forms.EditContext\" />.\n            </summary>\n        ",
+        "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -1935,7 +1935,7 @@
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
-        "Documentation": "\n            <summary>\n            Adds Data Annotations validation support to an <see cref=\"T:Microsoft.AspNetCore.Components.Forms.EditContext\" />.\n            </summary>\n        ",
+        "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
@@ -15130,7 +15130,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": "\n            <summary>\n            The name of the action method.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page\" /> is non-<c>null</c>.\n            </remarks>\n        ",
+            "Documentation": null,
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Action"
@@ -20521,58 +20521,58 @@
   "RootNamespace": "Rental",
   "Documents": [
     {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\Home\\About.cshtml",
-      "TargetPath": "Views\\Home\\About.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\Catalog\\Register.cshtml",
-      "TargetPath": "Views\\Catalog\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\Catalog\\Index.cshtml",
-      "TargetPath": "Views\\Catalog\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\Home\\Test.cshtml",
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\Home\\Test.cshtml",
       "TargetPath": "Views\\Home\\Test.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\Catalog\\Index.cshtml",
+      "TargetPath": "Views\\Catalog\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental\\Rental\\Views\\Home\\Index.cshtml",
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\Home\\About.cshtml",
+      "TargetPath": "Views\\Home\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\Catalog\\Register.cshtml",
+      "TargetPath": "Views\\Catalog\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programming\\SDGKU\\110\\Session 4 Rental CR\\Rental\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],
