@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 25rem;">
     <img class="card-img-top" src="{{movie.image_url}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{movie.title}}</h5>
@@ -15,8 +15,9 @@
       <h6 class="card-text movie-price">In Stock: {{movie.in_stock}}</h6>
       {% if movie.in_stock > 0 %}
       <a href="cart/{{movie.id}}" class="btn btn-info" role="button">Rent Movie</a>
+      <a href="/rentals/"class="btn btn-primary" role="button">Return to Movie Selection</a>
       {% else %}
-      <a href="/rentals/" class="btn btn-info" role="button" disabled>Out of Stock</a>
+      <a href="/rentals/" class="btn btn-info" role="button" disabled>Out of Stock, click to return to movies</a>
       {% endif %}   
 
 
