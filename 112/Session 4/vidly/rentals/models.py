@@ -27,6 +27,8 @@ class Movie(models.Model):
     image_url = models.TextField()
    
 
+    class Meta:
+        ordering = ('-release_year',)
     def __str__(self):
         return self.title+" Release Year: "+ str(self.release_year)
         
