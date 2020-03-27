@@ -10,3 +10,14 @@
 .item img { 
     width: 150px;
 }
+
+.card-group{
+    
+    max-width: 20rem;
+}
+
+.btn {
+    text-align: right;
+}
+
+
