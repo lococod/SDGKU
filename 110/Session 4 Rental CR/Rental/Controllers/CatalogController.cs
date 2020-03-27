@@ -32,6 +32,7 @@ namespace Rental.Controllers
             dbContext.Cars.Add(theCar);
             dbContext.SaveChanges();
             return Json(theCar);
+            
         }
 
         [HttpGet]

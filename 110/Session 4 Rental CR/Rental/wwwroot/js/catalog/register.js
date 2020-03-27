@@ -14,7 +14,17 @@ function Car(year,make,model,cyls,dailyPrice,imageURL,passengers,type,descriptio
 }
 
 
+function clearForm(){
+$("#txtYear").val("");
+$("#txtMake").val("");
+$("#txtModel").val("");
+$("#txtCyls").val("");
+$("#txtDailyPrice").val("");
+$("#txtImageUrl").val("");
+$("#txtPassengers").val("");
+$("#txtDescription").val("");
 
+}
 
 
 function saveCar() {
@@ -39,13 +49,19 @@ $.ajax({
     contentType: 'application/json',
     success: function(res){
         console.log("Server says ", res);
+        clearForm();
     },
     error: function(details){
         console.log("Error ", details);
     }
 })
 
+
+
+
 }
+
+
 
 function init() {
     console.log("Register Page!");
