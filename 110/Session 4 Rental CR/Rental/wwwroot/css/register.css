@@ -4,3 +4,10 @@ h1 {
 label{
     text-align: left;
 }
+.form-group-label{
+    font-weight: bolder;
+}
+
+.form-control {
+    text-align: center;
+}

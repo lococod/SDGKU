@@ -25,7 +25,9 @@ function displayCar(Car){
 <label>${Car.year}</label>
 <label>${Car.make}</label>
 <label>${Car.model}</label>
+<label>${Car.passengers}</label>
 <label>$${(Car.dailyPrice * 1).toFixed(2)}</label>
+<label>${Car.description}</label>
 </div>`;
    
     var container = $("#catalog");

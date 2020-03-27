@@ -23,6 +23,8 @@ $("#txtDailyPrice").val("");
 $("#txtImageUrl").val("");
 $("#txtPassengers").val("");
 $("#txtDescription").val("");
+$("#txtFuel").val("");
+$("#txtType").val("");
 
 }
 
