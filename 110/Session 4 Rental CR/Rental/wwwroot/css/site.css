@@ -5,12 +5,14 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  font-weight: bolder;
   
 }
 
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
+  font-weight: bolder;
 }
 
 
@@ -25,6 +27,7 @@ a {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+  font-weight: bolder;
 }
 
 /* Sticky footer styles
@@ -65,12 +68,12 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
-  background-color: rgb(132, 205, 218);
+  
 }
 
-.container {
+/* .container {
   background-color: rgba(87, 150, 172, 0.74);
-}
+} */
 
 .footer {
   /* position: absolute; */

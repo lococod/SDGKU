@@ -1,4 +1,4 @@
-.item {
+/* .item {
     border: 1px solid white;
     width: 600px;
     height: 200px;
@@ -7,17 +7,10 @@
 
 }
 
-.item img { 
+img { 
     width: 150px;
-}
+} */
 
 .card-group{
-    
-    max-width: 20rem;
+    background-color: red;
 }
-
-.btn {
-    text-align: right;
-}
-
-

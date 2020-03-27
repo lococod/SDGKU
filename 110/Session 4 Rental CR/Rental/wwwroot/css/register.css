@@ -11,3 +11,13 @@ label{
 .form-control {
     text-align: center;
 }
+
+.right-btn{
+    text-align:right;
+  }
+
+.form {padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+      background-color: rgba(238, 237, 237, 0.795);
+  }

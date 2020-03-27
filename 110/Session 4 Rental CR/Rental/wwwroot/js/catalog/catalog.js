@@ -7,9 +7,9 @@ function fetchCatalog() {
         url: '/Catalog/GetCatalog',
         success: function (res) {
             console.log("from server", res);
-
+            var sortPrice = res.sort((left, right) => left.dailyPrice - right.dailyPrice);
             for (var i = 0; i < res.length; i++) {
-                displayCar(res[i]);
+                displayCar(res[i],sortPrice[i]);
             }
         },
         error: function (details) {
@@ -57,7 +57,7 @@ function displayCar(Car){
     <p class="card-text">${Car.description}</p>
     <p class="card-text"><small class="text-muted">Daily Price: $${(Car.dailyPrice * 1).toFixed(2)}</small></p>
     <a href="#" class="btn btn-primary">Rent Me!</a>
-  </div>
+    </div>
 </div>`;
    
     var container = $("#catalog");
