@@ -55,6 +55,7 @@ $.ajax({
     },
     error: function(details){
         console.log("Error ", details);
+        clearForm();
     }
 })
 
