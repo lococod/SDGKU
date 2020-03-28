@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Rental Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="../../static/index.css">
+  </head>
+  <body>
+    {% for movie in movies %}
+    <!-- <div class="form">
+      <div class="form-group row">
+        <label class="col-4 form-group-label">Title:</label>
+        <div class="col-8">
+          {{movie.title}}
+        </div>
+      </div> -->
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{movie.image_url}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{movie.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{movie.genre}}</h6>
+          <p class="card-text">Release Year: {{movie.release_year}}</p>
+          <h6 class="card-text">{{movie.director}}</h6>
+          <h6 class="card-text movie-price">${{movie.price}}</h6>
+          <a href="{{movie.id}}" class="btn btn-primary" role="button">View Movie Details</a>         
+        </div>
+      </div>
+      <!-- <div class="form-group row">
+        <label class="col-4 form-group-label">Genre:</label>
+        <div class="col-8">
+          {{movie.genre}}
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-4 form-group-label">Year</label>
+        <div class="col-8">
+          {{movie.release_year}}
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-4 form-group-label">Director</label>
+        <div class="col-8">
+          {{movie.director}}
+        </div>
+      </div> -->
+    </div>
+    {% endfor %}
+  </body>
+  <script src="../../static/catalog.js"></script>
+</html>
