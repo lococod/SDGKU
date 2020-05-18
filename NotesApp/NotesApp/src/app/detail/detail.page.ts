@@ -63,6 +63,9 @@ export class DetailPage implements OnInit {
     this.notesService.deleteNote(this.note);
     this.navCtrl.navigateBack('/folder/'+this.note.folder);
     
+    
   }
+
+
 
 }
