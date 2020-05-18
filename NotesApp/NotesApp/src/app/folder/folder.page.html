@@ -4,7 +4,13 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>{{ folder }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="addNote()">
+        <ion-icon slot="icon-only" name="clipboard"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
+ 
 </ion-header>
 
 <ion-content [fullscreen]="true">
