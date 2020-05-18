@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AlertController, NavController } from '@ionic/angular';
 import { NotesService } from '../services/notes.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-folder',
@@ -22,11 +23,17 @@ export class FolderPage implements OnInit {
 
     this.alertCtrl.create({
       header: 'New Note',
-      message: 'What should the title of this note be?',
+      message: 'What are the note titles and additional details?',
       inputs: [
         {
           type: 'text',
+          placeholder: 'Title',
           name: 'title'
+        },
+        {
+          type: 'text',
+          placeholder: 'Message',
+          name: 'content'
         }
       ],
       buttons: [
@@ -36,7 +43,7 @@ export class FolderPage implements OnInit {
         {
           text: 'Save',
           handler: (data) => {
-            this.notesService.createNote(data.title, this.folder);
+            this.notesService.createNote(data.title, this.folder, data.content);
             console.log(data.title+" "+this.folder)
           }
         }
