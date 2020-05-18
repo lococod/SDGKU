@@ -57,7 +57,7 @@ export class NotesService {
       id: id.toString(),
       title: title,
       content: '',
-      folder: ''
+      folder: folder
     });
 
     this.save();

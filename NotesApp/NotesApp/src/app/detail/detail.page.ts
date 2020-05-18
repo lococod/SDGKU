@@ -33,14 +33,18 @@ export class DetailPage implements OnInit {
 
     // Get the id of the note from the URL
     let noteId = this.route.snapshot.paramMap.get('id');
+    let folderId = this.note.folder;
+    console.log(noteId + " " + folderId);
 
     // Check that the data is loaded before getting the note
     // This handles the case where the detail page is loaded directly via the URL
     if(this.notesService.loaded){
       this.note = this.notesService.getNote(noteId)
+
     } else {
       this.notesService.load().then(() => {
         this.note = this.notesService.getNote(noteId)
+
       });
     }
 
@@ -50,6 +54,8 @@ export class DetailPage implements OnInit {
 
   noteChanged(){
     this.notesService.save();
+    console.log(this.note.content);
+    console.log(this.note.folder);
   }
 
   deleteNote(){
