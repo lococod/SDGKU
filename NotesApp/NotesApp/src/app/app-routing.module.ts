@@ -17,7 +17,12 @@ const routes: Routes = [
   },
   { 
     path: "notes/:id", loadChildren: "./detail/detail.module#DetailPageModule" 
+  },
+  {
+    path: 'label/',
+    loadChildren: () => import('./label/label.module').then( m => m.LabelPageModule)
   }
+
 ];
 
 @NgModule({

@@ -18,10 +18,20 @@
         <ion-list id="labels-list">
           <ion-list-header>Labels</ion-list-header>
 
-          <ion-item *ngFor="let label of labels" lines="none">
+          <!-- <ion-item  button routerDirection="root" [routerLink]="'[label.url]'" 
+          routerDirection="forward"*ngFor="let label of labels; let l = index" lines="none">
             <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
-          </ion-item>
+            <ion-label>{{ label.title }}</ion-label>
+          </ion-item> -->
+
+          <ion-menu-toggle auto-hide="false" *ngFor="let label of labels; let l = index">
+            <ion-item (click)="selectedLabel = l" routerDirection="root" [routerLink]="[label.url]" lines="none" detail="false" [class.selected]="selectedLabel == l">
+              <ion-icon slot="start" [ios]="label.icon + '-outline'" [md]="label.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ label.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+
         </ion-list>
       </ion-content>
     </ion-menu>

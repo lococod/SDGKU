@@ -43,7 +43,38 @@ export class AppComponent implements OnInit {
       icon: 'checkmark-done'
     }
   ];
-  public labels = ['Donald', 'Marisa', 'Donovan', 'Dana', 'Dad', 'Mom'];
+  // public labels = ['Donald', 'Marisa', 'Donovan', 'Dana', 'Dad', 'Mom'];
+  public labels = [
+  {
+    title: 'Donald',
+    url: '/label/donald',
+    icon: 'bookmark'
+  },
+  {
+    title: 'Marisa',
+    url: '/label/marisa',
+    icon: 'bookmark'
+  },
+  {
+    title: 'Donovan',
+    url: '/label/donovan',
+    icon: 'bookmark'
+  },
+  {
+    title: 'Dana',
+    url: '/label/dana',
+    icon: 'bookmark'
+  },
+  {
+    title: 'Dad',
+    url: '/label/dad',
+    icon: 'bookmark'
+  },
+  {
+    title: 'Mom',
+    url: '/label/mom',
+    icon: 'bookmark'
+  }]
 
   constructor(
     private platform: Platform,
