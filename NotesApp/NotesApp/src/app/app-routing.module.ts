@@ -19,7 +19,7 @@ const routes: Routes = [
     path: "notes/:id", loadChildren: "./detail/detail.module#DetailPageModule" 
   },
   {
-    path: 'label/',
+    path: 'label/:id',
     loadChildren: () => import('./label/label.module').then( m => m.LabelPageModule)
   }
 

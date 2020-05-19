@@ -11,6 +11,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
+  public selectedLabel = 0;
   public appPages = [
     {
       title: 'Chores',
@@ -47,32 +48,32 @@ export class AppComponent implements OnInit {
   public labels = [
   {
     title: 'Donald',
-    url: '/label/donald',
+    url: '/label/Donald',
     icon: 'bookmark'
   },
   {
     title: 'Marisa',
-    url: '/label/marisa',
+    url: '/label/Marisa',
     icon: 'bookmark'
   },
   {
     title: 'Donovan',
-    url: '/label/donovan',
+    url: '/label/Donovan',
     icon: 'bookmark'
   },
   {
     title: 'Dana',
-    url: '/label/dana',
+    url: '/label/Dana',
     icon: 'bookmark'
   },
   {
     title: 'Dad',
-    url: '/label/dad',
+    url: '/label/Dad',
     icon: 'bookmark'
   },
   {
     title: 'Mom',
-    url: '/label/mom',
+    url: '/label/Mom',
     icon: 'bookmark'
   }]
 

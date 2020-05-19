@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { NotesService } from '../services/notes.service';
 
 @Component({
   selector: 'app-label',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LabelPage implements OnInit {
 
-  constructor() { }
+  public label: string;
+
+  constructor(private activatedRoute: ActivatedRoute,public notesService: NotesService) { }
 
   ngOnInit() {
+    this.label = this.activatedRoute.snapshot.paramMap.get('id');
+    this.notesService.load();
+    
   }
 
 }
