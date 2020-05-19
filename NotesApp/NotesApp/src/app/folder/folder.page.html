@@ -24,23 +24,22 @@
     <ion-list>
       <ion-item button detail *ngFor="let note of notesService.notes" [routerLink]="'/notes/' + note.id" routerDirection="forward">
         <div *ngIf="note.folder === this.folder">
-        <ion-label>{{ note.title }}</ion-label>
-        <ion-label>{{ note.folder }}</ion-label>
-        <ion-label>{{ this.folder }}</ion-label>
+          <ion-label >{{ note.title }} {{note.label}}</ion-label>
       </div>
       </ion-item>
     </ion-list>
   </div> -->
 
-  <ng-container *ngFor="let note of notesService.notes">
-    <ion-slide *ngIf="note.folder === this.folder">
-      <div >
-        <ion-label>{{ note.title }}</ion-label>
-        <ion-label>{{ note.folder }}</ion-label>
-        <ion-label>{{ this.folder }}</ion-label>
-      </div>
-    </ion-slide>
-  </ng-container>
+<div  id="container">
+<ion-list >
+<ng-container *ngFor="let note of notesService.notes">
+  <ion-slide button [routerLink]="'/notes/' + note.id" routerDirection="forward" class="hovering" *ngIf="note.folder === this.folder">
+      <ion-label >{{ note.title }} {{note.label}}</ion-label>
+  </ion-slide>
+</ng-container>
+</ion-list>
+</div>
+
 
 
 

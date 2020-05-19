@@ -23,10 +23,21 @@ ion-menu-button {
   margin: 0;
 }
 
+
+
 #container a {
   text-decoration: none;
 }
 
 #container {
-  background-color: #616e7e;
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.hovering:hover {
+  border-width: 3px;
+  border-color: cornflowerblue;
+  background-color: rgba(255, 248, 220, 0.24);
 }
