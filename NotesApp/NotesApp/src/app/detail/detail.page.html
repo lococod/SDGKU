@@ -1,9 +1,9 @@
-<ion-header>
-  <ion-toolbar color="primary">
+<ion-header [translucent]="true">
+  <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/notes"></ion-back-button>
     </ion-buttons>
-    <ion-title>Title: {{ note.title }}: Folder: {{note.folder}} Id: {{note.id}}</ion-title>
+    <ion-title>Title: {{ note.title }}: Folder: {{note.folder}}</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="deleteNote()">
           <ion-icon slot="icon-only" name="trash"></ion-icon>
