@@ -15,3 +15,11 @@
 <ion-content class="ion-padding">
   <ion-textarea (input)="noteChanged()" [(ngModel)]="note.content" placeholder="Additional comments go here"></ion-textarea>
 </ion-content>
+
+<ion-button expand="full">
+  <ion-icon lazy="true" slot="start" name="image"></ion-icon>
+  <br>
+  <ion-label class="upload-button" slot="end">Upload Image</ion-label>
+  <input type="file" (change)="loadImageFromDevice($event)" id="file-input"
+    accept="image/png, image/jpeg">
+</ion-button>

@@ -15,32 +15,32 @@ export class AppComponent implements OnInit {
     {
       title: 'Chores',
       url: '/folder/Chores',
-      icon: 'mail'
+      icon: 'create'
     },
     {
       title: 'Homework',
       url: '/folder/Homework',
-      icon: 'paper-plane'
+      icon: 'newspaper'
     },
     {
       title: 'Sams Club',
       url: '/folder/Sams Club',
-      icon: 'heart'
+      icon: 'basket'
     },
     {
       title: 'Costco',
       url: '/folder/Costco',
-      icon: 'archive'
+      icon: 'basket'
     },
     {
       title: 'Target',
       url: '/folder/Target',
-      icon: 'trash'
+      icon: 'basket'
     },
     {
       title: 'Archive',
       url: '/folder/Archive',
-      icon: 'warning'
+      icon: 'checkmark-done'
     }
   ];
   public labels = ['Donald', 'Marisa', 'Donovan', 'Dana', 'Dad', 'Mom'];

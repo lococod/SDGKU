@@ -48,7 +48,7 @@ export class NotesService {
     return this.notes.find(note => note.id === id);
   }
 
-  createNote(title,folder,content): void {
+  createNote(title,folder,content,label ): void {
 
     // Create a unique id that is one larger than the current largest id
     let id = Math.max(...this.notes.map(note => parseInt(note.id)), 0) + 1;
@@ -57,7 +57,8 @@ export class NotesService {
       id: id.toString(),
       title: title,
       content: content,
-      folder: folder
+      folder: folder,
+      label: label
     });
 
     this.save();

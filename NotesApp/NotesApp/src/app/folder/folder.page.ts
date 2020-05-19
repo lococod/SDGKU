@@ -34,6 +34,11 @@ export class FolderPage implements OnInit {
           type: 'text',
           placeholder: 'Message',
           name: 'content'
+        },
+        {
+          type: 'text',
+          placeholder: 'Label',
+          name: 'label'
         }
       ],
       buttons: [
@@ -43,7 +48,7 @@ export class FolderPage implements OnInit {
         {
           text: 'Save',
           handler: (data) => {
-            this.notesService.createNote(data.title, this.folder, data.content);
+            this.notesService.createNote(data.title, this.folder, data.content, data.label);
             console.log(data.title+" "+this.folder)
           }
         }
