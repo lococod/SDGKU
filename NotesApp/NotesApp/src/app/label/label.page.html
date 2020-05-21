@@ -31,7 +31,7 @@
           routerDirection="forward"
           class="hovering"
           *ngIf="note.label === this.label && note.folder !== 'Archive'">
-          <ion-card><ion-card-header><ion-card-title>{{note.title}}</ion-card-title></ion-card-header>
+          <ion-card><ion-card-header><ion-card-title>{{note.title}}</ion-card-title><IonCardSubtitle>{{note.folder}}</IonCardSubtitle></ion-card-header>
             <ion-card-content>
               {{note.content}}
             </ion-card-content></ion-card>

@@ -38,7 +38,7 @@ export class LabelPage implements OnInit {
         },
         {
           type: 'text',
-          placeholder: 'folder',
+          placeholder: 'Folder',
           name: 'folder'
         }
       ],

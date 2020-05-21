@@ -41,8 +41,11 @@
           routerDirection="forward"
           class="hovering"
           *ngIf="note.folder === this.folder">
-          <ion-label>{{ note.title }} {{note.content}} {{note.label}}</ion-label>
-        </ion-slide>
+          <ion-card><ion-card-header><ion-card-title>{{note.title}}</ion-card-title><IonCardSubtitle>{{note.label}}</IonCardSubtitle></ion-card-header>
+            <ion-card-content>
+              {{note.content}}
+            </ion-card-content></ion-card>
+             </ion-slide>
       </ng-container>
     </ion-list>
   </div>
