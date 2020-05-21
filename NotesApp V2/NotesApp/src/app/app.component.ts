@@ -76,6 +76,11 @@ export class AppComponent implements OnInit {
     title: 'Mom',
     url: '/label/Mom',
     icon: 'bookmark'
+  },
+  {
+    title: 'All',
+    url: '/label/All',
+    icon: 'bookmark'
   }]
 
   constructor(

@@ -32,8 +32,19 @@
             <ion-card-content>
               {{note.content}}
             </ion-card-content></ion-card>
-        </ion-slide>
-      </ng-container>
+            </ion-slide>
+            <ion-slide
+            button
+            [routerLink]="'/notes/' + note.id"
+            routerDirection="forward"
+            class="hovering"
+            *ngIf="this.label ==='All' && note.folder !== 'Archive'">
+            <ion-card><ion-card-header><ion-card-title>{{note.title}}</ion-card-title><IonCardSubtitle>{{note.folder}}</IonCardSubtitle></ion-card-header>
+              <ion-card-content>
+                {{note.content}}
+              </ion-card-content></ion-card>
+              </ion-slide>
+            </ng-container>
     </ion-list>
   </div>
 </ion-content>
