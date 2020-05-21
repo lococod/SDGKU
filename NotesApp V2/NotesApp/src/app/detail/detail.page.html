@@ -14,7 +14,12 @@
 
 <ion-content class="ion-padding">
   <ion-label>Task notes:</ion-label>
-  <ion-textarea (input)="noteChanged()" [(ngModel)]="note.content" placeholder="Additional comments go here"></ion-textarea>
+  <ion-textarea [(ngModel)]="note.content" placeholder="Additional comments go here" (input)="noteChanged()"></ion-textarea>
+</ion-content>
+
+<ion-content class="ion-padding">
+  <ion-label>Update Family Member:</ion-label>
+  <ion-textarea [(ngModel)]="note.label" placeholder="note.label" (input)="noteChanged()"></ion-textarea>
 </ion-content>
 
 <ion-button shape="round" fill="outline" expand="block">
