@@ -33,7 +33,7 @@
               {{note.content}}
             </ion-card-content>
           </ion-card>
-          <ion-button fill="outline" slot="end">View</ion-button>
+          <ion-button class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
         </ion-slide>
         <ion-slide button [routerLink]="'/notes/' + note.id" routerDirection="forward" class="hovering"
           *ngIf="this.label ==='All' && note.folder !== 'Archive'">
@@ -46,7 +46,7 @@
               {{note.content}}
             </ion-card-content>
           </ion-card>
-          <ion-button fill="outline" slot="end">View</ion-button>
+          <ion-button class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
         </ion-slide>
       </ng-container>
     </ion-list>
