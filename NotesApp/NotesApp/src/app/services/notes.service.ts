@@ -71,6 +71,11 @@ export class NotesService {
     let index = this.notes.indexOf(note);
 
     // Delete that element of the array and resave the data
+    if(index > -1 && note.folder === 'Archive'){
+      this.notes.splice(index, 1);
+      // note.folder = "Archive";
+      this.save();
+    }
     if(index > -1){
       // this.notes.splice(index, 1);
       note.folder = "Archive";

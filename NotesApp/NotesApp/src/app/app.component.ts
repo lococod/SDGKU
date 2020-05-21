@@ -12,7 +12,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public selectedLabel = 0;
-  public appPages = [
+
+    public appPages = [
     {
       title: 'Chores',
       url: '/folder/Chores',
