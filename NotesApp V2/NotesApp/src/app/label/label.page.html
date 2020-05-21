@@ -22,7 +22,7 @@
   <div id="container">
     <ion-list>
       <ng-container *ngFor="let note of notesService.notes">
-        <ion-slide button [routerLink]="'/notes/' + note.id" routerDirection="forward" class="hovering"
+        <ion-slide button  class="hovering"
           *ngIf="note.label === this.label && note.folder !== 'Archive'">
           <ion-card>
             <ion-card-header>
@@ -33,9 +33,9 @@
               {{note.content}}
             </ion-card-content>
           </ion-card>
-          <ion-button class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
+          <ion-button [routerLink]="'/notes/' + note.id" routerDirection="forward" class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
         </ion-slide>
-        <ion-slide button [routerLink]="'/notes/' + note.id" routerDirection="forward" class="hovering"
+        <ion-slide button  class="hovering"
           *ngIf="this.label ==='All' && note.folder !== 'Archive'">
           <ion-card>
             <ion-card-header>
@@ -46,7 +46,7 @@
               {{note.content}}
             </ion-card-content>
           </ion-card>
-          <ion-button class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
+          <ion-button [routerLink]="'/notes/' + note.id" routerDirection="forward" class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
         </ion-slide>
       </ng-container>
     </ion-list>

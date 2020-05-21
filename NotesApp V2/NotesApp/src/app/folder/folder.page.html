@@ -33,16 +33,15 @@
     <ion-list>
       <ng-container *ngFor="let note of notesService.notes">
         <ion-slide
-          button
-          [routerLink]="'/notes/' + note.id"
-          routerDirection="forward"
+         
           class="hovering"
           *ngIf="note.folder === this.folder">
           <ion-card><ion-card-header><ion-card-title>{{note.title}}</ion-card-title><IonCardSubtitle>{{note.label}}</IonCardSubtitle></ion-card-header>
             <ion-card-content>
               {{note.content}}
             </ion-card-content></ion-card>
-            <ion-button class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
+            <ion-button [routerLink]="'/notes/' + note.id"
+            routerDirection="forward" class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
              </ion-slide>
       </ng-container>
     </ion-list>
