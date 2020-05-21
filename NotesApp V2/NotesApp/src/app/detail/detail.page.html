@@ -19,7 +19,7 @@
 
 <ion-content class="ion-padding">
   <ion-label>Update Family Member:</ion-label>
-  <ion-textarea [(ngModel)]="note.label" placeholder="note.label" (input)="noteChanged()"></ion-textarea>
+  <ion-textarea [(ngModel)]="note.label" placeholder="{{note.label ? note.label : Name}}" (input)="noteChanged()"></ion-textarea>
 </ion-content>
 
 <ion-button shape="round" fill="outline" expand="block">
