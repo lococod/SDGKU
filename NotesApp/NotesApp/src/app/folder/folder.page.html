@@ -4,9 +4,10 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>{{ folder }}</ion-title>
+    
     <ion-buttons slot="end">
       <ion-button (click)="addNote()">
-        <ion-icon slot="icon-only" name="clipboard"></ion-icon>
+        <ion-icon slot="icon-only" name="add"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -16,7 +17,9 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">{{ folder }}</ion-title>
+      
     </ion-toolbar>
+    
   </ion-header>
 
   <!-- <div id="container">
@@ -38,7 +41,7 @@
           routerDirection="forward"
           class="hovering"
           *ngIf="note.folder === this.folder">
-          <ion-label>{{ note.title }} {{note.label}}</ion-label>
+          <ion-label>{{ note.title }} {{note.content}} {{note.label}}</ion-label>
         </ion-slide>
       </ng-container>
     </ion-list>
