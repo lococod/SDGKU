@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/notes"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Title: {{ note.title }}: Folder: {{note.folder}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="deleteNote()">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label>Task notes:</ion-label>
+  <ion-textarea [(ngModel)]="note.content" placeholder="Additional comments go here" (input)="noteChanged()"></ion-textarea>
+</ion-content>
+
+<ion-content class="ion-padding">
+  <ion-label>Update Family Member:</ion-label>
+  <ion-textarea [(ngModel)]="note.label" placeholder="{{note.label ? note.label : Name}}" (input)="noteChanged()"></ion-textarea>
+</ion-content>
+
+<ion-button shape="round" fill="outline" expand="block">
+  <ion-icon lazy="true" slot="start" name="image"></ion-icon>
+  <br>
+  <ion-label class="upload-button" slot="end">Upload Image</ion-label>
+  <input type="file" (change)="loadImageFromDevice($event)" id="file-input"
+    accept="image/png, image/jpeg">
+</ion-button>

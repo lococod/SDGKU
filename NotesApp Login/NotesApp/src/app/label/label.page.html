@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ label }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="addNote2()">
+        <ion-icon slot="icon-only" name="add-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ label }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-list>
+      <ng-container *ngFor="let note of notesService.notes">
+        <ion-slide button  class="hovering"
+          *ngIf="note.label === this.label && note.folder !== 'Archive'">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>{{note.title}}</ion-card-title>
+              <IonCardSubtitle>{{note.folder}}</IonCardSubtitle>
+            </ion-card-header>
+            <ion-card-content>
+              {{note.content}}
+            </ion-card-content>
+          </ion-card>
+          <ion-button [routerLink]="'/notes/' + note.id" routerDirection="forward" class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
+        </ion-slide>
+        <ion-slide button  class="hovering"
+          *ngIf="this.label ==='All' && note.folder !== 'Archive'">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>{{note.title}}</ion-card-title>
+              <IonCardSubtitle>{{note.folder}}</IonCardSubtitle>
+            </ion-card-header>
+            <ion-card-content>
+              {{note.content}}
+            </ion-card-content>
+          </ion-card>
+          <ion-button [routerLink]="'/notes/' + note.id" routerDirection="forward" class="ion-activatable ripple-parent" fill="outline" slot="end">View<ion-ripple-effect type="unbounded"></ion-ripple-effect></ion-button>
+        </ion-slide>
+      </ng-container>
+    </ion-list>
+  </div>
+</ion-content>
