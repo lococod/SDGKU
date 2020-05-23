@@ -21,7 +21,6 @@ const routes: Routes = [
 })
 export class MemberRoutingModule { }
 
-
  // {
   //   path: 'dashboard',
   //   loadChildren: () => import('./members/dashboard/dashboard.module').then( m => m.DashboardPageModule)
