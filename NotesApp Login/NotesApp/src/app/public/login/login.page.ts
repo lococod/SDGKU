@@ -7,10 +7,14 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  mobile: boolean;
 
   constructor(private authService: AuthenticationService) { }
 
   ngOnInit() {
+    if (window.screen.width === 360) { // 768px portrait
+      this.mobile = true;
+    }
   }
 
 
