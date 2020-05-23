@@ -57,8 +57,8 @@ export class NotesService {
       id: id.toString(),
       title: title,
       content: content,
-      folder: folder,
-      label: label
+      folder: folder.toLowerCase(),
+      label: label.toLowerCase()
     });
 
     this.save();
@@ -71,14 +71,14 @@ export class NotesService {
     let index = this.notes.indexOf(note);
 
     // Delete that element of the array and resave the data
-    if(index > -1 && note.folder === 'Archive'){
+    if(index > -1 && note.folder === 'archive'){
       this.notes.splice(index, 1);
       // note.folder = "Archive";
       this.save();
     }
     if(index > -1){
       // this.notes.splice(index, 1);
-      note.folder = "Archive";
+      note.folder = "archive";
       this.save();
     }
 

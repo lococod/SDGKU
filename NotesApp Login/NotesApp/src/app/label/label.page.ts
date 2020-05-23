@@ -49,7 +49,7 @@ export class LabelPage implements OnInit {
         {
           text: 'Save',
           handler: (data) => {
-            this.notesService.createNote(data.title, data.folder, data.content, this.label);
+            this.notesService.createNote(data.title, data.folder.toLowerCase(), data.content, this.label.toLowerCase());
             console.log(data.title+" "+this.label)
           }
         }

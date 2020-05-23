@@ -48,7 +48,7 @@ export class FolderPage implements OnInit {
         {
           text: 'Save',
           handler: (data) => {
-            this.notesService.createNote(data.title, this.folder, data.content, data.label);
+            this.notesService.createNote(data.title, this.folder.toLowerCase(), data.content, data.label.toLowerCase());
             console.log(data.title+" "+this.folder)
           }
         }
