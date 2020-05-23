@@ -38,11 +38,11 @@ const routes: Routes = [
   //   path: 'dashboard',
   //   loadChildren: () => import('./members/dashboard/dashboard.module').then( m => m.DashboardPageModule)
   // }
-  {
-    path: 'members',
-    canActivate: [AuthGuardService],
-    loadChildren: './members/member-routing.module#MemberRoutingModule'
-  }
+  // {
+  //   path: 'members',
+  //   canActivate: [AuthGuardService],
+  //   loadChildren: './members/member-routing.module#MemberRoutingModule'
+  // }
 
 
 ];
