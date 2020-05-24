@@ -14,6 +14,7 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public selectedLabel = 0;
+  public showLogout = false;
 
     public appPages = [
     {
@@ -104,9 +105,13 @@ export class AppComponent implements OnInit {
         console.log('Auth changed: ', state);
         if (state) {
           this.router.navigate(['label','all']);
+          this.showLogout = true;
+          console.log("show logout: " + this.showLogout)
         }
         else {
           this.router.navigate(['login']);
+          this.showLogout = false;
+          console.log("show logout: " + this.showLogout)
         }
       });
     });
@@ -127,5 +132,9 @@ export class AppComponent implements OnInit {
 
   logout(){
     this.authService.logout();
+  }
+
+  isAuthorized(){
+    this.authService.isAuthenticated();   
   }
 }
