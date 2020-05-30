@@ -23,7 +23,7 @@
     <ion-list>
       <ng-container *ngFor="let note of notesService.notes">
         <ion-slide button  class="hovering"
-          *ngIf="note.label === this.label && note.folder !== 'archive'">
+          *ngIf="note.label === this.label && note.folder !== 'archive' && note.label !=='all'">
           <ion-card>
             <ion-card-header>
               <ion-card-title>{{note.title}}</ion-card-title>
