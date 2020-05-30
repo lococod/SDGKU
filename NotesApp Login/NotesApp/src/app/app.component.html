@@ -8,12 +8,12 @@
           <ion-button  *ngIf="showLogout" (click)="logout()" color="secondary" expand="block">Logout</ion-button>
 
           <div><br /></div>
-          <ion-searchbar animated showCancelButton="focus"></ion-searchbar>
+          <ion-searchbar *ngIf="showLogout" animated showCancelButton="focus"></ion-searchbar>
           <ion-menu-toggle  auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
+            <ion-item *ngIf="showLogout" (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
               detail="false" [class.selected]="selectedIndex == i">
-              <ion-icon *ngIf="showLogout" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-              <ion-label *ngIf="showLogout">{{ p.title }}</ion-label>
+              <ion-icon  slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
@@ -28,10 +28,10 @@
           </ion-item> -->
 
           <ion-menu-toggle auto-hide="false" *ngFor="let label of labels; let i = index">
-            <ion-item (click)="selectedLabel = i" routerDirection="root" [routerLink]="[label.url]" lines="none"
+            <ion-item *ngIf="showLogout" (click)="selectedLabel = i" routerDirection="root" [routerLink]="[label.url]" lines="none"
               detail="false" [class.selected]="selectedLabel == i">
-              <ion-icon slot="start" *ngIf="showLogout" [ios]="label.icon + '-outline'" [md]="label.icon + '-sharp'"></ion-icon>
-              <ion-label *ngIf="showLogout">{{ label.title }}</ion-label>
+              <ion-icon slot="start" [ios]="label.icon + '-outline'" [md]="label.icon + '-sharp'"></ion-icon>
+              <ion-label >{{ label.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
